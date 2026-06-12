@@ -35,3 +35,28 @@ Draft XI — статическая HTML/CSS/JS игра без Node.js
 - styles.css — цвета, размеры, поле, карточки, кнопки.
 - index.html — структура экрана.
 - js/app.js — логика игры.
+
+Как подключить общий leaderboard через MySQL:
+1. Создай таблицу в MySQL:
+   CREATE TABLE leaderboard (
+     id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+     nickname VARCHAR(24) NOT NULL,
+     score INT NOT NULL,
+     played_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+     INDEX idx_score_played_at (score DESC, played_at DESC)
+   ) DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+2. Залей файл api/leaderboard.php на хостинг вместе с сайтом.
+3. В api/leaderboard.php укажи свои DB_HOST, DB_NAME, DB_USER и DB_PASS от MySQL.
+4. В js/app.js endpoint должен смотреть на этот файл:
+   const LEADERBOARD_API_ENDPOINT = "https://www.38-0-0.ru/api/leaderboard.php";
+5. API отвечает на GET массивом [{ nickname, score, playedAt }] и на POST принимает JSON { nickname, score, playedAt }.
+6. Если API временно недоступен, игра сохранит результат локально в браузере как резервный вариант.
+
+Как работает «Поделиться результатом»:
+- index.html открывает share.html с параметрами nickname и score.
+- share.html показывает результат из URL.
+- Кнопка «Скопировать ссылку для друга» копирует текст:
+  Попробуй побить мой рекорд!
+  Я набрал {очки} попробуй побить мой рекорд в игре 38-0-0 Легенды РПЛ.
+
+  https://www.38-0-0.ru/share.html?nickname=...&score=...
