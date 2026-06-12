@@ -10,9 +10,9 @@
   --purple: #8738ff;
   --yellow: #ffde44;
   --green: #36f386;
-  --field: #0f8145;
-  --field-dark: #08713b;
-  --field-light: #138a4b;
+  --field: #159451;
+  --field-dark: #0d7f45;
+  --field-light: #1aa45d;
 }
 
 * { box-sizing: border-box; }
