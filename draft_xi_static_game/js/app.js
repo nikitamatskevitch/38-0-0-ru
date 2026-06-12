@@ -228,7 +228,7 @@
         style="--shirt-color: ${escapeAttribute(colors.shirt)}; --shirt-number-color: ${escapeAttribute(colors.number)};"
         title="${escapeAttribute(player.clubName)} — #${escapeAttribute(number)}"
         aria-label="Футболка ${escapeAttribute(player.clubName)}, номер ${escapeAttribute(number)}"
-      ><span class="shirt-number">${escapeHtml(number)}</span></span>
+      >${escapeHtml(number)}</span>
     `;
   }
 
