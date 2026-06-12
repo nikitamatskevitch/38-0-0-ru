@@ -65,6 +65,35 @@ button { cursor: pointer; }
   box-shadow: inset 0 0 0 1px rgba(255,255,255,.08);
 }
 .header-actions { display: flex; align-items: center; gap: 12px; }
+.support-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 44px;
+  border: 1px solid rgba(46, 166, 255, .34);
+  border-radius: 999px;
+  padding: 11px 17px;
+  color: #eef9ff;
+  font-weight: 1000;
+  text-decoration: none;
+  background: linear-gradient(135deg, rgba(42, 171, 238, .96), rgba(0, 119, 181, .78));
+  box-shadow: 0 14px 36px rgba(42, 171, 238, .22), inset 0 1px 0 rgba(255,255,255,.28);
+  transition: transform .18s ease, border-color .18s ease, filter .18s ease, box-shadow .18s ease;
+}
+.support-btn:hover {
+  transform: translateY(-1px);
+  border-color: rgba(154, 221, 255, .72);
+  filter: brightness(1.08);
+  box-shadow: 0 18px 42px rgba(42, 171, 238, .30), inset 0 1px 0 rgba(255,255,255,.36);
+}
+.support-btn-icon {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  fill: currentColor;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,.25));
+}
 .round-pill {
   border: 0;
   border-radius: 999px;
@@ -626,7 +655,9 @@ button { cursor: pointer; }
 .leaderboard-empty { text-align: center !important; color: var(--muted); padding: 28px 16px !important; }
 @media (max-width: 720px) {
   .header-actions { gap: 8px; }
-  .leaderboard-btn { padding: 10px 12px; font-size: 12px; }
+  .support-btn, .leaderboard-btn { padding: 10px 12px; font-size: 12px; }
+  .support-btn { gap: 7px; }
+  .support-btn-icon { width: 16px; height: 16px; }
   .finish-actions { justify-items: stretch; }
   .share-btn { min-width: 0; width: 100%; }
 }
