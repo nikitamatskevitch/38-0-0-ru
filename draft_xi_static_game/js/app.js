@@ -89,7 +89,7 @@
   const SHARE_URL = "https://www.38-0-0.ru";
   // Для подключения MySQL оставь фронтенд без изменений и укажи здесь URL своего API.
   // API может читать/писать в MySQL и возвращать массив: [{ nickname, score, playedAt }].
-  const LEADERBOARD_API_ENDPOINT = "";
+  const LEADERBOARD_API_ENDPOINT = "https://api.38-0-0.ru/leaderboard";
   const DEFAULT_SHIRT_COLORS = { shirt: "#2C2C45", number: "#FFFFFF" };
   // Цвета клубных футболок взяты из таблицы «таблица цвета 2.xlsx»: 1-й цвет — футболка, 2-й — номер.
   const CLUB_COLORS = {
