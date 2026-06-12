@@ -64,7 +64,7 @@ button { cursor: pointer; }
   display: block;
   filter: drop-shadow(0 8px 18px rgba(0,0,0,.35));
 }
-.game-brand .brand-logo-img { width: 68px; height: 58px; }
+.game-brand .brand-logo-img { width: 104px; height: 70px; }
 .mini-ball {
   width: 42px; height: 42px;
   display: grid; place-items: center;
@@ -698,7 +698,7 @@ button { cursor: pointer; }
   .brand-mini span { display: none; }
   .brand-mini strong { display: none; }
   .brand-logo-img { width: 48px; height: 48px; }
-  .game-brand .brand-logo-img { width: 58px; height: 50px; }
+  .game-brand .brand-logo-img { width: 78px; height: 56px; }
   .mode-row { grid-template-columns: 1fr; }
   .start-screen { padding-inline: 12px; }
   .start-hero-layout { grid-template-columns: minmax(0, 1fr); }
