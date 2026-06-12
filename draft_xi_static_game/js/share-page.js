@@ -13,8 +13,9 @@
 
   const nickname = normalizeNickname(params.get("nickname")) || "Игрок";
   const score = normalizeScore(params.get("score"));
-  const challengeText = `попробуй побить мой рекорд в игре 38-0-0 Легенды РПЛ. Я набрал: ${score}`;
+  const challengeText = `Я набрал ${score} попробуй побить мой рекорд в игре 38-0-0 Легенды РПЛ.`;
   const friendLink = getCanonicalFriendLink(nickname, score);
+  const shareMessage = getShareMessage(score, friendLink);
 
   nicknameEl.textContent = nickname;
   scoreEl.textContent = score;
@@ -38,10 +39,15 @@
     return url.toString();
   }
 
+
+  function getShareMessage(playerScore, link) {
+    return `Попробуй побить мой рекорд!\nЯ набрал ${playerScore} попробуй побить мой рекорд в игре 38-0-0 Легенды РПЛ.\n\n${link}`;
+  }
+
   function getShareData() {
     return {
       title: "38-0-0 Легенды РПЛ",
-      text: challengeText,
+      text: `Попробуй побить мой рекорд!\n${challengeText}`,
       url: friendLink
     };
   }
@@ -65,14 +71,14 @@
 
   async function copyFriendLink() {
     try {
-      await copyText(friendLink);
+      await copyText(shareMessage);
       statusEl.textContent = "Ссылка для друга скопирована!";
       copyFriendLinkBtn.textContent = "Ссылка скопирована";
       setTimeout(() => {
         copyFriendLinkBtn.textContent = "Скопировать ссылку для друга";
       }, 1500);
     } catch (error) {
-      statusEl.textContent = friendLink;
+      statusEl.textContent = shareMessage;
     }
   }
 
@@ -90,10 +96,10 @@
     }
 
     try {
-      await copyText(`${challengeText} ${friendLink}`);
+      await copyText(shareMessage);
       statusEl.textContent = "Браузер не открыл окно шаринга — сообщение скопировано.";
     } catch (error) {
-      statusEl.textContent = `${challengeText} ${friendLink}`;
+      statusEl.textContent = shareMessage;
     }
   }
 

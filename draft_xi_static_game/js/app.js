@@ -89,7 +89,7 @@
   const SHARE_URL = "https://www.38-0-0.ru";
   // Для подключения MySQL оставь фронтенд без изменений и укажи здесь URL своего API.
   // API может читать/писать в MySQL и возвращать массив: [{ nickname, score, playedAt }].
-  const LEADERBOARD_API_ENDPOINT = "https://api.38-0-0.ru/leaderboard";
+  const LEADERBOARD_API_ENDPOINT = "https://www.38-0-0.ru/api/leaderboard.php";
   const DEFAULT_SHIRT_COLORS = { shirt: "#2C2C45", number: "#FFFFFF" };
   // Цвета клубных футболок взяты из таблицы «таблица цвета 2.xlsx»: 1-й цвет — футболка, 2-й — номер.
   const CLUB_COLORS = {
@@ -523,11 +523,12 @@
 
     if (LEADERBOARD_API_ENDPOINT) {
       try {
-        await fetch(LEADERBOARD_API_ENDPOINT, {
+        const response = await fetch(LEADERBOARD_API_ENDPOINT, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(entry)
         });
+        if (!response.ok) throw new Error("Не удалось сохранить leaderboard");
         return;
       } catch (error) {
         // При ошибке API сохраняем локально, чтобы игрок не потерял результат.
