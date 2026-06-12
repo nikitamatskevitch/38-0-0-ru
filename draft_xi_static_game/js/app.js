@@ -34,6 +34,15 @@
   const nicknameForm = document.getElementById("nicknameForm");
   const nicknameInput = document.getElementById("nicknameInput");
   const nicknameError = document.getElementById("nicknameError");
+  const shareModal = document.getElementById("shareModal");
+  const closeShareBtn = document.getElementById("closeShareBtn");
+  const sharePreview = document.getElementById("sharePreview");
+  const shareTextInput = document.getElementById("shareTextInput");
+  const copyShareTextBtn = document.getElementById("copyShareTextBtn");
+  const nativeShareBtn = document.getElementById("nativeShareBtn");
+  const telegramShareLink = document.getElementById("telegramShareLink");
+  const whatsappShareLink = document.getElementById("whatsappShareLink");
+  const vkShareLink = document.getElementById("vkShareLink");
 
   const DB = Array.isArray(window.PLAYERS_DB) ? window.PLAYERS_DB : [];
   const REQUIRED_POSITIONS = ["ВРТ", "ПЗ", "ЦЗ", "ЦЗ", "ЛЗ", "ЦП", "ЦП", "ЦП", "ПП", "ФРВ", "ЛП"];
@@ -486,31 +495,85 @@
     return date.toLocaleDateString("ru-RU", { day: "2-digit", month: "2-digit", year: "numeric" });
   }
 
-  async function shareResult() {
+  function getSharePayload() {
     const score = state.lastRating || calculateTeamRating();
     const text = `попробуй побить мой рекорд в игре 38-0-0 Легенды РПЛ. Я набрал: ${score}`;
-    const shareData = {
+    const fullText = `${text} ${SHARE_URL}`;
+
+    return {
       title: "38-0-0 Легенды РПЛ",
       text,
-      url: SHARE_URL
+      url: SHARE_URL,
+      fullText
+    };
+  }
+
+  function updateShareModal(payload) {
+    const encodedText = encodeURIComponent(payload.fullText);
+    const encodedUrl = encodeURIComponent(payload.url);
+    const encodedTitle = encodeURIComponent(payload.title);
+
+    sharePreview.textContent = payload.fullText;
+    shareTextInput.value = payload.fullText;
+    telegramShareLink.href = `https://t.me/share/url?url=${encodedUrl}&text=${encodeURIComponent(payload.text)}`;
+    whatsappShareLink.href = `https://wa.me/?text=${encodedText}`;
+    vkShareLink.href = `https://vk.com/share.php?url=${encodedUrl}&title=${encodedTitle}&comment=${encodeURIComponent(payload.text)}`;
+  }
+
+  function openShareModal(payload = getSharePayload()) {
+    updateShareModal(payload);
+    shareModal.classList.remove("hidden");
+    shareStatus.textContent = "Если системное окно закрылось, выбери мессенджер ниже или скопируй текст.";
+  }
+
+  function closeShareModal() {
+    shareModal.classList.add("hidden");
+  }
+
+  async function copyShareText() {
+    const payload = getSharePayload();
+    updateShareModal(payload);
+
+    try {
+      await navigator.clipboard.writeText(payload.fullText);
+      shareStatus.textContent = "Сообщение скопировано — вставь его в мессенджер!";
+      copyShareTextBtn.textContent = "Скопировано";
+      setTimeout(() => {
+        copyShareTextBtn.textContent = "Копировать";
+      }, 1400);
+    } catch (error) {
+      shareTextInput.focus();
+      shareTextInput.select();
+      shareStatus.textContent = "Скопируй выделенный текст вручную.";
+    }
+  }
+
+  async function tryNativeShare(payload) {
+    if (!navigator.share) return false;
+
+    const shareData = {
+      title: payload.title,
+      text: payload.text,
+      url: payload.url
     };
 
-    if (navigator.share) {
-      try {
-        await navigator.share(shareData);
-        shareStatus.textContent = "Готово — результат отправлен!";
-        return;
-      } catch (error) {
-        if (error.name === "AbortError") return;
-      }
-    }
+    if (navigator.canShare && !navigator.canShare(shareData)) return false;
 
-    const fallbackText = `${text} ${SHARE_URL}`;
     try {
-      await navigator.clipboard.writeText(fallbackText);
-      shareStatus.textContent = "Сообщение скопировано — вставь его в мессенджер!";
+      await navigator.share(shareData);
+      shareStatus.textContent = "Готово — результат отправлен!";
+      return true;
     } catch (error) {
-      shareStatus.textContent = fallbackText;
+      return false;
+    }
+  }
+
+  async function shareResult() {
+    const payload = getSharePayload();
+    const shared = await tryNativeShare(payload);
+
+    if (!shared) {
+      openShareModal(payload);
     }
   }
 
@@ -567,6 +630,18 @@
   closeLeaderboardBtn.addEventListener("click", closeLeaderboard);
   leaderboardModal.addEventListener("click", event => {
     if (event.target === leaderboardModal) closeLeaderboard();
+  });
+  closeShareBtn.addEventListener("click", closeShareModal);
+  shareModal.addEventListener("click", event => {
+    if (event.target === shareModal) closeShareModal();
+  });
+  copyShareTextBtn.addEventListener("click", copyShareText);
+  nativeShareBtn.addEventListener("click", async () => {
+    const payload = getSharePayload();
+    const shared = await tryNativeShare(payload);
+    if (!shared) {
+      shareStatus.textContent = "Системное окно недоступно — выбери мессенджер или скопируй текст.";
+    }
   });
   nicknameForm.addEventListener("submit", event => {
     event.preventDefault();

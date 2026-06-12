@@ -630,3 +630,46 @@ button { cursor: pointer; }
   .finish-actions { justify-items: stretch; }
   .share-btn { min-width: 0; width: 100%; }
 }
+
+.share-card { width: min(680px, 100%); }
+.share-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 18px 0;
+}
+.share-option {
+  display: grid;
+  place-items: center;
+  min-height: 52px;
+  border-radius: 15px;
+  color: #fff;
+  font-weight: 1000;
+  text-decoration: none;
+  background: linear-gradient(135deg, rgba(54,243,134,.22), rgba(135,56,255,.26));
+  border: 1px solid rgba(255,255,255,.10);
+  transition: transform .18s ease, filter .18s ease;
+}
+.share-option:hover { transform: translateY(-2px); filter: brightness(1.12); }
+.share-copy-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.secondary-btn {
+  width: 100%;
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 15px;
+  padding: 14px 18px;
+  color: var(--text);
+  font-weight: 1000;
+  background: rgba(255,255,255,.08);
+  transition: transform .18s ease, background .18s ease;
+}
+.secondary-btn:hover { transform: translateY(-1px); background: rgba(255,255,255,.12); }
+@media (max-width: 620px) {
+  .share-options,
+  .share-copy-row { grid-template-columns: 1fr; }
+}
