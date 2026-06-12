@@ -10,9 +10,9 @@
 declare(strict_types=1);
 
 const DB_HOST = 'localhost';
-const DB_NAME = 'database';
-const DB_USER = 'database_user';
-const DB_PASS = 'database_password';
+const DB_NAME = 'h210331';
+const DB_USER = 'h210331';
+const DB_PASS = 'QPH6n(4w]H2cxQ%s';
 const MAX_NICKNAME_LENGTH = 24;
 const MAX_LEADERBOARD_ROWS = 50;
 
