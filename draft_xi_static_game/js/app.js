@@ -33,6 +33,8 @@
   const leaderboardModal = document.getElementById("leaderboardModal");
   const closeLeaderboardBtn = document.getElementById("closeLeaderboardBtn");
   const leaderboardBody = document.getElementById("leaderboardBody");
+  const perfectPlayersList = document.getElementById("perfectPlayersList");
+  const recentAttemptsList = document.getElementById("recentAttemptsList");
   const nicknameModal = document.getElementById("nicknameModal");
   const nicknameForm = document.getElementById("nicknameForm");
   const nicknameInput = document.getElementById("nicknameInput");
@@ -503,21 +505,47 @@
       .sort((a, b) => Number(b.score) - Number(a.score) || new Date(b.playedAt || 0) - new Date(a.playedAt || 0));
   }
 
-  async function loadLeaderboard() {
+  function sortByNewest(entries) {
+    return entries
+      .slice()
+      .sort((a, b) => new Date(b.playedAt || 0) - new Date(a.playedAt || 0));
+  }
+
+  function getLeaderboardUrl(view = "top", limit) {
+    const url = new URL(LEADERBOARD_API_ENDPOINT, window.location.href);
+    url.searchParams.set("view", view);
+    if (limit) url.searchParams.set("limit", String(limit));
+    return url.toString();
+  }
+
+  async function loadLeaderboard(view = "top", limit) {
     if (LEADERBOARD_API_ENDPOINT) {
-      const response = await fetch(LEADERBOARD_API_ENDPOINT);
+      const response = await fetch(getLeaderboardUrl(view, limit));
       if (!response.ok) throw new Error("Не удалось загрузить leaderboard");
       const entries = await response.json();
-      return sortLeaderboard(Array.isArray(entries) ? entries.filter(isValidLeaderboardEntry) : []);
+      return normalizeLeaderboardEntries(entries, view, limit);
     }
 
-    return sortLeaderboard(getLocalLeaderboard());
+    return normalizeLeaderboardEntries(getLocalLeaderboard(), view, limit);
+  }
+
+  function normalizeLeaderboardEntries(entries, view = "top", limit) {
+    const validEntries = Array.isArray(entries) ? entries.filter(isValidLeaderboardEntry) : [];
+    const sortedEntries = view === "recent" || view === "perfect"
+      ? sortByNewest(validEntries)
+      : sortLeaderboard(validEntries);
+    const filteredEntries = view === "perfect"
+      ? sortedEntries.filter(entry => Number(entry.score) >= 100)
+      : sortedEntries;
+
+    return filteredEntries.slice(0, limit || 50);
   }
 
   async function saveLeaderboardResult(score) {
     const entry = {
       nickname: getSavedNickname() || "Игрок",
       score,
+      formation: state.formation || selectedFormation,
       playedAt: new Date().toISOString()
     };
 
@@ -529,6 +557,7 @@
           body: JSON.stringify(entry)
         });
         if (!response.ok) throw new Error("Не удалось сохранить leaderboard");
+        refreshHomeFeeds();
         return;
       } catch (error) {
         // При ошибке API сохраняем локально, чтобы игрок не потерял результат.
@@ -537,6 +566,47 @@
 
     const entries = sortLeaderboard([...getLocalLeaderboard(), entry]).slice(0, 100);
     setLocalLeaderboard(entries);
+    refreshHomeFeeds();
+  }
+
+  async function refreshHomeFeeds() {
+    if (!perfectPlayersList || !recentAttemptsList) return;
+
+    try {
+      const [perfectPlayers, recentAttempts] = await Promise.all([
+        loadLeaderboard("perfect", 10),
+        loadLeaderboard("recent", 10)
+      ]);
+      renderHomeFeed(perfectPlayersList, perfectPlayers, { emptyText: "Пока никто не сделал 38-0-0." });
+      renderHomeFeed(recentAttemptsList, recentAttempts, { emptyText: "Пока нет попыток." });
+    } catch (error) {
+      perfectPlayersList.innerHTML = `<div class="home-feed-empty">Не удалось загрузить игроков.</div>`;
+      recentAttemptsList.innerHTML = `<div class="home-feed-empty">Не удалось загрузить попытки.</div>`;
+    }
+  }
+
+  function renderHomeFeed(container, entries, options = {}) {
+    if (!entries.length) {
+      container.innerHTML = `<div class="home-feed-empty">${escapeHtml(options.emptyText || "Пока нет результатов.")}</div>`;
+      return;
+    }
+
+    container.innerHTML = entries.slice(0, 10).map(entry => `
+      <div class="home-feed-row">
+        <div class="home-feed-player">
+          <strong>${escapeHtml(entry.nickname)}</strong>
+          <span>${escapeHtml(formatPlayedAtShort(entry.playedAt))}</span>
+        </div>
+        <div class="home-feed-result">
+          <strong>${formatHomeScore(entry.score)}</strong>
+          <span>схема: ${escapeHtml(entry.formation || "—")}</span>
+        </div>
+      </div>
+    `).join("");
+  }
+
+  function formatHomeScore(score) {
+    return Number(score) >= 100 ? "38-0-0" : `${escapeHtml(score)} очков`;
   }
 
   async function openLeaderboard() {
@@ -578,6 +648,13 @@
     const date = new Date(value);
     if (Number.isNaN(date.getTime())) return "—";
     return date.toLocaleDateString("ru-RU", { day: "2-digit", month: "2-digit", year: "numeric" });
+  }
+
+  function formatPlayedAtShort(value) {
+    if (!value) return "—";
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) return "—";
+    return date.toLocaleString("ru-RU", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" });
   }
 
   function getSharePayload() {
@@ -686,6 +763,10 @@
   changeSideBtn.addEventListener("click", () => gameGrid.classList.toggle("flipped"));
   searchInput.addEventListener("input", renderPlayers);
   slots.forEach(slot => slot.addEventListener("click", () => handleSlotClick(slot)));
+  refreshHomeFeeds();
+  if (perfectPlayersList || recentAttemptsList) {
+    window.setInterval(refreshHomeFeeds, 30000);
+  }
 
   if (!DB.length) {
     spinHint.textContent = "База игроков пустая. Добавь игроков в data/players.js.";
