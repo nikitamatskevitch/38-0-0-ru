@@ -10,6 +10,9 @@
   const changeSideBtn = document.getElementById("changeSideBtn");
   const roundPill = document.getElementById("roundPill");
   const gameGrid = document.getElementById("gameGrid");
+  const formationCards = Array.from(document.querySelectorAll(".formation-card"));
+  const formationTitle = document.getElementById("formationTitle");
+  const formationPill = document.getElementById("formationPill");
 
   const drawCard = document.getElementById("drawCard");
   const playersCard = document.getElementById("playersCard");
@@ -36,7 +39,51 @@
   const nicknameError = document.getElementById("nicknameError");
 
   const DB = Array.isArray(window.PLAYERS_DB) ? window.PLAYERS_DB : [];
-  const REQUIRED_POSITIONS = ["ВРТ", "ПЗ", "ЦЗ", "ЦЗ", "ЛЗ", "ЦП", "ЦП", "ЦП", "ПП", "ФРВ", "ЛП"];
+  const SLOT_IDS = ["st", "lw", "rw", "cm-left", "cm-mid", "cm-right", "lb", "cb-left", "cb-right", "rb", "gk"];
+  const FORMATIONS = {
+    "4-3-3": [
+      slot("st", "ФРВ", 50, 13), slot("lw", "ЛП", 18, 20), slot("rw", "ПП", 82, 20),
+      slot("cm-left", "ЦП", 26, 51), slot("cm-mid", "ЦП", 50, 45), slot("cm-right", "ЦП", 74, 51),
+      slot("lb", "ЛЗ", 16, 69), slot("cb-left", "ЦЗ", 40, 72), slot("cb-right", "ЦЗ", 60, 72), slot("rb", "ПЗ", 84, 69),
+      slot("gk", "ВРТ", 50, 88)
+    ],
+    "4-4-2": [
+      slot("st", "ФРВ", 40, 15), slot("lw", "ФРВ", 60, 15),
+      slot("rw", "ЛП", 16, 43), slot("cm-left", "ЦП", 39, 46), slot("cm-mid", "ЦП", 61, 46), slot("cm-right", "ПП", 84, 43),
+      slot("lb", "ЛЗ", 16, 69), slot("cb-left", "ЦЗ", 40, 72), slot("cb-right", "ЦЗ", 60, 72), slot("rb", "ПЗ", 84, 69),
+      slot("gk", "ВРТ", 50, 88)
+    ],
+    "4-2-4": [
+      slot("st", "ЛП", 15, 20), slot("lw", "ФРВ", 38, 14), slot("rw", "ФРВ", 62, 14), slot("cm-left", "ПП", 85, 20),
+      slot("cm-mid", "ЦП", 40, 48), slot("cm-right", "ЦП", 60, 48),
+      slot("lb", "ЛЗ", 16, 69), slot("cb-left", "ЦЗ", 40, 72), slot("cb-right", "ЦЗ", 60, 72), slot("rb", "ПЗ", 84, 69),
+      slot("gk", "ВРТ", 50, 88)
+    ],
+    "3-4-3": [
+      slot("st", "ФРВ", 50, 13), slot("lw", "ЛП", 18, 20), slot("rw", "ПП", 82, 20),
+      slot("cm-left", "ЛП", 16, 46), slot("cm-mid", "ЦП", 39, 49), slot("cm-right", "ЦП", 61, 49), slot("lb", "ПП", 84, 46),
+      slot("cb-left", "ЦЗ", 30, 72), slot("cb-right", "ЦЗ", 50, 75), slot("rb", "ЦЗ", 70, 72),
+      slot("gk", "ВРТ", 50, 88)
+    ],
+    "3-5-2": [
+      slot("st", "ФРВ", 40, 15), slot("lw", "ФРВ", 60, 15),
+      slot("rw", "ЛП", 12, 47), slot("cm-left", "ЦП", 31, 51), slot("cm-mid", "ЦП", 50, 44), slot("cm-right", "ЦП", 69, 51), slot("lb", "ПП", 88, 47),
+      slot("cb-left", "ЦЗ", 30, 72), slot("cb-right", "ЦЗ", 50, 75), slot("rb", "ЦЗ", 70, 72),
+      slot("gk", "ВРТ", 50, 88)
+    ],
+    "5-3-2": [
+      slot("st", "ФРВ", 40, 15), slot("lw", "ФРВ", 60, 15),
+      slot("rw", "ЦП", 30, 47), slot("cm-left", "ЦП", 50, 43), slot("cm-mid", "ЦП", 70, 47),
+      slot("cm-right", "ЛЗ", 10, 70), slot("lb", "ЦЗ", 30, 73), slot("cb-left", "ЦЗ", 50, 76), slot("cb-right", "ЦЗ", 70, 73), slot("rb", "ПЗ", 90, 70),
+      slot("gk", "ВРТ", 50, 88)
+    ],
+    "5-4-1": [
+      slot("st", "ФРВ", 50, 14),
+      slot("lw", "ЛП", 16, 43), slot("rw", "ЦП", 39, 47), slot("cm-left", "ЦП", 61, 47), slot("cm-mid", "ПП", 84, 43),
+      slot("cm-right", "ЛЗ", 10, 70), slot("lb", "ЦЗ", 30, 73), slot("cb-left", "ЦЗ", 50, 76), slot("cb-right", "ЦЗ", 70, 73), slot("rb", "ПЗ", 90, 70),
+      slot("gk", "ВРТ", 50, 88)
+    ]
+  };
   const NICKNAME_STORAGE_KEY = "rpl3800.nickname";
   const LEADERBOARD_STORAGE_KEY = "rpl3800.leaderboard";
   const SHARE_URL = "https://www.38-0-0.ru";
@@ -77,6 +124,8 @@
     "ЦСКА": { shirt: "#C8102E", number: "#002B5C" }
   };
 
+  const slotById = new Map(slots.map(item => [item.dataset.slot, item]));
+  let selectedFormation = "4-3-3";
   let state = createFreshState();
 
   function createFreshState() {
@@ -87,8 +136,13 @@
       selectedPlayerId: null,
       placed: {},
       usedPlayerIds: new Set(),
-      lastRating: 0
+      lastRating: 0,
+      formation: selectedFormation
     };
+  }
+
+  function slot(id, position, left, top) {
+    return { id, position, left, top };
   }
 
   function startGame() {
@@ -101,8 +155,47 @@
     resetDraft();
   }
 
+  function selectFormation(formationId) {
+    if (!FORMATIONS[formationId]) return;
+
+    selectedFormation = formationId;
+    updateFormationChoice();
+    applyFormationToPitch();
+  }
+
+  function updateFormationChoice() {
+    formationCards.forEach(card => {
+      const isActive = card.dataset.formation === selectedFormation;
+      card.classList.toggle("active", isActive);
+      card.setAttribute("aria-pressed", String(isActive));
+    });
+
+    if (formationTitle) formationTitle.textContent = `Схема ${selectedFormation}`;
+    if (formationPill) formationPill.textContent = selectedFormation.replaceAll("-", " - ");
+  }
+
+  function applyFormationToPitch() {
+    const formationSlots = FORMATIONS[selectedFormation] || FORMATIONS["4-3-3"];
+    const activeIds = new Set(formationSlots.map(item => item.id));
+
+    SLOT_IDS.forEach(id => {
+      const slotEl = slotById.get(id);
+      if (slotEl) slotEl.classList.toggle("hidden", !activeIds.has(id));
+    });
+
+    formationSlots.forEach(item => {
+      const slotEl = slotById.get(item.id);
+      if (!slotEl) return;
+
+      slotEl.dataset.position = item.position;
+      slotEl.style.left = `${item.left}%`;
+      slotEl.style.top = `${item.top}%`;
+    });
+  }
+
   function resetDraft() {
     state = createFreshState();
+    applyFormationToPitch();
     teamCodeEl.textContent = "---";
     seasonCodeEl.textContent = "----";
     spinHint.textContent = "Крути рулетку, чтобы получить клуб и сезон, затем выбери игрока.";
@@ -522,12 +615,12 @@
   }
 
   function hasAnyFreePosition(player) {
-    return slots.some(slot => !state.placed[slot.dataset.slot] && player.positions.includes(slot.dataset.position));
+    return slots.some(slot => !slot.classList.contains("hidden") && !state.placed[slot.dataset.slot] && player.positions.includes(slot.dataset.position));
   }
 
   function getOpenPositionsText() {
     const open = slots
-      .filter(slot => !state.placed[slot.dataset.slot])
+      .filter(slot => !slot.classList.contains("hidden") && !state.placed[slot.dataset.slot])
       .map(slot => slot.dataset.position);
 
     const counts = open.reduce((acc, pos) => {
@@ -560,6 +653,10 @@
   function escapeAttribute(value) {
     return escapeHtml(value).replaceAll("`", "&#096;");
   }
+
+  formationCards.forEach(card => card.addEventListener("click", () => selectFormation(card.dataset.formation)));
+  updateFormationChoice();
+  applyFormationToPitch();
 
   playBtn.addEventListener("click", requestNicknameBeforeStart);
   spinBtn.addEventListener("click", spin);
