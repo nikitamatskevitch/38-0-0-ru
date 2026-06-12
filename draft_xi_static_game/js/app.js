@@ -1,6 +1,7 @@
 (function () {
   "use strict";
 
+  const pageMode = document.body.dataset.page || "home";
   const slots = Array.from(document.querySelectorAll(".slot"));
   const startScreen = document.getElementById("startScreen");
   const gameScreen = document.getElementById("gameScreen");
@@ -136,8 +137,14 @@
   };
 
   const slotById = new Map(slots.map(item => [item.dataset.slot, item]));
-  let selectedFormation = "4-3-3";
+  let selectedFormation = getInitialFormation();
   let state = createFreshState();
+
+  function getInitialFormation() {
+    const params = new URLSearchParams(window.location.search);
+    const formation = params.get("formation");
+    return FORMATIONS[formation] ? formation : "4-3-3";
+  }
 
   function createFreshState() {
     return {
@@ -158,11 +165,11 @@
 
   function startGame() {
     ensureNicknameBadge();
-    startScreen.classList.add("hidden");
-    gameScreen.classList.remove("hidden");
-    resetBtn.classList.remove("hidden");
-    changeSideBtn.classList.remove("hidden");
-    roundPill.classList.remove("hidden");
+    if (startScreen) startScreen.classList.add("hidden");
+    if (gameScreen) gameScreen.classList.remove("hidden");
+    if (resetBtn) resetBtn.classList.remove("hidden");
+    if (changeSideBtn) changeSideBtn.classList.remove("hidden");
+    if (roundPill) roundPill.classList.remove("hidden");
     resetDraft();
   }
 
@@ -183,6 +190,15 @@
 
     if (formationTitle) formationTitle.textContent = `Схема ${selectedFormation}`;
     if (formationPill) formationPill.textContent = selectedFormation.replaceAll("-", " - ");
+    updatePlayLink();
+  }
+
+  function updatePlayLink() {
+    if (!playBtn || playBtn.tagName !== "A") return;
+
+    const url = new URL("/game/", window.location.origin);
+    url.searchParams.set("formation", selectedFormation);
+    playBtn.href = `${url.pathname}${url.search}`;
   }
 
   function applyFormationToPitch() {
@@ -791,36 +807,46 @@
   updateFormationChoice();
   applyFormationToPitch();
 
-  playBtn.addEventListener("click", requestNicknameBeforeStart);
-  spinBtn.addEventListener("click", spin);
-  resetBtn.addEventListener("click", resetDraft);
-  playAgainBtn.addEventListener("click", resetDraft);
-  shareResultBtn.addEventListener("click", shareResult);
-  leaderboardBtn.addEventListener("click", openLeaderboard);
-  closeLeaderboardBtn.addEventListener("click", closeLeaderboard);
-  leaderboardModal.addEventListener("click", event => {
-    if (event.target === leaderboardModal) closeLeaderboard();
-  });
-  nicknameForm.addEventListener("submit", event => {
-    event.preventDefault();
-    const nickname = normalizeNickname(nicknameInput.value);
-    if (nickname.length < 2) {
-      nicknameError.textContent = "Минимум 2 символа.";
-      return;
-    }
-    saveNickname(nickname);
-    nicknameModal.classList.add("hidden");
-    startGame();
-  });
-  changeSideBtn.addEventListener("click", () => gameGrid.classList.toggle("flipped"));
-  searchInput.addEventListener("input", renderPlayers);
+  if (playBtn && pageMode === "game" && playBtn.tagName !== "A") {
+    playBtn.addEventListener("click", requestNicknameBeforeStart);
+  }
+  if (spinBtn) spinBtn.addEventListener("click", spin);
+  if (resetBtn) resetBtn.addEventListener("click", resetDraft);
+  if (playAgainBtn) playAgainBtn.addEventListener("click", resetDraft);
+  if (shareResultBtn) shareResultBtn.addEventListener("click", shareResult);
+  if (leaderboardBtn) leaderboardBtn.addEventListener("click", openLeaderboard);
+  if (closeLeaderboardBtn) closeLeaderboardBtn.addEventListener("click", closeLeaderboard);
+  if (leaderboardModal) {
+    leaderboardModal.addEventListener("click", event => {
+      if (event.target === leaderboardModal) closeLeaderboard();
+    });
+  }
+  if (nicknameForm) {
+    nicknameForm.addEventListener("submit", event => {
+      event.preventDefault();
+      const nickname = normalizeNickname(nicknameInput.value);
+      if (nickname.length < 2) {
+        nicknameError.textContent = "Минимум 2 символа.";
+        return;
+      }
+      saveNickname(nickname);
+      nicknameModal.classList.add("hidden");
+      startGame();
+    });
+  }
+  if (changeSideBtn && gameGrid) changeSideBtn.addEventListener("click", () => gameGrid.classList.toggle("flipped"));
+  if (searchInput) searchInput.addEventListener("input", renderPlayers);
   slots.forEach(slot => slot.addEventListener("click", () => handleSlotClick(slot)));
   refreshHomeFeeds();
   if (perfectPlayersList || recentAttemptsList) {
     window.setInterval(refreshHomeFeeds, 30000);
   }
 
-  if (!DB.length) {
+  if (pageMode === "game") {
+    requestNicknameBeforeStart();
+  }
+
+  if (!DB.length && spinHint && spinBtn) {
     spinHint.textContent = "База игроков пустая. Добавь игроков в data/players.js.";
     spinBtn.disabled = true;
   }

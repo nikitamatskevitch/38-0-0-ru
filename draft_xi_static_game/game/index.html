@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Игра — 38-0-0 Легенды РПЛ</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body data-page="game">
+  <div class="app-shell">
+    <div class="top-glow"></div>
+
+    <header class="app-header game-header" id="appHeader">
+      <a class="brand-mini game-brand" href="/" aria-label="На главную 38-0-0 Легенды РПЛ">
+        <img class="brand-logo-img" src="/logo.png" alt="38-0-0 Легенды РПЛ" />
+      </a>
+
+      <div class="header-actions">
+        <a class="support-btn" href="https://t.me/rpl38game?direct" target="_blank" rel="noopener noreferrer" aria-label="Поддержка в Telegram">
+          <svg class="support-btn-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M21.7 3.3 18.4 19c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.8 12.5.8 10.9c-1.1-.3-1.1-1.1.2-1.6L20.5 1.8c.9-.3 1.7.2 1.2 1.5Z"/>
+          </svg>
+          <span>Поддержка</span>
+        </a>
+        <button class="leaderboard-btn" id="leaderboardBtn" type="button">🏆 Лучшие игроки</button>
+        <button class="round-pill hidden" id="roundPill">Раунд 1 / 11</button>
+        <button class="icon-btn hidden" id="changeSideBtn" title="Поменять стороны">⇄</button>
+        <button class="icon-btn hidden" id="resetBtn" title="Начать заново">↻</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="screen game-screen hidden" id="gameScreen">
+        <div class="game-grid" id="gameGrid">
+          <aside class="control-panel" id="controlPanel">
+            <div class="draw-card" id="drawCard">
+              <div class="draw-top">
+                <div class="draw-stat neon-pink">
+                  <span>КОМАНДА</span>
+                  <strong id="teamCode">---</strong>
+                </div>
+                <div class="draw-stat neon-purple">
+                  <span>ГОД</span>
+                  <strong id="seasonCode">----</strong>
+                </div>
+              </div>
+
+              <button class="primary-btn" id="spinBtn">КРУТИТЬ</button>
+              <p class="hint" id="spinHint">Крути рулетку, чтобы получить клуб и сезон, затем выбери игрока.</p>
+            </div>
+
+            <div class="players-card hidden" id="playersCard">
+              <div class="players-head">
+                <div>
+                  <h2 id="clubTitle">Клуб</h2>
+                  <span id="clubSeason">Сезон</span>
+                </div>
+                <input id="searchInput" type="search" placeholder="Поиск игрока..." autocomplete="off" />
+              </div>
+
+              <div class="draft-info" id="draftInfo">Выбери одного игрока</div>
+
+              <div class="stat-head">
+                <span></span>
+                <span>ТЕМ</span><span>УДР</span><span>ПАС</span><span>ДРБ</span><span>ЗАЩ</span><span>ФИЗ</span><span>ОБЩ</span>
+              </div>
+
+              <div class="players-list" id="playersList"></div>
+            </div>
+
+            <div class="finished-card hidden" id="finishedCard">
+              <div class="finish-logo" aria-hidden="true">
+                <img src="/logo.png" alt="" />
+              </div>
+              <h2 id="finishHeadline">Сможет ли твой XI сделать 38-0-0?</h2>
+              <p id="teamRatingText">Рейтинг команды: 0</p>
+
+              <div class="projected-record-card" aria-label="Прогноз сезона">
+                <div class="projected-kicker">Projected record</div>
+                <div class="projected-record">
+                  <strong class="record-win" id="projectedWins">0</strong>
+                  <span>–</span>
+                  <strong class="record-draw" id="projectedDraws">0</strong>
+                  <span>–</span>
+                  <strong class="record-loss" id="projectedLosses">0</strong>
+                </div>
+                <p id="projectedPointsText">W · D · L over 38 games · 0 pts</p>
+                <div class="season-badge" id="seasonBadge">Борьба за выживание</div>
+              </div>
+
+              <div class="finish-actions">
+                <button class="share-btn" id="shareResultBtn" type="button">Share result</button>
+                <button class="secondary-finish-btn" id="playAgainBtn" type="button">Build another</button>
+              </div>
+              <p class="share-status" id="shareStatus" aria-live="polite"></p>
+            </div>
+          </aside>
+
+          <section class="pitch-wrap">
+            <div class="pitch" id="pitch" aria-label="Футбольное поле 4-3-3">
+              <div class="stripe s1"></div>
+              <div class="stripe s2"></div>
+              <div class="stripe s3"></div>
+              <div class="stripe s4"></div>
+              <div class="stripe s5"></div>
+              <div class="stripe s6"></div>
+              <div class="line half"></div>
+              <div class="circle center-circle"></div>
+              <div class="box penalty top"></div>
+              <div class="box six top"></div>
+              <div class="box penalty bottom"></div>
+              <div class="box six bottom"></div>
+              <div class="dot top-dot"></div>
+              <div class="dot bottom-dot"></div>
+
+              <button class="slot" data-slot="st" data-position="ФРВ"><span>ФРВ</span></button>
+              <button class="slot" data-slot="lw" data-position="ЛП"><span>ЛП</span></button>
+              <button class="slot" data-slot="rw" data-position="ПП"><span>ПП</span></button>
+
+              <button class="slot" data-slot="cm-left" data-position="ЦП"><span>ЦП</span></button>
+              <button class="slot" data-slot="cm-mid" data-position="ЦП"><span>ЦП</span></button>
+              <button class="slot" data-slot="cm-right" data-position="ЦП"><span>ЦП</span></button>
+
+              <button class="slot" data-slot="lb" data-position="ЛЗ"><span>ЛЗ</span></button>
+              <button class="slot" data-slot="cb-left" data-position="ЦЗ"><span>ЦЗ</span></button>
+              <button class="slot" data-slot="cb-right" data-position="ЦЗ"><span>ЦЗ</span></button>
+              <button class="slot" data-slot="rb" data-position="ПЗ"><span>ПЗ</span></button>
+              <button class="slot" data-slot="gk" data-position="ВРТ"><span>ВРТ</span></button>
+            </div>
+            <div class="formation-pill" id="formationPill">4 - 3 - 3</div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal-backdrop hidden" id="nicknameModal" role="dialog" aria-modal="true" aria-labelledby="nicknameTitle">
+    <form class="modal-card nickname-card" id="nicknameForm">
+      <div class="modal-kicker">Первый вход</div>
+      <h2 id="nicknameTitle">Введи свой никнейм</h2>
+      <p>Он сохранится в браузере, и после обновления страницы ты останешься в игре под этим именем.</p>
+      <label for="nicknameInput">Никнейм игрока</label>
+      <input id="nicknameInput" name="nickname" type="text" maxlength="24" placeholder="Например: RPL Legend" autocomplete="nickname" required />
+      <p class="form-error" id="nicknameError" aria-live="polite"></p>
+      <button class="primary-btn" type="submit">Сохранить и играть</button>
+    </form>
+  </div>
+
+  <div class="modal-backdrop hidden" id="leaderboardModal" role="dialog" aria-modal="true" aria-labelledby="leaderboardTitle">
+    <div class="modal-card leaderboard-card">
+      <button class="modal-close" id="closeLeaderboardBtn" type="button" aria-label="Закрыть таблицу лидеров">×</button>
+      <div class="modal-kicker">Leaderboard</div>
+      <h2 id="leaderboardTitle">Лучшие игроки</h2>
+      <p>Здесь показаны лучшие результаты всех игроков. Если API временно недоступен, игра сохранит результат локально в этом браузере.</p>
+      <div class="leaderboard-table-wrap">
+        <table class="leaderboard-table">
+          <thead>
+            <tr><th>Место</th><th>Игрок</th><th>Очки</th><th>Дата</th></tr>
+          </thead>
+          <tbody id="leaderboardBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="/data/players.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
