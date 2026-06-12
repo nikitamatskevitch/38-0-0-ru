@@ -461,7 +461,7 @@
     if (projectedWins) projectedWins.textContent = season.wins;
     if (projectedDraws) projectedDraws.textContent = season.draws;
     if (projectedLosses) projectedLosses.textContent = season.losses;
-    if (projectedPointsText) projectedPointsText.textContent = `W · D · L за 38 матчей · ${season.points} очков`;
+    if (projectedPointsText) projectedPointsText.textContent = `Победы · Ничьи · Поражения за 38 матчей · ${season.points} очков`;
     if (seasonBadge) {
       seasonBadge.textContent = season.label;
       seasonBadge.dataset.tier = season.tier;
