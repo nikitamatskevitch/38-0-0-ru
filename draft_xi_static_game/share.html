@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Мой рекорд — 38-0-0 Легенды РПЛ</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="share-page-body">
+  <div class="top-glow"></div>
+
+  <main class="share-page">
+    <section class="share-result-card" aria-labelledby="shareResultTitle">
+      <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+
+      <a class="share-page-logo" href="index.html" aria-label="На главную 38-0-0 Легенды РПЛ">
+        <img src="logo.png" alt="38-0-0 Легенды РПЛ" />
+      </a>
+
+      <div class="modal-kicker">Рекорд игрока</div>
+      <h1 id="shareResultTitle">Попробуй побить мой рекорд!</h1>
+
+      <div class="share-player-card">
+        <span>Игрок</span>
+        <strong id="shareNickname">Игрок</strong>
+      </div>
+
+      <div class="share-score-card">
+        <span>Я набрал</span>
+        <strong id="shareScore">0</strong>
+        <em>очков</em>
+      </div>
+
+      <p class="share-challenge-text" id="shareChallengeText">
+        попробуй побить мой рекорд в игре 38-0-0 Легенды РПЛ. Я набрал: 0
+      </p>
+
+      <div class="share-page-actions">
+        <button class="primary-btn" id="copyFriendLinkBtn" type="button">Скопировать ссылку для друга</button>
+        <button class="share-btn share-page-native-btn" id="shareFriendBtn" type="button">🚀 Поделиться</button>
+      </div>
+
+      <p class="share-status" id="sharePageStatus" aria-live="polite"></p>
+      <a class="share-back-link" href="index.html">← Вернуться в игру</a>
+    </section>
+  </main>
+
+  <script src="js/share-page.js"></script>
+</body>
+</html>
