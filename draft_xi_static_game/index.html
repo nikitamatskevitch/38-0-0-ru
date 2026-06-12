@@ -35,7 +35,7 @@
           </div>
 
           <h1>Собери свой XI</h1>
-          <p>Нажми «Играть», крути рулетку, выбирай футболистов из базы и ставь их на позиции 4-3-3.</p>
+          <p>Нажми «Играть», крути рулетку, выбирай футболистов из базы и ставь их на выбранную схему.</p>
 
           <div class="mode-row single-mode">
             <div class="mode-card active">
@@ -44,7 +44,16 @@
             </div>
           </div>
 
-          <div class="formation-title">Схема 4-3-3</div>
+          <div class="formation-title" id="formationTitle">Выбери схему</div>
+          <div class="formation-grid" id="formationGrid" aria-label="Выбор схемы">
+            <button class="formation-card active" type="button" data-formation="4-3-3">4-3-3</button>
+            <button class="formation-card" type="button" data-formation="4-4-2">4-4-2</button>
+            <button class="formation-card" type="button" data-formation="4-2-4">4-2-4</button>
+            <button class="formation-card" type="button" data-formation="3-4-3">3-4-3</button>
+            <button class="formation-card" type="button" data-formation="3-5-2">3-5-2</button>
+            <button class="formation-card" type="button" data-formation="5-3-2">5-3-2</button>
+            <button class="formation-card" type="button" data-formation="5-4-1">5-4-1</button>
+          </div>
           <button class="primary-btn big" id="playBtn">Играть →</button>
         </div>
 
@@ -54,11 +63,12 @@
 
           <h3>Как играть</h3>
           <ol>
-            <li><strong>Нажми «Играть»</strong> — начнётся классический режим со схемой 4-3-3.</li>
+            <li><strong>Выбери схему</strong> — доступны 4-3-3, 4-4-2, 4-2-4, 3-4-3, 3-5-2, 5-3-2 и 5-4-1.</li>
+            <li><strong>Нажми «Играть»</strong> — начнётся классический режим с выбранной расстановкой.</li>
             <li><strong>Крути рулетку</strong>, чтобы получить случайный клуб и сезон из базы.</li>
             <li><strong>Выбери одного игрока</strong> из выпавшего состава.</li>
             <li><strong>Поставь игрока на подсвеченную позицию</strong> — футболист может занять только подходящую для него роль.</li>
-            <li><strong>Повтори 11 раундов</strong>, пока не заполнишь ФРВ, ЛП, ПП, ЦП×3, ЛЗ, ЦЗ×2, ПЗ и ВРТ.</li>
+            <li><strong>Повтори 11 раундов</strong>, пока не заполнишь все позиции выбранной схемы.</li>
             <li><strong>Получи рейтинг команды</strong> — итог считается по среднему общему рейтингу всех игроков твоего XI.</li>
           </ol>
 
@@ -66,7 +76,7 @@
           <p>Название 38-0-0 отсылает к идеальному сезону: 38 матчей, 38 побед, 0 ничьих и 0 поражений. В реальном футболе такой результат практически недостижим, поэтому задача игры — собрать настолько мощный и сбалансированный состав, насколько позволит рулетка.</p>
 
           <h3>Схема</h3>
-          <p>Сейчас игра проходит в классической схеме <strong>4-3-3</strong>: три нападающих, три центральных полузащитника, четыре защитника и вратарь. Позиции игроков взяты из таблицы 38-0-0 и отображаются в русских кодах: <strong>ФРВ, ЛП, ПП, ЦП, ЛЗ, ЦЗ, ПЗ, ВРТ</strong>.</p>
+          <p>Перед стартом можно выбрать одну из семи схем: <strong>4-3-3, 4-4-2, 4-2-4, 3-4-3, 3-5-2, 5-3-2 или 5-4-1</strong>. Позиции игроков взяты из таблицы 38-0-0 и отображаются в русских кодах: <strong>ФРВ, ЛП, ПП, ЦП, ЛЗ, ЦЗ, ПЗ, ВРТ</strong>.</p>
 
           <h3>Режим игры</h3>
           <ul>
@@ -169,7 +179,7 @@
               <button class="slot" data-slot="rb" data-position="ПЗ"><span>ПЗ</span></button>
               <button class="slot" data-slot="gk" data-position="ВРТ"><span>ВРТ</span></button>
             </div>
-            <div class="formation-pill">4 - 3 - 3</div>
+            <div class="formation-pill" id="formationPill">4 - 3 - 3</div>
           </section>
         </div>
       </section>
