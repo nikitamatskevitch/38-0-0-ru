@@ -26,7 +26,40 @@
   const teamRatingText = document.getElementById("teamRatingText");
 
   const DB = Array.isArray(window.PLAYERS_DB) ? window.PLAYERS_DB : [];
-  const REQUIRED_POSITIONS = ["GK", "RB", "CB", "CB", "LB", "CM", "CM", "CM", "RW", "ST", "LW"];
+  const REQUIRED_POSITIONS = ["ВРТ", "ПЗ", "ЦЗ", "ЦЗ", "ЛЗ", "ЦП", "ЦП", "ЦП", "ПП", "ФРВ", "ЛП"];
+  const DEFAULT_SHIRT_COLORS = { shirt: "#2C2C45", number: "#FFFFFF" };
+  // Цвета клубных футболок взяты из таблицы «таблица цвета 2.xlsx»: 1-й цвет — футболка, 2-й — номер.
+  const CLUB_COLORS = {
+    "ПФК «Крылья Советов»": { shirt: "#0066CC", number: "#009966" },
+    "ПФК «Спартак» Нальчик": { shirt: "#C8102E", number: "#FFFFFF" },
+    "ПФК «Спартак-Нальчик»": { shirt: "#C8102E", number: "#FFFFFF" },
+    "РФК «Ахмат»": { shirt: "#007A3D", number: "#FFFFFF" },
+    "СЦКА": { shirt: "#C8102E", number: "#002B5C" },
+    "ФК «Алания»": { shirt: "#C8102E", number: "#FFCC00" },
+    "ФК «Амкар»": { shirt: "#C8102E", number: "#000000" },
+    "ФК «Анжи»": { shirt: "#FFCC00", number: "#007A3D" },
+    "ФК «Арсенал» Тула": { shirt: "#C8102E", number: "#FFCC00" },
+    "ФК «Волга» Н.Новгород": { shirt: "#00539B", number: "#FFFFFF" },
+    "ФК «Динамо» Москва": { shirt: "#00539B", number: "#FFFFFF" },
+    "ФК «Зенит»": { shirt: "#0097DB", number: "#FFFFFF" },
+    "ФК «Краснодар»": { shirt: "#007A3D", number: "#000000" },
+    "ФК «Кубань» Краснодар": { shirt: "#FFCC00", number: "#007A3D" },
+    "ФК «Локомотив»": { shirt: "#C8102E", number: "#007A3D" },
+    "ФК «Мордовия» Саранск": { shirt: "#C8102E", number: "#FFFFFF" },
+    "ФК «Москва»": { shirt: "#800020", number: "#000000" },
+    "ФК «Оренбург»": { shirt: "#00539B", number: "#FFFFFF" },
+    "ФК «Ростов»": { shirt: "#FFCC00", number: "#00539B" },
+    "ФК «Рубин»": { shirt: "#7A2339", number: "#007A3D" },
+    "ФК «Сатурн» Раменское": { shirt: "#000000", number: "#00539B" },
+    "ФК «Сибирь»": { shirt: "#00539B", number: "#FFFFFF" },
+    "ФК «Спартак» Москва": { shirt: "#C8102E", number: "#FFFFFF" },
+    "ФК «Томь» Томск": { shirt: "#007A3D", number: "#FFFFFF" },
+    "ФК «Торпедо» Москва": { shirt: "#000000", number: "#FFFFFF" },
+    "ФК «Урал» Екатеринбург": { shirt: "#FF6600", number: "#000000" },
+    "ФК «Уфа»": { shirt: "#C8102E", number: "#007A3D" },
+    "ФК «Химки»": { shirt: "#C8102E", number: "#000000" },
+    "ЦСКА": { shirt: "#C8102E", number: "#002B5C" }
+  };
 
   let state = createFreshState();
 
@@ -187,11 +220,20 @@
   }
 
   function shirtTemplate(player) {
-    const initials = escapeHtml(player.initials || getInitials(player.name));
-    if (player.icon) {
-      return `<span class="shirt"><img src="${escapeAttribute(player.icon)}" alt="${escapeAttribute(player.name)}" onerror="this.remove(); this.parentElement.textContent='${initials}'"></span>`;
-    }
-    return `<span class="shirt">${initials}</span>`;
+    const colors = getClubColors(player.clubName);
+    const number = player.number || "–";
+    return `
+      <span
+        class="shirt"
+        style="--shirt-color: ${escapeAttribute(colors.shirt)}; --shirt-number-color: ${escapeAttribute(colors.number)};"
+        title="${escapeAttribute(player.clubName)} — #${escapeAttribute(number)}"
+        aria-label="Футболка ${escapeAttribute(player.clubName)}, номер ${escapeAttribute(number)}"
+      >${escapeHtml(number)}</span>
+    `;
+  }
+
+  function getClubColors(clubName) {
+    return CLUB_COLORS[clubName] || DEFAULT_SHIRT_COLORS;
   }
 
   function selectPlayer(playerId) {

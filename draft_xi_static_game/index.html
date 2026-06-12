@@ -59,15 +59,15 @@
             <li><strong>Крути рулетку</strong>, чтобы получить случайный клуб и сезон из базы.</li>
             <li><strong>Выбери одного игрока</strong> из выпавшего состава.</li>
             <li><strong>Поставь игрока на подсвеченную позицию</strong> — футболист может занять только подходящую для него роль.</li>
-            <li><strong>Повтори 11 раундов</strong>, пока не заполнишь ST, LW, RW, CM×3, LB, CB×2, RB и GK.</li>
-            <li><strong>Получи рейтинг команды</strong> — итог считается по среднему OVR всех игроков твоего XI.</li>
+            <li><strong>Повтори 11 раундов</strong>, пока не заполнишь ФРВ, ЛП, ПП, ЦП×3, ЛЗ, ЦЗ×2, ПЗ и ВРТ.</li>
+            <li><strong>Получи рейтинг команды</strong> — итог считается по среднему общему рейтингу всех игроков твоего XI.</li>
           </ol>
 
           <h3>Вызов 38-0-0</h3>
           <p>Название 38-0-0 отсылает к идеальному сезону: 38 матчей, 38 побед, 0 ничьих и 0 поражений. В реальном футболе такой результат практически недостижим, поэтому задача игры — собрать настолько мощный и сбалансированный состав, насколько позволит рулетка.</p>
 
           <h3>Схема</h3>
-          <p>Сейчас игра проходит в классической схеме <strong>4-3-3</strong>: три нападающих, три центральных полузащитника, четыре защитника и вратарь. Позиции игроков не переводятся и остаются в футбольных кодах: <strong>ST, LW, RW, CM, LB, CB, RB, GK</strong>.</p>
+          <p>Сейчас игра проходит в классической схеме <strong>4-3-3</strong>: три нападающих, три центральных полузащитника, четыре защитника и вратарь. Позиции игроков взяты из таблицы 38-0-0 и отображаются в русских кодах: <strong>ФРВ, ЛП, ПП, ЦП, ЛЗ, ЦЗ, ПЗ, ВРТ</strong>.</p>
 
           <h3>Режим игры</h3>
           <ul>
@@ -83,7 +83,7 @@
             <div class="faq-q">Как выбираются доступные игроки?</div>
             <div class="faq-a">После прокрутки показываются только футболисты выпавшего клуба и сезона, которые ещё не использованы и подходят хотя бы на одну свободную позицию.</div>
             <div class="faq-q">Как считается мой результат?</div>
-            <div class="faq-a">Финальный рейтинг — это средний OVR всех 11 выбранных игроков, округлённый до ближайшего целого числа.</div>
+            <div class="faq-a">Финальный рейтинг — это средний общий рейтинг всех 11 выбранных игроков, округлённый до ближайшего целого числа.</div>
             <div class="faq-q">Можно ли поставить игрока не на свою позицию?</div>
             <div class="faq-a">Нет. После выбора игрока подсвечиваются только те свободные позиции, которые указаны в его профиле.</div>
           </div>
@@ -122,7 +122,7 @@
 
               <div class="stat-head">
                 <span></span>
-                <span>СКР</span><span>УДР</span><span>ПАС</span><span>ДРБ</span><span>ЗАЩ</span><span>ФИЗ</span><span>РЕЙ</span>
+                <span>ТЕМ</span><span>УДР</span><span>ПАС</span><span>ДРБ</span><span>ЗАЩ</span><span>ФИЗ</span><span>ОБЩ</span>
               </div>
 
               <div class="players-list" id="playersList"></div>
@@ -152,19 +152,19 @@
               <div class="dot top-dot"></div>
               <div class="dot bottom-dot"></div>
 
-              <button class="slot" data-slot="st" data-position="ST"><span>ST</span></button>
-              <button class="slot" data-slot="lw" data-position="LW"><span>LW</span></button>
-              <button class="slot" data-slot="rw" data-position="RW"><span>RW</span></button>
+              <button class="slot" data-slot="st" data-position="ФРВ"><span>ФРВ</span></button>
+              <button class="slot" data-slot="lw" data-position="ЛП"><span>ЛП</span></button>
+              <button class="slot" data-slot="rw" data-position="ПП"><span>ПП</span></button>
 
-              <button class="slot" data-slot="cm-left" data-position="CM"><span>CM</span></button>
-              <button class="slot" data-slot="cm-mid" data-position="CM"><span>CM</span></button>
-              <button class="slot" data-slot="cm-right" data-position="CM"><span>CM</span></button>
+              <button class="slot" data-slot="cm-left" data-position="ЦП"><span>ЦП</span></button>
+              <button class="slot" data-slot="cm-mid" data-position="ЦП"><span>ЦП</span></button>
+              <button class="slot" data-slot="cm-right" data-position="ЦП"><span>ЦП</span></button>
 
-              <button class="slot" data-slot="lb" data-position="LB"><span>LB</span></button>
-              <button class="slot" data-slot="cb-left" data-position="CB"><span>CB</span></button>
-              <button class="slot" data-slot="cb-right" data-position="CB"><span>CB</span></button>
-              <button class="slot" data-slot="rb" data-position="RB"><span>RB</span></button>
-              <button class="slot" data-slot="gk" data-position="GK"><span>GK</span></button>
+              <button class="slot" data-slot="lb" data-position="ЛЗ"><span>ЛЗ</span></button>
+              <button class="slot" data-slot="cb-left" data-position="ЦЗ"><span>ЦЗ</span></button>
+              <button class="slot" data-slot="cb-right" data-position="ЦЗ"><span>ЦЗ</span></button>
+              <button class="slot" data-slot="rb" data-position="ПЗ"><span>ПЗ</span></button>
+              <button class="slot" data-slot="gk" data-position="ВРТ"><span>ВРТ</span></button>
             </div>
             <div class="formation-pill">4 - 3 - 3</div>
           </section>
