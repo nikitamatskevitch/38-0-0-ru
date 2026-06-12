@@ -10,7 +10,7 @@
 declare(strict_types=1);
 
 const DB_HOST = 'localhost';
-const DB_NAME = 'h210331';
+const DB_NAME = 'database';
 const DB_USER = 'h210331';
 const DB_PASS = 'QPH6n(4w]H2cxQ%s';
 const MAX_NICKNAME_LENGTH = 24;
