@@ -20,6 +20,7 @@
       </div>
 
       <div class="header-actions">
+        <button class="leaderboard-btn" id="leaderboardBtn" type="button">🏆 Лучшие игроки</button>
         <button class="round-pill hidden" id="roundPill">Раунд 1 / 11</button>
         <button class="icon-btn hidden" id="changeSideBtn" title="Поменять стороны">⇄</button>
         <button class="icon-btn hidden" id="resetBtn" title="Начать заново">↻</button>
@@ -30,9 +31,7 @@
       <section class="screen start-screen" id="startScreen">
         <div class="hero-card">
           <div class="logo-mark">
-            <div class="logo-ball">⚽</div>
-            <div class="logo-score">38-0-0</div>
-            <div class="logo-ribbon">ОСН. 2026</div>
+            <img src="logo.png" alt="38-0-0 Легенды РПЛ" />
           </div>
 
           <h1>Собери свой XI</h1>
@@ -131,7 +130,11 @@
             <div class="finished-card hidden" id="finishedCard">
               <h2>XI собран!</h2>
               <p id="teamRatingText">Рейтинг команды: 0</p>
-              <button class="primary-btn" id="playAgainBtn">Играть снова</button>
+              <div class="finish-actions">
+                <button class="share-btn" id="shareResultBtn" type="button">🚀 Поделиться результатом</button>
+                <button class="primary-btn" id="playAgainBtn">Играть снова</button>
+              </div>
+              <p class="share-status" id="shareStatus" aria-live="polite"></p>
             </div>
           </aside>
 
@@ -171,6 +174,35 @@
         </div>
       </section>
     </main>
+  </div>
+
+  <div class="modal-backdrop hidden" id="nicknameModal" role="dialog" aria-modal="true" aria-labelledby="nicknameTitle">
+    <form class="modal-card nickname-card" id="nicknameForm">
+      <div class="modal-kicker">Первый вход</div>
+      <h2 id="nicknameTitle">Введи свой никнейм</h2>
+      <p>Он сохранится в браузере, и после обновления страницы ты останешься в игре под этим именем.</p>
+      <label for="nicknameInput">Никнейм игрока</label>
+      <input id="nicknameInput" name="nickname" type="text" maxlength="24" placeholder="Например: RPL Legend" autocomplete="nickname" required />
+      <p class="form-error" id="nicknameError" aria-live="polite"></p>
+      <button class="primary-btn" type="submit">Сохранить и играть</button>
+    </form>
+  </div>
+
+  <div class="modal-backdrop hidden" id="leaderboardModal" role="dialog" aria-modal="true" aria-labelledby="leaderboardTitle">
+    <div class="modal-card leaderboard-card">
+      <button class="modal-close" id="closeLeaderboardBtn" type="button" aria-label="Закрыть таблицу лидеров">×</button>
+      <div class="modal-kicker">Leaderboard</div>
+      <h2 id="leaderboardTitle">Лучшие игроки</h2>
+      <p>Результаты сейчас сохраняются локально. Для MySQL замени функции сохранения/загрузки в <code>js/app.js</code> на запросы к API.</p>
+      <div class="leaderboard-table-wrap">
+        <table class="leaderboard-table">
+          <thead>
+            <tr><th>Место</th><th>Игрок</th><th>Очки</th><th>Дата</th></tr>
+          </thead>
+          <tbody id="leaderboardBody"></tbody>
+        </table>
+      </div>
+    </div>
   </div>
 
   <script src="data/players.js"></script>
