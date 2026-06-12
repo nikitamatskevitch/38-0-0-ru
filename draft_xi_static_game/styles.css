@@ -498,7 +498,7 @@ button { cursor: pointer; }
 }
 .leaderboard-btn:hover { transform: translateY(-1px); border-color: rgba(255,222,68,.58); filter: brightness(1.08); }
 .logo-mark img {
-  width: min(240px, 58vw);
+  width: min(600px, 90vw);
   height: auto;
   display: block;
   filter: drop-shadow(0 24px 52px rgba(0,0,0,.46));
