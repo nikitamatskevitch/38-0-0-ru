@@ -26,7 +26,7 @@
   const teamRatingText = document.getElementById("teamRatingText");
 
   const DB = Array.isArray(window.PLAYERS_DB) ? window.PLAYERS_DB : [];
-  const REQUIRED_POSITIONS = ["GK", "RB", "CB", "CB", "LB", "CM", "CM", "CM", "RW", "ST", "LW"];
+  const REQUIRED_POSITIONS = ["ВРТ", "ПЗ", "ЦЗ", "ЦЗ", "ЛЗ", "ЦП", "ЦП", "ЦП", "ПП", "ФРВ", "ЛП"];
 
   let state = createFreshState();
 
