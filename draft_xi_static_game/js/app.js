@@ -29,6 +29,12 @@
   const shareResultBtn = document.getElementById("shareResultBtn");
   const shareStatus = document.getElementById("shareStatus");
   const teamRatingText = document.getElementById("teamRatingText");
+  const finishHeadline = document.getElementById("finishHeadline");
+  const projectedWins = document.getElementById("projectedWins");
+  const projectedDraws = document.getElementById("projectedDraws");
+  const projectedLosses = document.getElementById("projectedLosses");
+  const projectedPointsText = document.getElementById("projectedPointsText");
+  const seasonBadge = document.getElementById("seasonBadge");
   const leaderboardBtn = document.getElementById("leaderboardBtn");
   const leaderboardModal = document.getElementById("leaderboardModal");
   const closeLeaderboardBtn = document.getElementById("closeLeaderboardBtn");
@@ -425,9 +431,55 @@
     finishedCard.classList.remove("hidden");
     const rating = calculateTeamRating();
     state.lastRating = rating;
-    teamRatingText.textContent = `Рейтинг команды: ${rating}`;
+    renderFinishSummary(rating);
     roundPill.textContent = "Завершено";
     saveLeaderboardResult(rating);
+  }
+
+
+  function renderFinishSummary(rating) {
+    const season = getProjectedSeason(rating);
+
+    if (finishHeadline) finishHeadline.textContent = `Сможет ли твой XI сделать 38-0-0?`;
+    teamRatingText.textContent = `Рейтинг команды: ${rating}`;
+    if (projectedWins) projectedWins.textContent = season.wins;
+    if (projectedDraws) projectedDraws.textContent = season.draws;
+    if (projectedLosses) projectedLosses.textContent = season.losses;
+    if (projectedPointsText) projectedPointsText.textContent = `W · D · L за 38 матчей · ${season.points} очков`;
+    if (seasonBadge) {
+      seasonBadge.textContent = season.label;
+      seasonBadge.dataset.tier = season.tier;
+    }
+  }
+
+  function getProjectedSeason(rating) {
+    const safeRating = Math.max(0, Math.min(100, Number(rating) || 0));
+
+    if (safeRating >= 100) {
+      return { wins: 38, draws: 0, losses: 0, points: 114, label: "38-0-0 сезон", tier: "perfect" };
+    }
+
+    const pointsTarget = Math.max(10, Math.min(108, Math.round((safeRating - 45) * 1.35)));
+    const drawTarget = Math.max(4, Math.min(14, Math.round(12 - ((safeRating - 70) * 0.12))));
+    let wins = Math.max(0, Math.min(37, Math.round((pointsTarget - drawTarget) / 3)));
+    let draws = Math.max(0, Math.min(38 - wins, drawTarget));
+    let losses = 38 - wins - draws;
+
+    while ((wins * 3) + draws > pointsTarget && wins > 0) {
+      wins -= 1;
+      losses += 1;
+    }
+
+    const points = (wins * 3) + draws;
+    const tier = points >= 88 ? "title" : points >= 65 ? "europe" : points >= 45 ? "mid" : "survival";
+    const labels = {
+      title: "Гонка за титул",
+      europe: "Еврокубковый темп",
+      mid: "Середина таблицы",
+      survival: "Борьба за выживание"
+    };
+
+    return { wins, draws, losses, points, label: labels[tier], tier };
   }
 
   function calculateTeamRating() {

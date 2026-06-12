@@ -581,9 +581,95 @@ button { cursor: pointer; }
   letter-spacing: .18em;
   background: rgba(10,10,19,.65);
 }
-.finished-card { padding: 30px; text-align: center; }
-.finished-card h2 { margin: 0 0 8px; font-size: 30px; }
-.finished-card p { color: var(--muted); margin-bottom: 22px; }
+.finished-card {
+  padding: clamp(24px, 4vw, 38px);
+  text-align: center;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(135,56,255,.18), transparent 16rem),
+    rgba(21,21,38,.96);
+}
+.finish-logo {
+  display: grid;
+  place-items: center;
+  margin: 0 auto 12px;
+}
+.finish-logo img {
+  width: min(170px, 56vw);
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 16px 34px rgba(0,0,0,.48));
+}
+.finished-card h2 {
+  max-width: 520px;
+  margin: 0 auto 10px;
+  font-size: clamp(27px, 4vw, 34px);
+  line-height: 1.12;
+  letter-spacing: -.04em;
+}
+.finished-card > p {
+  color: var(--muted);
+  margin: 0 0 24px;
+  font-weight: 850;
+}
+.projected-record-card {
+  margin: 0 auto 24px;
+  padding: clamp(20px, 4vw, 28px);
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 24px;
+  background: rgba(16,16,31,.92);
+  box-shadow: 0 28px 80px rgba(0,0,0,.36), inset 0 1px 0 rgba(255,255,255,.08);
+}
+.projected-kicker {
+  color: #9d9abc;
+  font-size: 12px;
+  font-weight: 1000;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+}
+.projected-record {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: clamp(8px, 2vw, 16px);
+  margin: 12px 0 8px;
+  font-weight: 1000;
+  line-height: .9;
+}
+.projected-record strong {
+  font-size: clamp(52px, 10vw, 76px);
+  letter-spacing: -.08em;
+}
+.projected-record span {
+  color: #777491;
+  font-size: clamp(40px, 8vw, 62px);
+  font-weight: 1000;
+}
+.record-win { color: var(--green); }
+.record-draw { color: #a8a5c1; }
+.record-loss { color: var(--pink); }
+.projected-record-card p {
+  margin: 0 0 16px;
+  color: #b8b4ce;
+  font-weight: 900;
+}
+.season-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: min(100%, 240px);
+  border-radius: 999px;
+  padding: 11px 22px;
+  color: #1a0c13;
+  font-weight: 1000;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #ff5573, #9f2748);
+  box-shadow: 0 14px 34px rgba(255,47,134,.24), inset 0 1px 0 rgba(255,255,255,.32);
+}
+.season-badge[data-tier="mid"] { background: linear-gradient(135deg, #ffde44, #ff8d3a); }
+.season-badge[data-tier="europe"] { background: linear-gradient(135deg, #36f386, #1ebdff); }
+.season-badge[data-tier="title"],
+.season-badge[data-tier="perfect"] { background: linear-gradient(135deg, #ffef6a, #36f386); }
 .empty-state { padding: 28px 20px; color: var(--muted); text-align: center; }
 
 @media (max-width: 1180px) {
@@ -643,9 +729,36 @@ button { cursor: pointer; }
 }
 .slot.filled > span:first-child { transform: none; }
 .finish-actions {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 14px;
-  justify-items: center;
+  justify-content: center;
+}
+.finished-card .share-btn,
+.secondary-finish-btn {
+  min-width: min(100%, 210px);
+  border-radius: 15px;
+  padding: 16px 24px;
+  color: #fff;
+  font-weight: 1000;
+  letter-spacing: .02em;
+  text-transform: none;
+}
+.finished-card .share-btn {
+  background: linear-gradient(135deg, var(--pink), #9238ff);
+  box-shadow: 0 18px 48px rgba(255,47,134,.28), inset 0 1px 0 rgba(255,255,255,.23);
+}
+.secondary-finish-btn {
+  border: 1px solid rgba(255,255,255,.08);
+  background: #1b1b30;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.07);
+  cursor: pointer;
+  transition: transform .18s ease, filter .18s ease, border-color .18s ease;
+}
+.secondary-finish-btn:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255,255,255,.18);
+  filter: brightness(1.08);
 }
 .share-btn {
   position: relative;
@@ -761,8 +874,8 @@ button { cursor: pointer; }
   .support-btn, .leaderboard-btn { padding: 10px 12px; font-size: 12px; }
   .support-btn { gap: 7px; }
   .support-btn-icon { width: 16px; height: 16px; }
-  .finish-actions { justify-items: stretch; }
-  .share-btn { min-width: 0; width: 100%; }
+  .finish-actions { display: grid; justify-items: stretch; }
+  .share-btn, .secondary-finish-btn { min-width: 0; width: 100%; }
 }
 
 .share-page-body {

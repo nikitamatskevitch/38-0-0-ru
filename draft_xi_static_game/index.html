@@ -182,11 +182,28 @@
             </div>
 
             <div class="finished-card hidden" id="finishedCard">
-              <h2>XI собран!</h2>
+              <div class="finish-logo" aria-hidden="true">
+                <img src="logo.png" alt="" />
+              </div>
+              <h2 id="finishHeadline">Сможет ли твой XI сделать 38-0-0?</h2>
               <p id="teamRatingText">Рейтинг команды: 0</p>
+
+              <div class="projected-record-card" aria-label="Прогноз сезона">
+                <div class="projected-kicker">Projected record</div>
+                <div class="projected-record">
+                  <strong class="record-win" id="projectedWins">0</strong>
+                  <span>–</span>
+                  <strong class="record-draw" id="projectedDraws">0</strong>
+                  <span>–</span>
+                  <strong class="record-loss" id="projectedLosses">0</strong>
+                </div>
+                <p id="projectedPointsText">W · D · L over 38 games · 0 pts</p>
+                <div class="season-badge" id="seasonBadge">Борьба за выживание</div>
+              </div>
+
               <div class="finish-actions">
-                <button class="share-btn" id="shareResultBtn" type="button">🚀 Поделиться результатом</button>
-                <button class="primary-btn" id="playAgainBtn">Играть снова</button>
+                <button class="share-btn" id="shareResultBtn" type="button">Share result</button>
+                <button class="secondary-finish-btn" id="playAgainBtn" type="button">Build another</button>
               </div>
               <p class="share-status" id="shareStatus" aria-live="polite"></p>
             </div>
