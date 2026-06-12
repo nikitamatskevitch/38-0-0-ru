@@ -42,15 +42,19 @@ Draft XI — статическая HTML/CSS/JS игра без Node.js
      id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
      nickname VARCHAR(24) NOT NULL,
      score INT NOT NULL,
+     formation VARCHAR(5) NOT NULL DEFAULT '',
      played_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-     INDEX idx_score_played_at (score DESC, played_at DESC)
+     INDEX idx_score_played_at (score DESC, played_at DESC),
+     INDEX idx_played_at (played_at DESC)
    ) DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 2. Залей файл api/leaderboard.php на хостинг вместе с сайтом.
 3. В api/leaderboard.php укажи свои DB_HOST, DB_NAME, DB_USER и DB_PASS от MySQL.
 4. В js/app.js endpoint должен смотреть на этот файл:
    const LEADERBOARD_API_ENDPOINT = "https://www.38-0-0.ru/api/leaderboard.php";
-5. API отвечает на GET массивом [{ nickname, score, playedAt }] и на POST принимает JSON { nickname, score, playedAt }.
-6. Если API временно недоступен, игра сохранит результат локально в браузере как резервный вариант.
+5. API отвечает на GET массивом [{ nickname, score, formation, playedAt }] и на POST принимает JSON { nickname, score, formation, playedAt }.
+6. Для блоков на главной используются GET-параметры view=perfect&limit=10 и view=recent&limit=10.
+7. Если API временно недоступен, игра сохранит результат локально в браузере как резервный вариант.
+8. Если таблица уже создана без схемы, добавь колонку: ALTER TABLE leaderboard ADD COLUMN formation VARCHAR(5) NOT NULL DEFAULT '' AFTER score;
 
 Как работает «Поделиться результатом»:
 - index.html открывает share.html с параметрами nickname и score.

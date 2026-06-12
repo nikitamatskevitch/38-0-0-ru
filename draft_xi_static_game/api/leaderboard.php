@@ -4,7 +4,7 @@
  *
  * 1. Залей этот файл на хостинг как /api/leaderboard.php.
  * 2. Впиши доступы к MySQL ниже.
- * 3. Таблица должна содержать поля: id, nickname, score, played_at.
+ * 3. Таблица должна содержать поля: id, nickname, score, formation, played_at.
  */
 
 declare(strict_types=1);
@@ -14,7 +14,9 @@ const DB_NAME = 'database';
 const DB_USER = 'h210331';
 const DB_PASS = 'QPH6n(4w]H2cxQ%s';
 const MAX_NICKNAME_LENGTH = 24;
+const MAX_FORMATION_LENGTH = 5;
 const MAX_LEADERBOARD_ROWS = 50;
+const PERFECT_SCORE = 100;
 
 header('Content-Type: application/json; charset=utf-8');
 header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
@@ -28,7 +30,7 @@ try {
     $pdo = createConnection();
 
     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-        sendJson(loadLeaderboard($pdo));
+        sendJson(loadLeaderboard($pdo, getLeaderboardView(), getLeaderboardLimit()));
     }
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -55,23 +57,36 @@ function createConnection(): PDO
 }
 
 /**
- * @return array<int, array{nickname: string, score: int, playedAt: string}>
+ * @return array<int, array{nickname: string, score: int, formation: string, playedAt: string}>
  */
-function loadLeaderboard(PDO $pdo): array
+function loadLeaderboard(PDO $pdo, string $view, int $limit): array
 {
+    $hasFormation = leaderboardHasColumn($pdo, 'formation');
+    $columns = $hasFormation ? 'nickname, score, formation, played_at' : 'nickname, score, played_at';
+    $where = $view === 'perfect' ? 'WHERE score >= :perfect_score' : '';
+    $orderBy = $view === 'recent' || $view === 'perfect'
+        ? 'played_at DESC, id DESC'
+        : 'score DESC, played_at DESC, id DESC';
+
     $statement = $pdo->prepare(
-        'SELECT nickname, score, played_at
+        "SELECT {$columns}
          FROM leaderboard
-         ORDER BY score DESC, played_at DESC
-         LIMIT :limit'
+         {$where}
+         ORDER BY {$orderBy}
+         LIMIT :limit"
     );
-    $statement->bindValue(':limit', MAX_LEADERBOARD_ROWS, PDO::PARAM_INT);
+
+    if ($view === 'perfect') {
+        $statement->bindValue(':perfect_score', PERFECT_SCORE, PDO::PARAM_INT);
+    }
+    $statement->bindValue(':limit', $limit, PDO::PARAM_INT);
     $statement->execute();
 
-    return array_map(static function (array $row): array {
+    return array_map(static function (array $row) use ($hasFormation): array {
         return [
             'nickname' => (string) $row['nickname'],
             'score' => (int) $row['score'],
+            'formation' => $hasFormation ? (string) $row['formation'] : '',
             'playedAt' => mysqlDateTimeToIso((string) $row['played_at']),
         ];
     }, $statement->fetchAll());
@@ -84,7 +99,22 @@ function saveLeaderboardEntry(PDO $pdo, array $payload): void
 {
     $nickname = normalizeNickname($payload['nickname'] ?? '');
     $score = normalizeScore($payload['score'] ?? null);
-    $playedAt = normalizePlayedAt($payload['playedAt'] ?? null);
+    $formation = normalizeFormation($payload['formation'] ?? '');
+    $playedAt = gmdate('Y-m-d H:i:s');
+
+    if (leaderboardHasColumn($pdo, 'formation')) {
+        $statement = $pdo->prepare(
+            'INSERT INTO leaderboard (nickname, score, formation, played_at)
+             VALUES (:nickname, :score, :formation, :played_at)'
+        );
+        $statement->execute([
+            ':nickname' => $nickname,
+            ':score' => $score,
+            ':formation' => $formation,
+            ':played_at' => $playedAt,
+        ]);
+        return;
+    }
 
     $statement = $pdo->prepare(
         'INSERT INTO leaderboard (nickname, score, played_at)
@@ -141,16 +171,54 @@ function normalizeScore($value): int
     return $score;
 }
 
-function normalizePlayedAt($value): string
+function normalizeFormation($value): string
 {
-    if (is_string($value) && $value !== '') {
-        $timestamp = strtotime($value);
-        if ($timestamp !== false) {
-            return gmdate('Y-m-d H:i:s', $timestamp);
-        }
+    $formation = trim((string) $value);
+    if (!preg_match('/^[3-5]-[2-5]-[1-4]$/', $formation)) {
+        return '';
     }
 
-    return gmdate('Y-m-d H:i:s');
+    return substr($formation, 0, MAX_FORMATION_LENGTH);
+}
+
+function getLeaderboardView(): string
+{
+    $view = strtolower((string) ($_GET['view'] ?? 'top'));
+    return in_array($view, ['top', 'recent', 'perfect'], true) ? $view : 'top';
+}
+
+function getLeaderboardLimit(): int
+{
+    $limit = (int) ($_GET['limit'] ?? MAX_LEADERBOARD_ROWS);
+    if ($limit < 1) {
+        return 1;
+    }
+
+    return min($limit, MAX_LEADERBOARD_ROWS);
+}
+
+function leaderboardHasColumn(PDO $pdo, string $columnName): bool
+{
+    static $cache = [];
+
+    if (array_key_exists($columnName, $cache)) {
+        return $cache[$columnName];
+    }
+
+    $statement = $pdo->prepare(
+        'SELECT COUNT(*)
+         FROM INFORMATION_SCHEMA.COLUMNS
+         WHERE TABLE_SCHEMA = DATABASE()
+           AND TABLE_NAME = :table_name
+           AND COLUMN_NAME = :column_name'
+    );
+    $statement->execute([
+        ':table_name' => 'leaderboard',
+        ':column_name' => $columnName,
+    ]);
+
+    $cache[$columnName] = (int) $statement->fetchColumn() > 0;
+    return $cache[$columnName];
 }
 
 function mysqlDateTimeToIso(string $value): string

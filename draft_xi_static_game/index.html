@@ -49,32 +49,54 @@
 
     <main>
       <section class="screen start-screen" id="startScreen">
-        <div class="hero-card">
-          <div class="logo-mark">
-            <img src="logo.png" alt="38-0-0 Легенды РПЛ" />
-          </div>
-
-          <h1>Собери свой XI</h1>
-          <p>Нажми «Играть», крути рулетку, выбирай футболистов из базы и ставь их на выбранную схему.</p>
-
-          <div class="mode-row single-mode">
-            <div class="mode-card active">
-              <h3>Классический режим</h3>
-              <p>Показаны рейтинги, возраст, позиции и сила игроков.</p>
+        <div class="start-hero-layout">
+          <div class="hero-card">
+            <div class="logo-mark">
+              <img src="logo.png" alt="38-0-0 Легенды РПЛ" />
             </div>
+
+            <h1>Собери свой XI</h1>
+            <p>Нажми «Играть», крути рулетку, выбирай футболистов из базы и ставь их на выбранную схему.</p>
+
+            <div class="mode-row single-mode">
+              <div class="mode-card active">
+                <h3>Классический режим</h3>
+                <p>Показаны рейтинги, возраст, позиции и сила игроков.</p>
+              </div>
+            </div>
+
+            <div class="formation-title" id="formationTitle">Выбери схему</div>
+            <div class="formation-grid" id="formationGrid" aria-label="Выбор схемы">
+              <button class="formation-card active" type="button" data-formation="4-3-3">4-3-3</button>
+              <button class="formation-card" type="button" data-formation="4-4-2">4-4-2</button>
+              <button class="formation-card" type="button" data-formation="4-2-4">4-2-4</button>
+              <button class="formation-card" type="button" data-formation="3-4-3">3-4-3</button>
+              <button class="formation-card" type="button" data-formation="3-5-2">3-5-2</button>
+              <button class="formation-card" type="button" data-formation="5-3-2">5-3-2</button>
+              <button class="formation-card" type="button" data-formation="5-4-1">5-4-1</button>
+            </div>
+            <button class="primary-btn big" id="playBtn">Играть →</button>
           </div>
 
-          <div class="formation-title" id="formationTitle">Выбери схему</div>
-          <div class="formation-grid" id="formationGrid" aria-label="Выбор схемы">
-            <button class="formation-card active" type="button" data-formation="4-3-3">4-3-3</button>
-            <button class="formation-card" type="button" data-formation="4-4-2">4-4-2</button>
-            <button class="formation-card" type="button" data-formation="4-2-4">4-2-4</button>
-            <button class="formation-card" type="button" data-formation="3-4-3">3-4-3</button>
-            <button class="formation-card" type="button" data-formation="3-5-2">3-5-2</button>
-            <button class="formation-card" type="button" data-formation="5-3-2">5-3-2</button>
-            <button class="formation-card" type="button" data-formation="5-4-1">5-4-1</button>
-          </div>
-          <button class="primary-btn big" id="playBtn">Играть →</button>
+          <aside class="home-leaderboards" aria-label="Последние результаты игроков">
+            <section class="home-feed-card">
+              <div class="home-feed-kicker">38-0-0</div>
+              <h2>Лучшие игроки</h2>
+              <p class="home-feed-subtitle">Последние игроки, которые смогли сделать 38-0-0.</p>
+              <div class="home-feed-list" id="perfectPlayersList">
+                <div class="home-feed-empty">Загружаем...</div>
+              </div>
+            </section>
+
+            <section class="home-feed-card live-card">
+              <div class="home-feed-kicker">Realtime</div>
+              <h2>Последние попытки</h2>
+              <p class="home-feed-subtitle">10 свежих результатов игроков.</p>
+              <div class="home-feed-list" id="recentAttemptsList">
+                <div class="home-feed-empty">Загружаем...</div>
+              </div>
+            </section>
+          </aside>
         </div>
 
         <div class="about-inner">
