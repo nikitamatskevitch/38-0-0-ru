@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Draft XI — Football Squad Builder</title>
+  <title>Draft XI — Футбольный драфт состава</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,12 +15,12 @@
         <div class="mini-ball">⚽</div>
         <div>
           <strong>Draft XI</strong>
-          <span>Build a 4-3-3 XI</span>
+          <span>Собери XI 4-3-3</span>
         </div>
       </div>
 
       <div class="header-actions">
-        <button class="round-pill hidden" id="roundPill">Round 1 / 11</button>
+        <button class="round-pill hidden" id="roundPill">Раунд 1 / 11</button>
         <button class="icon-btn hidden" id="changeSideBtn" title="Поменять стороны">⇄</button>
         <button class="icon-btn hidden" id="resetBtn" title="Начать заново">↻</button>
       </div>
@@ -32,25 +32,21 @@
           <div class="logo-mark">
             <div class="logo-ball">⚽</div>
             <div class="logo-score">38-0-0</div>
-            <div class="logo-ribbon">EST. 2026</div>
+            <div class="logo-ribbon">ОСН. 2026</div>
           </div>
 
-          <h1>Build your XI</h1>
-          <p>Нажми Play, крути Spin, выбирай футболистов из базы и ставь их на позиции 4-3-3.</p>
+          <h1>Собери свой XI</h1>
+          <p>Нажми «Играть», крути рулетку, выбирай футболистов из базы и ставь их на позиции 4-3-3.</p>
 
-          <div class="mode-row">
+          <div class="mode-row single-mode">
             <div class="mode-card active">
-              <h3>Classic</h3>
+              <h3>Классический режим</h3>
               <p>Показаны рейтинги, возраст, позиции и сила игроков.</p>
             </div>
-            <div class="mode-card muted-card">
-              <h3>Local DB</h3>
-              <p>Игроки редактируются прямо в файле <b>data/players.js</b>.</p>
-            </div>
           </div>
 
-          <div class="formation-title">4-3-3 formation</div>
-          <button class="primary-btn big" id="playBtn">Play →</button>
+          <div class="formation-title">Схема 4-3-3</div>
+          <button class="primary-btn big" id="playBtn">Играть →</button>
         </div>
       </section>
 
@@ -60,47 +56,47 @@
             <div class="draw-card" id="drawCard">
               <div class="draw-top">
                 <div class="draw-stat neon-pink">
-                  <span>TEAM</span>
+                  <span>КОМАНДА</span>
                   <strong id="teamCode">---</strong>
                 </div>
                 <div class="draw-stat neon-purple">
-                  <span>YEAR</span>
+                  <span>ГОД</span>
                   <strong id="seasonCode">----</strong>
                 </div>
               </div>
 
-              <button class="primary-btn" id="spinBtn">SPIN</button>
-              <p class="hint" id="spinHint">Spin to draw a club & season, then draft a player.</p>
+              <button class="primary-btn" id="spinBtn">КРУТИТЬ</button>
+              <p class="hint" id="spinHint">Крути рулетку, чтобы получить клуб и сезон, затем выбери игрока.</p>
             </div>
 
             <div class="players-card hidden" id="playersCard">
               <div class="players-head">
                 <div>
-                  <h2 id="clubTitle">Club</h2>
-                  <span id="clubSeason">Season</span>
+                  <h2 id="clubTitle">Клуб</h2>
+                  <span id="clubSeason">Сезон</span>
                 </div>
-                <input id="searchInput" type="search" placeholder="Search player..." autocomplete="off" />
+                <input id="searchInput" type="search" placeholder="Поиск игрока..." autocomplete="off" />
               </div>
 
-              <div class="draft-info" id="draftInfo">Pick one player</div>
+              <div class="draft-info" id="draftInfo">Выбери одного игрока</div>
 
               <div class="stat-head">
                 <span></span>
-                <span>PAC</span><span>SHO</span><span>PAS</span><span>DRI</span><span>DEF</span><span>PHY</span><span>OVR</span>
+                <span>СКР</span><span>УДР</span><span>ПАС</span><span>ДРБ</span><span>ЗАЩ</span><span>ФИЗ</span><span>РЕЙ</span>
               </div>
 
               <div class="players-list" id="playersList"></div>
             </div>
 
             <div class="finished-card hidden" id="finishedCard">
-              <h2>XI completed!</h2>
-              <p id="teamRatingText">Team rating: 0</p>
-              <button class="primary-btn" id="playAgainBtn">Play again</button>
+              <h2>XI собран!</h2>
+              <p id="teamRatingText">Рейтинг команды: 0</p>
+              <button class="primary-btn" id="playAgainBtn">Играть снова</button>
             </div>
           </aside>
 
           <section class="pitch-wrap">
-            <div class="pitch" id="pitch" aria-label="Football pitch 4-3-3">
+            <div class="pitch" id="pitch" aria-label="Футбольное поле 4-3-3">
               <div class="stripe s1"></div>
               <div class="stripe s2"></div>
               <div class="stripe s3"></div>

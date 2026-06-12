@@ -54,7 +54,7 @@
     state = createFreshState();
     teamCodeEl.textContent = "---";
     seasonCodeEl.textContent = "----";
-    spinHint.textContent = "Spin to draw a club & season, then draft a player.";
+    spinHint.textContent = "Крути рулетку, чтобы получить клуб и сезон, затем выбери игрока.";
     drawCard.classList.remove("hidden");
     playersCard.classList.add("hidden");
     finishedCard.classList.add("hidden");
@@ -68,7 +68,7 @@
   }
 
   function updateRound() {
-    roundPill.textContent = `Round ${Math.min(state.round, 11)} / 11`;
+    roundPill.textContent = `Раунд ${Math.min(state.round, 11)} / 11`;
   }
 
   function getDrawGroups() {
@@ -100,7 +100,7 @@
     }
 
     spinBtn.disabled = true;
-    spinBtn.textContent = "SPINNING...";
+    spinBtn.textContent = "КРУТИМ...";
 
     let ticks = 0;
     const maxTicks = 16;
@@ -115,7 +115,7 @@
         const draw = groups[Math.floor(Math.random() * groups.length)];
         showPlayersForDraw(draw);
         spinBtn.disabled = false;
-        spinBtn.textContent = "SPIN";
+        spinBtn.textContent = "КРУТИТЬ";
       }
     }, 56);
   }
@@ -132,7 +132,7 @@
     clubTitle.textContent = draw.clubName;
     clubSeason.textContent = draw.season;
     searchInput.value = "";
-    draftInfo.textContent = `Pick one player — ${getOpenPositionsText()}`;
+    draftInfo.textContent = `Выбери одного игрока — ${getOpenPositionsText()}`;
     drawCard.classList.add("hidden");
     playersCard.classList.remove("hidden");
     finishedCard.classList.add("hidden");
@@ -170,7 +170,7 @@
             <span class="player-name">${escapeHtml(player.name)}</span>
             <span class="player-meta">
               <span class="pos-badge">${escapeHtml(player.positions.join("/"))}</span>
-              <span>Age ${escapeHtml(player.age)}</span>
+              <span>Возраст: ${escapeHtml(player.age)}</span>
               <span>#${escapeHtml(player.number || "-")}</span>
             </span>
           </span>
@@ -199,7 +199,7 @@
     if (!player) return;
 
     state.selectedPlayerId = playerId;
-    draftInfo.textContent = `${player.name} selected — click a highlighted position →`;
+    draftInfo.textContent = `${player.name} выбран — нажми подсвеченную позицию →`;
     clearHighlights();
 
     slots.forEach(slot => {
@@ -255,7 +255,7 @@
     drawCard.classList.remove("hidden");
     teamCodeEl.textContent = player.clubCode;
     seasonCodeEl.textContent = player.season;
-    spinHint.textContent = `${Object.keys(state.placed).length}/11 positions filled — spin for the next.`;
+    spinHint.textContent = `${Object.keys(state.placed).length}/11 позиций заполнено — крути для следующей.`;
     state.selectedPlayerId = null;
   }
 
@@ -264,8 +264,8 @@
     drawCard.classList.add("hidden");
     finishedCard.classList.remove("hidden");
     const rating = calculateTeamRating();
-    teamRatingText.textContent = `Team rating: ${rating}`;
-    roundPill.textContent = "Completed";
+    teamRatingText.textContent = `Рейтинг команды: ${rating}`;
+    roundPill.textContent = "Завершено";
   }
 
   function calculateTeamRating() {
