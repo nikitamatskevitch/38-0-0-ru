@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Draft XI — Football Squad Builder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <div class="top-glow"></div>
+
+    <header class="app-header" id="appHeader">
+      <div class="brand-mini" aria-label="Draft XI">
+        <div class="mini-ball">⚽</div>
+        <div>
+          <strong>Draft XI</strong>
+          <span>Build a 4-3-3 XI</span>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <button class="round-pill hidden" id="roundPill">Round 1 / 11</button>
+        <button class="icon-btn hidden" id="changeSideBtn" title="Поменять стороны">⇄</button>
+        <button class="icon-btn hidden" id="resetBtn" title="Начать заново">↻</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="screen start-screen" id="startScreen">
+        <div class="hero-card">
+          <div class="logo-mark">
+            <div class="logo-ball">⚽</div>
+            <div class="logo-score">38-0-0</div>
+            <div class="logo-ribbon">EST. 2026</div>
+          </div>
+
+          <h1>Build your XI</h1>
+          <p>Нажми Play, крути Spin, выбирай футболистов из базы и ставь их на позиции 4-3-3.</p>
+
+          <div class="mode-row">
+            <div class="mode-card active">
+              <h3>Classic</h3>
+              <p>Показаны рейтинги, возраст, позиции и сила игроков.</p>
+            </div>
+            <div class="mode-card muted-card">
+              <h3>Local DB</h3>
+              <p>Игроки редактируются прямо в файле <b>data/players.js</b>.</p>
+            </div>
+          </div>
+
+          <div class="formation-title">4-3-3 formation</div>
+          <button class="primary-btn big" id="playBtn">Play →</button>
+        </div>
+      </section>
+
+      <section class="screen game-screen hidden" id="gameScreen">
+        <div class="game-grid" id="gameGrid">
+          <aside class="control-panel" id="controlPanel">
+            <div class="draw-card" id="drawCard">
+              <div class="draw-top">
+                <div class="draw-stat neon-pink">
+                  <span>TEAM</span>
+                  <strong id="teamCode">---</strong>
+                </div>
+                <div class="draw-stat neon-purple">
+                  <span>YEAR</span>
+                  <strong id="seasonCode">----</strong>
+                </div>
+              </div>
+
+              <button class="primary-btn" id="spinBtn">SPIN</button>
+              <p class="hint" id="spinHint">Spin to draw a club & season, then draft a player.</p>
+            </div>
+
+            <div class="players-card hidden" id="playersCard">
+              <div class="players-head">
+                <div>
+                  <h2 id="clubTitle">Club</h2>
+                  <span id="clubSeason">Season</span>
+                </div>
+                <input id="searchInput" type="search" placeholder="Search player..." autocomplete="off" />
+              </div>
+
+              <div class="draft-info" id="draftInfo">Pick one player</div>
+
+              <div class="stat-head">
+                <span></span>
+                <span>PAC</span><span>SHO</span><span>PAS</span><span>DRI</span><span>DEF</span><span>PHY</span><span>OVR</span>
+              </div>
+
+              <div class="players-list" id="playersList"></div>
+            </div>
+
+            <div class="finished-card hidden" id="finishedCard">
+              <h2>XI completed!</h2>
+              <p id="teamRatingText">Team rating: 0</p>
+              <button class="primary-btn" id="playAgainBtn">Play again</button>
+            </div>
+          </aside>
+
+          <section class="pitch-wrap">
+            <div class="pitch" id="pitch" aria-label="Football pitch 4-3-3">
+              <div class="stripe s1"></div>
+              <div class="stripe s2"></div>
+              <div class="stripe s3"></div>
+              <div class="stripe s4"></div>
+              <div class="stripe s5"></div>
+              <div class="stripe s6"></div>
+              <div class="line half"></div>
+              <div class="circle center-circle"></div>
+              <div class="box penalty top"></div>
+              <div class="box six top"></div>
+              <div class="box penalty bottom"></div>
+              <div class="box six bottom"></div>
+              <div class="dot top-dot"></div>
+              <div class="dot bottom-dot"></div>
+
+              <button class="slot" data-slot="st" data-position="ST"><span>ST</span></button>
+              <button class="slot" data-slot="lw" data-position="LW"><span>LW</span></button>
+              <button class="slot" data-slot="rw" data-position="RW"><span>RW</span></button>
+
+              <button class="slot" data-slot="cm-left" data-position="CM"><span>CM</span></button>
+              <button class="slot" data-slot="cm-mid" data-position="CM"><span>CM</span></button>
+              <button class="slot" data-slot="cm-right" data-position="CM"><span>CM</span></button>
+
+              <button class="slot" data-slot="lb" data-position="LB"><span>LB</span></button>
+              <button class="slot" data-slot="cb-left" data-position="CB"><span>CB</span></button>
+              <button class="slot" data-slot="cb-right" data-position="CB"><span>CB</span></button>
+              <button class="slot" data-slot="rb" data-position="RB"><span>RB</span></button>
+              <button class="slot" data-slot="gk" data-position="GK"><span>GK</span></button>
+            </div>
+            <div class="formation-pill">4 - 3 - 3</div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="data/players.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
