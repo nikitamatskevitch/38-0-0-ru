@@ -54,9 +54,17 @@ button { cursor: pointer; }
   top: 0;
   z-index: 10;
 }
-.brand-mini { display: flex; align-items: center; gap: 12px; color: var(--muted); }
+.brand-mini { display: flex; align-items: center; gap: 12px; color: var(--muted); text-decoration: none; }
 .brand-mini strong { display: block; color: var(--text); letter-spacing: .02em; }
 .brand-mini span { font-size: 13px; }
+.brand-logo-img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 8px 18px rgba(0,0,0,.35));
+}
+.game-brand .brand-logo-img { width: 68px; height: 58px; }
 .mini-ball {
   width: 42px; height: 42px;
   display: grid; place-items: center;
@@ -170,6 +178,10 @@ button { cursor: pointer; }
 .mode-card p { margin: 0; color: var(--muted); line-height: 1.55; font-size: 18px; }
 .formation-title { color: var(--yellow); font-weight: 1000; letter-spacing: .28em; margin-bottom: 20px; text-transform: uppercase; }
 .primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   border: 0;
   min-width: 164px;
   border-radius: 15px;
@@ -684,6 +696,9 @@ button { cursor: pointer; }
 @media (max-width: 720px) {
   .app-header { padding: 0 12px; height: 68px; }
   .brand-mini span { display: none; }
+  .brand-mini strong { display: none; }
+  .brand-logo-img { width: 48px; height: 48px; }
+  .game-brand .brand-logo-img { width: 58px; height: 50px; }
   .mode-row { grid-template-columns: 1fr; }
   .start-screen { padding-inline: 12px; }
   .start-hero-layout { grid-template-columns: minmax(0, 1fr); }
