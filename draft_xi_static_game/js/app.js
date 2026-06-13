@@ -36,6 +36,7 @@
   const projectedLosses = document.getElementById("projectedLosses");
   const projectedPointsText = document.getElementById("projectedPointsText");
   const seasonBadge = document.getElementById("seasonBadge");
+  const matchResultsList = document.getElementById("matchResultsList");
   const leaderboardBtn = document.getElementById("leaderboardBtn");
   const leaderboardModal = document.getElementById("leaderboardModal");
   const closeLeaderboardBtn = document.getElementById("closeLeaderboardBtn");
@@ -155,6 +156,8 @@
       placed: {},
       usedPlayerIds: new Set(),
       lastRating: 0,
+      lastSeason: null,
+      matchResults: [],
       formation: selectedFormation
     };
   }
@@ -230,6 +233,7 @@
     playersCard.classList.add("hidden");
     finishedCard.classList.add("hidden");
     if (shareStatus) shareStatus.textContent = "";
+    if (matchResultsList) matchResultsList.innerHTML = "";
     clearHighlights();
     slots.forEach(slot => {
       slot.classList.remove("filled", "highlight");
@@ -309,6 +313,7 @@
     playersCard.classList.remove("hidden");
     finishedCard.classList.add("hidden");
     if (shareStatus) shareStatus.textContent = "";
+    if (matchResultsList) matchResultsList.innerHTML = "";
     clearHighlights();
     renderPlayers();
   }
@@ -446,15 +451,17 @@
     drawCard.classList.add("hidden");
     finishedCard.classList.remove("hidden");
     const rating = calculateTeamRating();
+    const season = getProjectedSeason(rating);
     state.lastRating = rating;
-    renderFinishSummary(rating);
+    state.lastSeason = season;
+    state.matchResults = generateMatchResults(season);
+    renderFinishSummary(rating, season);
     roundPill.textContent = "Завершено";
     saveLeaderboardResult(rating);
   }
 
 
-  function renderFinishSummary(rating) {
-    const season = getProjectedSeason(rating);
+  function renderFinishSummary(rating, season = getProjectedSeason(rating)) {
 
     if (finishHeadline) finishHeadline.textContent = `Сможет ли твой XI сделать 38-0-0?`;
     teamRatingText.textContent = `Рейтинг команды: ${rating}`;
@@ -466,6 +473,7 @@
       seasonBadge.textContent = season.label;
       seasonBadge.dataset.tier = season.tier;
     }
+    renderMatchResults(state.matchResults);
   }
 
   function getProjectedSeason(rating) {
@@ -586,6 +594,92 @@
     return items;
   }
 
+  function generateMatchResults(season) {
+    const opponents = getOpponentPool();
+    const outcomes = shuffleDeterministic([
+      ...Array(season.wins).fill("win"),
+      ...Array(season.draws).fill("draw"),
+      ...Array(season.losses).fill("loss")
+    ], getSeasonSeed(season));
+
+    return outcomes.map((outcome, index) => {
+      const opponent = opponents[index % opponents.length] || { clubName: "Случайная команда", season: "—" };
+      return {
+        round: index + 1,
+        outcome,
+        opponent: opponent.clubName,
+        season: opponent.season,
+        score: getMatchScore(outcome, index, season)
+      };
+    });
+  }
+
+  function getOpponentPool() {
+    const seen = new Set();
+    const selectedClubSeasons = new Set(Object.values(state.placed).map(player => `${player.clubName}|${player.season}`));
+
+    return DB.reduce((items, player) => {
+      const key = `${player.clubName}|${player.season}`;
+      if (seen.has(key) || selectedClubSeasons.has(key)) return items;
+      seen.add(key);
+      items.push({ clubName: player.clubName, season: player.season });
+      return items;
+    }, []);
+  }
+
+  function getMatchScore(outcome, index, season) {
+    const variants = {
+      win: [[1, 0], [2, 0], [2, 1], [3, 0], [3, 1]],
+      draw: [[0, 0], [1, 1], [2, 2]],
+      loss: [[0, 1], [1, 2], [0, 2], [2, 3]]
+    };
+    const list = variants[outcome] || variants.draw;
+    const [forGoals, againstGoals] = list[(index + season.points) % list.length];
+    return `${forGoals}:${againstGoals}`;
+  }
+
+  function getSeasonSeed(season) {
+    return `${state.formation}|${season.wins}-${season.draws}-${season.losses}|${Object.values(state.placed).map(player => player.id).sort().join(",")}`;
+  }
+
+  function shuffleDeterministic(items, seedText) {
+    const shuffled = items.slice();
+    let seed = hashText(seedText);
+
+    for (let index = shuffled.length - 1; index > 0; index -= 1) {
+      seed = (seed * 1664525 + 1013904223) >>> 0;
+      const swapIndex = seed % (index + 1);
+      [shuffled[index], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[index]];
+    }
+
+    return shuffled;
+  }
+
+  function hashText(value) {
+    return String(value).split("").reduce((hash, char) => {
+      return ((hash << 5) - hash + char.charCodeAt(0)) >>> 0;
+    }, 2166136261);
+  }
+
+  function renderMatchResults(results) {
+    if (!matchResultsList) return;
+
+    if (!results.length) {
+      matchResultsList.innerHTML = `<div class="match-results-empty">Матчи появятся после завершения драфта.</div>`;
+      return;
+    }
+
+    matchResultsList.innerHTML = results.map(match => `
+      <div class="match-result-row ${match.outcome}">
+        <div class="match-result-meta">
+          <span>${match.round}. матч</span>
+          <strong>${escapeHtml(match.opponent)}, сезон ${escapeHtml(match.season)}</strong>
+        </div>
+        <div class="match-result-score">${escapeHtml(match.score)}</div>
+      </div>
+    `).join("");
+  }
+
   function calculateTeamRating() {
     const players = Object.values(state.placed);
     if (!players.length) return 0;
@@ -691,7 +785,10 @@
       ? sortByNewest(validEntries)
       : sortLeaderboard(validEntries);
     const filteredEntries = view === "perfect"
-      ? sortedEntries.filter(entry => Number(entry.score) >= 100)
+      ? sortedEntries.filter(entry => {
+        const season = getEntrySeason(entry, entry.score);
+        return season.wins === 38 && season.draws === 0 && season.losses === 0;
+      })
       : sortedEntries;
 
     return filteredEntries.slice(0, limit || 50);
@@ -701,6 +798,10 @@
     const entry = {
       nickname: getSavedNickname() || "Игрок",
       score,
+      wins: state.lastSeason?.wins,
+      draws: state.lastSeason?.draws,
+      losses: state.lastSeason?.losses,
+      points: state.lastSeason?.points,
       formation: state.formation || selectedFormation,
       playedAt: new Date().toISOString()
     };
@@ -755,20 +856,33 @@
           <span>${escapeHtml(formatPlayedAtShort(entry.playedAt))}</span>
         </div>
         <div class="home-feed-result">
-          <strong>${formatHomeRecord(entry.score)}</strong>
-          <span>${formatHomeScoreDetails(entry.score, entry.formation)}</span>
+          <strong>${formatHomeRecord(entry.score, entry)}</strong>
+          <span>${formatHomeScoreDetails(entry.score, entry.formation, entry)}</span>
         </div>
       </div>
     `).join("");
   }
 
-  function formatHomeRecord(score) {
-    const season = getProjectedSeason(score);
+  function getEntrySeason(entry, fallbackScore) {
+    const wins = Number(entry?.wins);
+    const draws = Number(entry?.draws);
+    const losses = Number(entry?.losses);
+    const points = Number(entry?.points);
+
+    if ([wins, draws, losses, points].every(Number.isFinite) && (wins + draws + losses) === 38) {
+      return { wins, draws, losses, points };
+    }
+
+    return getProjectedSeason(fallbackScore);
+  }
+
+  function formatHomeRecord(score, entry = {}) {
+    const season = getEntrySeason(entry, score);
     return `<span class="home-record-win">${season.wins}</span><span class="home-record-separator">-</span><span class="home-record-draw">${season.draws}</span><span class="home-record-separator">-</span><span class="home-record-loss">${season.losses}</span>`;
   }
 
-  function formatHomeScoreDetails(score, formation) {
-    const season = getProjectedSeason(score);
+  function formatHomeScoreDetails(score, formation, entry = {}) {
+    const season = getEntrySeason(entry, score);
     return `${season.points} очков · схема: ${escapeHtml(formation || "—")}`;
   }
 

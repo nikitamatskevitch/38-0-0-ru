@@ -5,6 +5,7 @@
  * 1. Залей этот файл на хостинг как /api/leaderboard.php.
  * 2. Впиши доступы к MySQL ниже.
  * 3. Таблица должна содержать поля: id, nickname, score, formation, played_at.
+ *    Для точного лидерборда добавь поля: wins, draws, losses, points.
  */
 
 declare(strict_types=1);
@@ -80,33 +81,52 @@ function createConnection(): PDO
 function loadLeaderboard(PDO $pdo, string $view, int $limit): array
 {
     $hasFormation = leaderboardHasColumn($pdo, 'formation');
-    $columns = $hasFormation ? 'nickname, score, formation, played_at' : 'nickname, score, played_at';
-    $where = $view === 'perfect' ? 'WHERE score >= :perfect_score' : '';
+    $hasSeasonRecord = leaderboardHasSeasonRecord($pdo);
+    $columns = ['nickname', 'score', 'played_at'];
+    if ($hasFormation) {
+        $columns[] = 'formation';
+    }
+    if ($hasSeasonRecord) {
+        array_push($columns, 'wins', 'draws', 'losses', 'points');
+    }
+    $columnsSql = implode(', ', $columns);
+    $where = $view === 'perfect'
+        ? ($hasSeasonRecord ? 'WHERE wins = 38 AND draws = 0 AND losses = 0' : 'WHERE score >= :perfect_score')
+        : '';
     $orderBy = $view === 'recent' || $view === 'perfect'
         ? 'played_at DESC, id DESC'
         : 'score DESC, played_at DESC, id DESC';
 
     $statement = $pdo->prepare(
-        "SELECT {$columns}
+        "SELECT {$columnsSql}
          FROM leaderboard
          {$where}
          ORDER BY {$orderBy}
          LIMIT :limit"
     );
 
-    if ($view === 'perfect') {
+    if ($view === 'perfect' && !$hasSeasonRecord) {
         $statement->bindValue(':perfect_score', PERFECT_SCORE, PDO::PARAM_INT);
     }
     $statement->bindValue(':limit', $limit, PDO::PARAM_INT);
     $statement->execute();
 
-    return array_map(static function (array $row) use ($hasFormation): array {
-        return [
+    return array_map(static function (array $row) use ($hasFormation, $hasSeasonRecord): array {
+        $entry = [
             'nickname' => (string) $row['nickname'],
             'score' => (int) $row['score'],
             'formation' => $hasFormation ? (string) $row['formation'] : '',
             'playedAt' => mysqlDateTimeToIso((string) $row['played_at']),
         ];
+
+        if ($hasSeasonRecord) {
+            $entry['wins'] = (int) $row['wins'];
+            $entry['draws'] = (int) $row['draws'];
+            $entry['losses'] = (int) $row['losses'];
+            $entry['points'] = (int) $row['points'];
+        }
+
+        return $entry;
     }, $statement->fetchAll());
 }
 
@@ -119,18 +139,43 @@ function saveLeaderboardEntry(PDO $pdo, array $payload): void
     $score = normalizeScore($payload['score'] ?? null);
     $formation = normalizeFormation($payload['formation'] ?? '');
     $playedAt = gmdate('Y-m-d H:i:s');
+    $seasonRecord = normalizeSeasonRecord($payload);
+    $hasFormation = leaderboardHasColumn($pdo, 'formation');
+    $hasSeasonRecord = leaderboardHasSeasonRecord($pdo);
 
-    if (leaderboardHasColumn($pdo, 'formation')) {
-        $statement = $pdo->prepare(
-            'INSERT INTO leaderboard (nickname, score, formation, played_at)
-             VALUES (:nickname, :score, :formation, :played_at)'
-        );
-        $statement->execute([
+    if ($hasFormation || $hasSeasonRecord) {
+        $columns = ['nickname', 'score'];
+        $placeholders = [':nickname', ':score'];
+        $values = [
             ':nickname' => $nickname,
             ':score' => $score,
-            ':formation' => $formation,
-            ':played_at' => $playedAt,
-        ]);
+        ];
+
+        if ($hasFormation) {
+            $columns[] = 'formation';
+            $placeholders[] = ':formation';
+            $values[':formation'] = $formation;
+        }
+
+        if ($hasSeasonRecord) {
+            array_push($columns, 'wins', 'draws', 'losses', 'points');
+            array_push($placeholders, ':wins', ':draws', ':losses', ':points');
+            $values[':wins'] = $seasonRecord['wins'];
+            $values[':draws'] = $seasonRecord['draws'];
+            $values[':losses'] = $seasonRecord['losses'];
+            $values[':points'] = $seasonRecord['points'];
+        }
+
+        $columns[] = 'played_at';
+        $placeholders[] = ':played_at';
+        $values[':played_at'] = $playedAt;
+
+        $statement = $pdo->prepare(sprintf(
+            'INSERT INTO leaderboard (%s) VALUES (%s)',
+            implode(', ', $columns),
+            implode(', ', $placeholders)
+        ));
+        $statement->execute($values);
         return;
     }
 
@@ -158,6 +203,41 @@ function readJsonBody(): array
     }
 
     return $payload;
+}
+
+/**
+ * @param array<string, mixed> $payload
+ * @return array{wins: int, draws: int, losses: int, points: int}
+ */
+function normalizeSeasonRecord(array $payload): array
+{
+    $wins = normalizeNonNegativeInt($payload['wins'] ?? 0);
+    $draws = normalizeNonNegativeInt($payload['draws'] ?? 0);
+    $losses = normalizeNonNegativeInt($payload['losses'] ?? 0);
+    $points = normalizeNonNegativeInt($payload['points'] ?? (($wins * 3) + $draws));
+
+    if (($wins + $draws + $losses) !== 38) {
+        $wins = 0;
+        $draws = 0;
+        $losses = 38;
+        $points = 0;
+    }
+
+    return [
+        'wins' => $wins,
+        'draws' => $draws,
+        'losses' => $losses,
+        'points' => $points,
+    ];
+}
+
+function normalizeNonNegativeInt($value): int
+{
+    if (!is_numeric($value)) {
+        return 0;
+    }
+
+    return max(0, (int) $value);
 }
 
 function normalizeNickname($value): string
@@ -237,6 +317,14 @@ function leaderboardHasColumn(PDO $pdo, string $columnName): bool
 
     $cache[$columnName] = (int) $statement->fetchColumn() > 0;
     return $cache[$columnName];
+}
+
+function leaderboardHasSeasonRecord(PDO $pdo): bool
+{
+    return leaderboardHasColumn($pdo, 'wins')
+        && leaderboardHasColumn($pdo, 'draws')
+        && leaderboardHasColumn($pdo, 'losses')
+        && leaderboardHasColumn($pdo, 'points');
 }
 
 function mysqlDateTimeToIso(string $value): string
