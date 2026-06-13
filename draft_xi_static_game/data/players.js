@@ -127442,5 +127442,9891 @@ window.PLAYERS_DB = [
       "phy": 67,
       "ovr": 43
     }
+  },
+{
+  "id": "2023-AKH23_001",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Rizvan Utsiev",
+  "positions": [
+    "ПЗ",
+    "ПФЗ"
+  ],
+  "age": 34,
+  "number": 40,
+  "initials": "RU",
+  "stats": {
+    "pac": 60,
+    "sho": 47,
+    "pas": 46,
+    "dri": 55,
+    "def": 60,
+    "phy": 58,
+    "ovr": 54
   }
+},
+{
+  "id": "2023-AKH23_002",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Bernard Berisha",
+  "positions": [
+    "ЛП",
+    "ПВ",
+    "ЦАП"
+  ],
+  "age": 30,
+  "number": 7,
+  "initials": "BB",
+  "stats": {
+    "pac": 73,
+    "sho": 57,
+    "pas": 58,
+    "dri": 69,
+    "def": 45,
+    "phy": 53,
+    "ovr": 59
+  }
+},
+{
+  "id": "2023-AKH23_003",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Zoran Nižić",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 32,
+  "number": 20,
+  "initials": "ZN",
+  "stats": {
+    "pac": 63,
+    "sho": 45,
+    "pas": 41,
+    "dri": 51,
+    "def": 57,
+    "phy": 68,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-AKH23_004",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Darko Todorović",
+  "positions": [
+    "ПЗ",
+    "ПФЗ"
+  ],
+  "age": 25,
+  "number": 4,
+  "initials": "DT",
+  "stats": {
+    "pac": 65,
+    "sho": 40,
+    "pas": 59,
+    "dri": 60,
+    "def": 63,
+    "phy": 49,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-AKH23_005",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Evgeny Kharin",
+  "positions": [
+    "ЛФЗ",
+    "ЛП",
+    "ПВ"
+  ],
+  "age": 27,
+  "number": 59,
+  "initials": "EK",
+  "stats": {
+    "pac": 68,
+    "sho": 48,
+    "pas": 53,
+    "dri": 55,
+    "def": 47,
+    "phy": 59,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-AKH23_006",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Amir Aduev",
+  "positions": [
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 23,
+  "number": 6,
+  "initials": "AA",
+  "stats": {
+    "pac": 53,
+    "sho": 57,
+    "pas": 61,
+    "dri": 61,
+    "def": 35,
+    "phy": 54,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-AKH23_007",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Giorgi Shelia",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 33,
+  "number": 88,
+  "initials": "GS",
+  "stats": {
+    "pac": 40,
+    "sho": 17,
+    "pas": 31,
+    "dri": 33,
+    "def": 23,
+    "phy": 66,
+    "ovr": 35
+  }
+},
+{
+  "id": "2023-AKH23_008",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Andrey Semenov",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 33,
+  "number": 15,
+  "initials": "AS",
+  "stats": {
+    "pac": 58,
+    "sho": 45,
+    "pas": 50,
+    "dri": 45,
+    "def": 62,
+    "phy": 71,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-AKH23_009",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Khalid Kadyrov",
+  "positions": [
+    "ПВ",
+    "ЛП"
+  ],
+  "age": 28,
+  "number": 10,
+  "initials": "KK",
+  "stats": {
+    "pac": 73,
+    "sho": 38,
+    "pas": 39,
+    "dri": 55,
+    "def": 22,
+    "phy": 36,
+    "ovr": 44
+  }
+},
+{
+  "id": "2023-AKH23_010",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Mikhail Oparin",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 29,
+  "number": 1,
+  "initials": "MO",
+  "stats": {
+    "pac": 45,
+    "sho": 23,
+    "pas": 29,
+    "dri": 34,
+    "def": 28,
+    "phy": 62,
+    "ovr": 37
+  }
+},
+{
+  "id": "2023-AKH23_011",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Marat Bystrov",
+  "positions": [
+    "ПЗ",
+    "ЛЗ",
+    "ЦЗ",
+    "ПФЗ"
+  ],
+  "age": 29,
+  "number": 96,
+  "initials": "MB",
+  "stats": {
+    "pac": 73,
+    "sho": 38,
+    "pas": 43,
+    "dri": 55,
+    "def": 50,
+    "phy": 61,
+    "ovr": 53
+  }
+},
+{
+  "id": "2023-AKH23_012",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Artem Timofeev",
+  "positions": [
+    "ЦП",
+    "ЦОП"
+  ],
+  "age": 28,
+  "number": 94,
+  "initials": "AT",
+  "stats": {
+    "pac": 60,
+    "sho": 43,
+    "pas": 49,
+    "dri": 58,
+    "def": 62,
+    "phy": 69,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-AKH23_013",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Vladimir Iljin",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 30,
+  "number": 29,
+  "initials": "VI",
+  "stats": {
+    "pac": 60,
+    "sho": 55,
+    "pas": 44,
+    "dri": 54,
+    "def": 42,
+    "phy": 62,
+    "ovr": 53
+  }
+},
+{
+  "id": "2023-AKH23_014",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Abubakar Kadyrov",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 25,
+  "number": 95,
+  "initials": "AK",
+  "stats": {
+    "pac": 63,
+    "sho": 42,
+    "pas": 43,
+    "dri": 54,
+    "def": 30,
+    "phy": 47,
+    "ovr": 47
+  }
+},
+{
+  "id": "2023-AKH23_015",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Yury Zhuravlev",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 25,
+  "number": 44,
+  "initials": "YZ",
+  "stats": {
+    "pac": 60,
+    "sho": 50,
+    "pas": 49,
+    "dri": 44,
+    "def": 62,
+    "phy": 62,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-AKH23_016",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Vladislav Kamilov",
+  "positions": [
+    "ЦП",
+    "ЦАП",
+    "ЦОП"
+  ],
+  "age": 26,
+  "number": 18,
+  "initials": "VK",
+  "stats": {
+    "pac": 60,
+    "sho": 58,
+    "pas": 55,
+    "dri": 55,
+    "def": 52,
+    "phy": 53,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-AKH23_017",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Alexandr Troshechkin",
+  "positions": [
+    "ЦП",
+    "ЦАП",
+    "ЦОП"
+  ],
+  "age": 26,
+  "number": 25,
+  "initials": "AT",
+  "stats": {
+    "pac": 53,
+    "sho": 48,
+    "pas": 59,
+    "dri": 58,
+    "def": 57,
+    "phy": 54,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-AKH23_018",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Alexandr Melikhov",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 24,
+  "number": 0,
+  "initials": "AM",
+  "stats": {
+    "pac": 70,
+    "sho": 18,
+    "pas": 31,
+    "dri": 36,
+    "def": 27,
+    "phy": 54,
+    "ovr": 39
+  }
+},
+{
+  "id": "2023-AKH23_019",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Ivan Oleinikov",
+  "positions": [
+    "ПП",
+    "ЛП",
+    "ПВ",
+    "ЦАП"
+  ],
+  "age": 23,
+  "number": 21,
+  "initials": "IO",
+  "stats": {
+    "pac": 63,
+    "sho": 53,
+    "pas": 60,
+    "dri": 68,
+    "def": 38,
+    "phy": 51,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-AKH23_020",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Idris Umaev",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 23,
+  "number": 0,
+  "initials": "IU",
+  "stats": {
+    "pac": 60,
+    "sho": 48,
+    "pas": 53,
+    "dri": 58,
+    "def": 25,
+    "phy": 45,
+    "ovr": 48
+  }
+},
+{
+  "id": "2023-AKH23_021",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Mohamed Konaté",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 24,
+  "number": 13,
+  "initials": "MK",
+  "stats": {
+    "pac": 63,
+    "sho": 52,
+    "pas": 43,
+    "dri": 54,
+    "def": 35,
+    "phy": 67,
+    "ovr": 52
+  }
+},
+{
+  "id": "2023-AKH23_022",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Kirill Folmer",
+  "positions": [
+    "ПВ",
+    "ЛП",
+    "ЦАП"
+  ],
+  "age": 22,
+  "number": 19,
+  "initials": "KF",
+  "stats": {
+    "pac": 65,
+    "sho": 48,
+    "pas": 59,
+    "dri": 58,
+    "def": 42,
+    "phy": 45,
+    "ovr": 53
+  }
+},
+{
+  "id": "2023-AKH23_023",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Gamid Agalarov",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 21,
+  "number": 77,
+  "initials": "GA",
+  "stats": {
+    "pac": 68,
+    "sho": 57,
+    "pas": 44,
+    "dri": 58,
+    "def": 33,
+    "phy": 53,
+    "ovr": 52
+  }
+},
+{
+  "id": "2023-AKH23_024",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Vladislav Karapuzov",
+  "positions": [
+    "ПП",
+    "ПВ",
+    "ЛП"
+  ],
+  "age": 22,
+  "number": 17,
+  "initials": "VK",
+  "stats": {
+    "pac": 80,
+    "sho": 40,
+    "pas": 45,
+    "dri": 51,
+    "def": 38,
+    "phy": 53,
+    "ovr": 51
+  }
+},
+{
+  "id": "2023-AKH23_025",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Ilja Moseichuk",
+  "positions": [
+    "ПП",
+    "ЛП",
+    "ПВ"
+  ],
+  "age": 22,
+  "number": 0,
+  "initials": "IM",
+  "stats": {
+    "pac": 65,
+    "sho": 35,
+    "pas": 38,
+    "dri": 50,
+    "def": 38,
+    "phy": 46,
+    "ovr": 45
+  }
+},
+{
+  "id": "2023-AKH23_026",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Lechi Sadulaev",
+  "positions": [
+    "ПП",
+    "ЛП",
+    "ПВ"
+  ],
+  "age": 22,
+  "number": 11,
+  "initials": "LS",
+  "stats": {
+    "pac": 65,
+    "sho": 48,
+    "pas": 56,
+    "dri": 59,
+    "def": 40,
+    "phy": 47,
+    "ovr": 53
+  }
+},
+{
+  "id": "2023-AKH23_027",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Nikita Karmaev",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 21,
+  "number": 0,
+  "initials": "NK",
+  "stats": {
+    "pac": 63,
+    "sho": 42,
+    "pas": 43,
+    "dri": 44,
+    "def": 53,
+    "phy": 56,
+    "ovr": 50
+  }
+},
+{
+  "id": "2023-AKH23_028",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Islam Alsultanov",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 20,
+  "number": 90,
+  "initials": "IA",
+  "stats": {
+    "pac": 55,
+    "sho": 43,
+    "pas": 50,
+    "dri": 50,
+    "def": 30,
+    "phy": 56,
+    "ovr": 47
+  }
+},
+{
+  "id": "2023-AKH23_029",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Rizvan Tashaev",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 18,
+  "number": 35,
+  "initials": "RT",
+  "stats": {
+    "pac": 55,
+    "sho": 8,
+    "pas": 18,
+    "dri": 24,
+    "def": 18,
+    "phy": 33,
+    "ovr": 26
+  }
+},
+{
+  "id": "2023-AKH23_030",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Magomed Artsuev",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 18,
+  "number": 67,
+  "initials": "MA",
+  "stats": {
+    "pac": 65,
+    "sho": 33,
+    "pas": 25,
+    "dri": 46,
+    "def": 15,
+    "phy": 37,
+    "ovr": 37
+  }
+},
+{
+  "id": "2023-AKH23_031",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Miroslav Bogosavac",
+  "positions": [
+    "ЛЗ",
+    "ЛФЗ"
+  ],
+  "age": 25,
+  "number": 8,
+  "initials": "MB",
+  "stats": {
+    "pac": 65,
+    "sho": 42,
+    "pas": 58,
+    "dri": 63,
+    "def": 63,
+    "phy": 63,
+    "ovr": 59
+  }
+},
+{
+  "id": "2023-AKH23_032",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Anton Shvets",
+  "positions": [
+    "ЦП",
+    "ЦОП"
+  ],
+  "age": 29,
+  "number": 23,
+  "initials": "AS",
+  "stats": {
+    "pac": 63,
+    "sho": 50,
+    "pas": 46,
+    "dri": 60,
+    "def": 58,
+    "phy": 65,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-AKH23_033",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Alvi Adilkhanov",
+  "positions": [
+    "ЛЗ"
+  ],
+  "age": 19,
+  "number": 93,
+  "initials": "AA",
+  "stats": {
+    "pac": 63,
+    "sho": 25,
+    "pas": 44,
+    "dri": 41,
+    "def": 45,
+    "phy": 41,
+    "ovr": 43
+  }
+},
+{
+  "id": "2023-AKH23_034",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Turpal-Ali Ibishev",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 20,
+  "number": 79,
+  "initials": "TI",
+  "stats": {
+    "pac": 63,
+    "sho": 35,
+    "pas": 38,
+    "dri": 39,
+    "def": 50,
+    "phy": 51,
+    "ovr": 46
+  }
+},
+{
+  "id": "2023-AKH23_035",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Andemir Goguzokov",
+  "positions": [
+    "ПП",
+    "ЦП",
+    "ПВ"
+  ],
+  "age": 19,
+  "number": 22,
+  "initials": "AG",
+  "stats": {
+    "pac": 65,
+    "sho": 40,
+    "pas": 36,
+    "dri": 58,
+    "def": 28,
+    "phy": 33,
+    "ovr": 43
+  }
+},
+{
+  "id": "2023-AKH23_036",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Bilal Akhjadov",
+  "positions": [
+    "ПЗ",
+    "ЛЗ",
+    "ЛП"
+  ],
+  "age": 18,
+  "number": 70,
+  "initials": "BA",
+  "stats": {
+    "pac": 63,
+    "sho": 25,
+    "pas": 38,
+    "dri": 46,
+    "def": 35,
+    "phy": 38,
+    "ovr": 41
+  }
+},
+{
+  "id": "2023-AKH23_037",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Yegor Kravtsov",
+  "positions": [
+    "ПП",
+    "ЛП",
+    "ПВ"
+  ],
+  "age": 18,
+  "number": 53,
+  "initials": "YK",
+  "stats": {
+    "pac": 65,
+    "sho": 48,
+    "pas": 41,
+    "dri": 58,
+    "def": 25,
+    "phy": 30,
+    "ovr": 45
+  }
+},
+{
+  "id": "2023-AKH23_038",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Ibragim Yaratkhanov",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 18,
+  "number": 80,
+  "initials": "IY",
+  "stats": {
+    "pac": 63,
+    "sho": 35,
+    "pas": 18,
+    "dri": 43,
+    "def": 15,
+    "phy": 36,
+    "ovr": 35
+  }
+},
+{
+  "id": "2023-AKH23_039",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Magomed-Deni Tsutsulaev",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 18,
+  "number": 97,
+  "initials": "MT",
+  "stats": {
+    "pac": 40,
+    "sho": 5,
+    "pas": 10,
+    "dri": 19,
+    "def": 17,
+    "phy": 31,
+    "ovr": 20
+  }
+},
+{
+  "id": "2023-AKH23_040",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Magomed Yakuev",
+  "positions": [
+    "ПП",
+    "ЛП",
+    "ПВ"
+  ],
+  "age": 17,
+  "number": 71,
+  "initials": "MY",
+  "stats": {
+    "pac": 60,
+    "sho": 38,
+    "pas": 45,
+    "dri": 50,
+    "def": 13,
+    "phy": 26,
+    "ovr": 39
+  }
+},
+{
+  "id": "2023-AKH23_041",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Abubakar Inalkaev",
+  "positions": [
+    "ЦП",
+    "ЦОП"
+  ],
+  "age": 17,
+  "number": 92,
+  "initials": "AI",
+  "stats": {
+    "pac": 38,
+    "sho": 42,
+    "pas": 41,
+    "dri": 50,
+    "def": 43,
+    "phy": 50,
+    "ovr": 44
+  }
+},
+{
+  "id": "2023-AKH23_042",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Suliman Murtazaev",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 18,
+  "number": 72,
+  "initials": "SM",
+  "stats": {
+    "pac": 35,
+    "sho": 10,
+    "pas": 13,
+    "dri": 13,
+    "def": 17,
+    "phy": 31,
+    "ovr": 20
+  }
+},
+{
+  "id": "2023-AKH23_043",
+  "clubCode": "АХМ",
+  "clubName": "РФК «Ахмат»",
+  "season": 2023,
+  "name": "Mikail Akhmedov",
+  "positions": [
+    "ПЗ",
+    "ЦЗ"
+  ],
+  "age": 18,
+  "number": 48,
+  "initials": "MA",
+  "stats": {
+    "pac": 38,
+    "sho": 17,
+    "pas": 25,
+    "dri": 28,
+    "def": 45,
+    "phy": 32,
+    "ovr": 31
+  }
+},
+{
+  "id": "2023-CSKA23_001",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Igor Akinfeev",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 36,
+  "number": 35,
+  "initials": "IA",
+  "stats": {
+    "pac": 48,
+    "sho": 32,
+    "pas": 43,
+    "dri": 43,
+    "def": 35,
+    "phy": 56,
+    "ovr": 43
+  }
+},
+{
+  "id": "2023-CSKA23_002",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Kirill Nababkin",
+  "positions": [
+    "ПЗ",
+    "ЛЗ",
+    "ЦЗ"
+  ],
+  "age": 35,
+  "number": 14,
+  "initials": "KN",
+  "stats": {
+    "pac": 43,
+    "sho": 44,
+    "pas": 46,
+    "dri": 41,
+    "def": 68,
+    "phy": 66,
+    "ovr": 51
+  }
+},
+{
+  "id": "2023-CSKA23_003",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Adolfo Gaich",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 23,
+  "number": 21,
+  "initials": "AG",
+  "stats": {
+    "pac": 56,
+    "sho": 53,
+    "pas": 52,
+    "dri": 63,
+    "def": 37,
+    "phy": 70,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-CSKA23_004",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Mário Fernandes",
+  "positions": [
+    "ПЗ",
+    "ПФЗ"
+  ],
+  "age": 31,
+  "number": 2,
+  "initials": "MF",
+  "stats": {
+    "pac": 73,
+    "sho": 52,
+    "pas": 63,
+    "dri": 69,
+    "def": 61,
+    "phy": 65,
+    "ovr": 64
+  }
+},
+{
+  "id": "2023-CSKA23_005",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Moisés",
+  "positions": [
+    "ЛЗ",
+    "ЛФЗ"
+  ],
+  "age": 27,
+  "number": 27,
+  "initials": "M",
+  "stats": {
+    "pac": 71,
+    "sho": 45,
+    "pas": 56,
+    "dri": 61,
+    "def": 58,
+    "phy": 66,
+    "ovr": 60
+  }
+},
+{
+  "id": "2023-CSKA23_006",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Willyan Rocha",
+  "positions": [
+    "ЦЗ",
+    "ЦОП"
+  ],
+  "age": 27,
+  "number": 4,
+  "initials": "WR",
+  "stats": {
+    "pac": 55,
+    "sho": 30,
+    "pas": 39,
+    "dri": 49,
+    "def": 78,
+    "phy": 76,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-CSKA23_007",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Bruno Fuchs",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 23,
+  "number": 3,
+  "initials": "BF",
+  "stats": {
+    "pac": 63,
+    "sho": 44,
+    "pas": 57,
+    "dri": 55,
+    "def": 64,
+    "phy": 65,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-CSKA23_008",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Georgy Schennikov",
+  "positions": [
+    "ЛЗ",
+    "ЛФЗ"
+  ],
+  "age": 31,
+  "number": 42,
+  "initials": "GS",
+  "stats": {
+    "pac": 75,
+    "sho": 44,
+    "pas": 54,
+    "dri": 54,
+    "def": 58,
+    "phy": 59,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-CSKA23_009",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Anton Zabolotny",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 31,
+  "number": 91,
+  "initials": "AZ",
+  "stats": {
+    "pac": 60,
+    "sho": 59,
+    "pas": 55,
+    "dri": 54,
+    "def": 47,
+    "phy": 70,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-CSKA23_010",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Fedor Chalov",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 24,
+  "number": 9,
+  "initials": "FC",
+  "stats": {
+    "pac": 75,
+    "sho": 59,
+    "pas": 68,
+    "dri": 65,
+    "def": 36,
+    "phy": 62,
+    "ovr": 61
+  }
+},
+{
+  "id": "2023-CSKA23_011",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Konstantin Kuchaev",
+  "positions": [
+    "ЦП",
+    "ПВ",
+    "ЦАП"
+  ],
+  "age": 24,
+  "number": 20,
+  "initials": "KK",
+  "stats": {
+    "pac": 65,
+    "sho": 56,
+    "pas": 61,
+    "dri": 65,
+    "def": 48,
+    "phy": 54,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-CSKA23_012",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Igor Diveev",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 22,
+  "number": 78,
+  "initials": "ID",
+  "stats": {
+    "pac": 63,
+    "sho": 51,
+    "pas": 38,
+    "dri": 38,
+    "def": 69,
+    "phy": 70,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-CSKA23_013",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Ivan Oblyakov",
+  "positions": [
+    "ЛЗ",
+    "ЛФЗ",
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 23,
+  "number": 10,
+  "initials": "IO",
+  "stats": {
+    "pac": 68,
+    "sho": 54,
+    "pas": 67,
+    "dri": 61,
+    "def": 45,
+    "phy": 55,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-CSKA23_014",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Vadim Karpov",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 19,
+  "number": 62,
+  "initials": "VK",
+  "stats": {
+    "pac": 0,
+    "sho": 0,
+    "pas": 45,
+    "dri": 28,
+    "def": 62,
+    "phy": 59,
+    "ovr": 49
+  }
+},
+{
+  "id": "2023-CSKA23_015",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Maxim Mukhin",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 20,
+  "number": 6,
+  "initials": "MM",
+  "stats": {
+    "pac": 66,
+    "sho": 38,
+    "pas": 49,
+    "dri": 66,
+    "def": 60,
+    "phy": 66,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-CSKA23_016",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Vladislav Torop",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 18,
+  "number": 49,
+  "initials": "VT",
+  "stats": {
+    "pac": 35,
+    "sho": 28,
+    "pas": 35,
+    "dri": 38,
+    "def": 53,
+    "phy": 46,
+    "ovr": 39
+  }
+},
+{
+  "id": "2023-CSKA23_017",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Vladislav Yakovlev",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 20,
+  "number": 46,
+  "initials": "VY",
+  "stats": {
+    "pac": 59,
+    "sho": 70,
+    "pas": 64,
+    "dri": 64,
+    "def": 0,
+    "phy": 50,
+    "ovr": 61
+  }
+},
+{
+  "id": "2023-CSKA23_018",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Dmitry Kaptilovich",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 19,
+  "number": 48,
+  "initials": "DK",
+  "stats": {
+    "pac": 0,
+    "sho": 0,
+    "pas": 58,
+    "dri": 35,
+    "def": 58,
+    "phy": 51,
+    "ovr": 51
+  }
+},
+{
+  "id": "2023-CSKA23_019",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Baqtiiar Zainutdinov",
+  "positions": [
+    "ЛЗ",
+    "ЛП",
+    "ЦП",
+    "ПВ"
+  ],
+  "age": 24,
+  "number": 19,
+  "initials": "BZ",
+  "stats": {
+    "pac": 58,
+    "sho": 62,
+    "pas": 56,
+    "dri": 66,
+    "def": 55,
+    "phy": 63,
+    "ovr": 60
+  }
+},
+{
+  "id": "2023-CSKA23_020",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Saša Zdjelar",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 27,
+  "number": 5,
+  "initials": "SZ",
+  "stats": {
+    "pac": 66,
+    "sho": 44,
+    "pas": 62,
+    "dri": 59,
+    "def": 67,
+    "phy": 71,
+    "ovr": 62
+  }
+},
+{
+  "id": "2023-CSKA23_021",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Milan Gajić",
+  "positions": [
+    "ПЗ",
+    "ПФЗ"
+  ],
+  "age": 26,
+  "number": 22,
+  "initials": "MG",
+  "stats": {
+    "pac": 68,
+    "sho": 53,
+    "pas": 56,
+    "dri": 55,
+    "def": 63,
+    "phy": 66,
+    "ovr": 60
+  }
+},
+{
+  "id": "2023-CSKA23_022",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Víctor Méndez",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 22,
+  "number": 88,
+  "initials": "VM",
+  "stats": {
+    "pac": 58,
+    "sho": 53,
+    "pas": 58,
+    "dri": 53,
+    "def": 68,
+    "phy": 60,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-CSKA23_023",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Jorge Carrascal",
+  "positions": [
+    "ЛП",
+    "ЦАП",
+    "ЦФД"
+  ],
+  "age": 24,
+  "number": 8,
+  "initials": "JC",
+  "stats": {
+    "pac": 65,
+    "sho": 68,
+    "pas": 69,
+    "dri": 76,
+    "def": 30,
+    "phy": 44,
+    "ovr": 59
+  }
+},
+{
+  "id": "2023-CSKA23_024",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Jesús Medina",
+  "positions": [
+    "ПВ",
+    "ЛП"
+  ],
+  "age": 25,
+  "number": 28,
+  "initials": "JM",
+  "stats": {
+    "pac": 66,
+    "sho": 60,
+    "pas": 63,
+    "dri": 69,
+    "def": 38,
+    "phy": 47,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-CSKA23_025",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Danila Bokov",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 19,
+  "number": 45,
+  "initials": "DB",
+  "stats": {
+    "pac": 0,
+    "sho": 0,
+    "pas": 0,
+    "dri": 0,
+    "def": 0,
+    "phy": 0,
+    "ovr": 0
+  }
+},
+{
+  "id": "2023-CSKA23_026",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Yegor Ushakov",
+  "positions": [
+    "ПП"
+  ],
+  "age": 19,
+  "number": 41,
+  "initials": "YU",
+  "stats": {
+    "pac": 0,
+    "sho": 10,
+    "pas": 46,
+    "dri": 68,
+    "def": 48,
+    "phy": 48,
+    "ovr": 44
+  }
+},
+{
+  "id": "2023-CSKA23_027",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Matvey Lukin",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 18,
+  "number": 90,
+  "initials": "ML",
+  "stats": {
+    "pac": 0,
+    "sho": 0,
+    "pas": 40,
+    "dri": 20,
+    "def": 57,
+    "phy": 53,
+    "ovr": 43
+  }
+},
+{
+  "id": "2023-CSKA23_028",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Denis Pershin",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 18,
+  "number": 83,
+  "initials": "DP",
+  "stats": {
+    "pac": 0,
+    "sho": 0,
+    "pas": 25,
+    "dri": 48,
+    "def": 52,
+    "phy": 54,
+    "ovr": 45
+  }
+},
+{
+  "id": "2023-CSKA23_029",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Vladimir Shaikhutdinov",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 18,
+  "number": 86,
+  "initials": "VS",
+  "stats": {
+    "pac": 0,
+    "sho": 0,
+    "pas": 0,
+    "dri": 0,
+    "def": 0,
+    "phy": 0,
+    "ovr": 0
+  }
+},
+{
+  "id": "2023-CSKA23_030",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Vadim Tsvetkov",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 18,
+  "number": 95,
+  "initials": "VT",
+  "stats": {
+    "pac": 0,
+    "sho": 0,
+    "pas": 0,
+    "dri": 0,
+    "def": 0,
+    "phy": 0,
+    "ovr": 0
+  }
+},
+{
+  "id": "2023-CSKA23_031",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Nikita Yermakov",
+  "positions": [
+    "ЦП"
+  ],
+  "age": 19,
+  "number": 72,
+  "initials": "NY",
+  "stats": {
+    "pac": 0,
+    "sho": 48,
+    "pas": 44,
+    "dri": 28,
+    "def": 25,
+    "phy": 50,
+    "ovr": 39
+  }
+},
+{
+  "id": "2023-CSKA23_032",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Alexey Slivin",
+  "positions": [
+    "ЦП"
+  ],
+  "age": 19,
+  "number": 96,
+  "initials": "AS",
+  "stats": {
+    "pac": 0,
+    "sho": 20,
+    "pas": 59,
+    "dri": 73,
+    "def": 53,
+    "phy": 43,
+    "ovr": 50
+  }
+},
+{
+  "id": "2023-CSKA23_033",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Yegor Noskov",
+  "positions": [
+    "ЛЗ"
+  ],
+  "age": 19,
+  "number": 92,
+  "initials": "YN",
+  "stats": {
+    "pac": 0,
+    "sho": 0,
+    "pas": 40,
+    "dri": 40,
+    "def": 38,
+    "phy": 30,
+    "ovr": 37
+  }
+},
+{
+  "id": "2023-CSKA23_034",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Yaroslav Arbuzov",
+  "positions": [
+    "ПП"
+  ],
+  "age": 18,
+  "number": 56,
+  "initials": "YA",
+  "stats": {
+    "pac": 0,
+    "sho": 30,
+    "pas": 48,
+    "dri": 35,
+    "def": 48,
+    "phy": 38,
+    "ovr": 40
+  }
+},
+{
+  "id": "2023-CSKA23_035",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Makar Pestov",
+  "positions": [
+    "ЛП"
+  ],
+  "age": 18,
+  "number": 58,
+  "initials": "MP",
+  "stats": {
+    "pac": 0,
+    "sho": 35,
+    "pas": 49,
+    "dri": 55,
+    "def": 25,
+    "phy": 45,
+    "ovr": 42
+  }
+},
+{
+  "id": "2023-CSKA23_036",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Mikhail Gainov",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 18,
+  "number": 81,
+  "initials": "MG",
+  "stats": {
+    "pac": 69,
+    "sho": 44,
+    "pas": 50,
+    "dri": 53,
+    "def": 0,
+    "phy": 43,
+    "ovr": 52
+  }
+},
+{
+  "id": "2023-CSKA23_037",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Daniil Gurchenko",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 18,
+  "number": 60,
+  "initials": "DG",
+  "stats": {
+    "pac": 64,
+    "sho": 41,
+    "pas": 51,
+    "dri": 48,
+    "def": 0,
+    "phy": 39,
+    "ovr": 49
+  }
+},
+{
+  "id": "2023-CSKA23_038",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Ilja Kazakov",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 17,
+  "number": 67,
+  "initials": "IK",
+  "stats": {
+    "pac": 0,
+    "sho": 0,
+    "pas": 35,
+    "dri": 30,
+    "def": 47,
+    "phy": 68,
+    "ovr": 45
+  }
+},
+{
+  "id": "2023-CSKA23_039",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Alexandr Grachev",
+  "positions": [
+    "ЦАП"
+  ],
+  "age": 17,
+  "number": 0,
+  "initials": "AG",
+  "stats": {
+    "pac": 33,
+    "sho": 65,
+    "pas": 60,
+    "dri": 41,
+    "def": 0,
+    "phy": 45,
+    "ovr": 49
+  }
+},
+{
+  "id": "2023-CSKA23_040",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Ruslan Ozdoev",
+  "positions": [
+    "ПП"
+  ],
+  "age": 19,
+  "number": 79,
+  "initials": "RO",
+  "stats": {
+    "pac": 0,
+    "sho": 40,
+    "pas": 34,
+    "dri": 33,
+    "def": 20,
+    "phy": 36,
+    "ovr": 33
+  }
+},
+{
+  "id": "2023-CSKA23_041",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Yegor Shevelev",
+  "positions": [
+    "ЦП"
+  ],
+  "age": 18,
+  "number": 68,
+  "initials": "YS",
+  "stats": {
+    "pac": 0,
+    "sho": 45,
+    "pas": 43,
+    "dri": 35,
+    "def": 53,
+    "phy": 48,
+    "ovr": 45
+  }
+},
+{
+  "id": "2023-CSKA23_042",
+  "clubCode": "ЦСКА",
+  "clubName": "ЦСКА",
+  "season": 2023,
+  "name": "Yaroslav Dol",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 18,
+  "number": 63,
+  "initials": "YD",
+  "stats": {
+    "pac": 49,
+    "sho": 43,
+    "pas": 19,
+    "dri": 25,
+    "def": 0,
+    "phy": 25,
+    "ovr": 32
+  }
+},
+{
+  "id": "2023-DIN23_001",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Anton Shunin",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 35,
+  "number": 1,
+  "initials": "AS",
+  "stats": {
+    "pac": 50,
+    "sho": 30,
+    "pas": 38,
+    "dri": 43,
+    "def": 42,
+    "phy": 58,
+    "ovr": 44
+  }
+},
+{
+  "id": "2023-DIN23_002",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Nicolas Moumi Ngamaleu",
+  "positions": [
+    "ПП",
+    "ПВ",
+    "ЛВ",
+    "ЦФД"
+  ],
+  "age": 27,
+  "number": 13,
+  "initials": "NM",
+  "stats": {
+    "pac": 68,
+    "sho": 68,
+    "pas": 62,
+    "dri": 71,
+    "def": 28,
+    "phy": 58,
+    "ovr": 59
+  }
+},
+{
+  "id": "2023-DIN23_003",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Eli Dasa",
+  "positions": [
+    "ПЗ",
+    "ПФЗ"
+  ],
+  "age": 29,
+  "number": 2,
+  "initials": "ED",
+  "stats": {
+    "pac": 69,
+    "sho": 38,
+    "pas": 59,
+    "dri": 62,
+    "def": 53,
+    "phy": 60,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-DIN23_004",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Mathias Normann",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 26,
+  "number": 17,
+  "initials": "MN",
+  "stats": {
+    "pac": 65,
+    "sho": 52,
+    "pas": 69,
+    "dri": 64,
+    "def": 53,
+    "phy": 62,
+    "ovr": 61
+  }
+},
+{
+  "id": "2023-DIN23_005",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Fedor Smolov",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 32,
+  "number": 10,
+  "initials": "FS",
+  "stats": {
+    "pac": 70,
+    "sho": 75,
+    "pas": 59,
+    "dri": 64,
+    "def": 35,
+    "phy": 64,
+    "ovr": 61
+  }
+},
+{
+  "id": "2023-DIN23_006",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Sergey Parshivlyuk",
+  "positions": [
+    "ПЗ",
+    "ПФЗ"
+  ],
+  "age": 33,
+  "number": 4,
+  "initials": "SP",
+  "stats": {
+    "pac": 62,
+    "sho": 48,
+    "pas": 58,
+    "dri": 56,
+    "def": 68,
+    "phy": 56,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-DIN23_007",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Igor Leschuk",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 26,
+  "number": 31,
+  "initials": "IL",
+  "stats": {
+    "pac": 42,
+    "sho": 24,
+    "pas": 31,
+    "dri": 39,
+    "def": 36,
+    "phy": 48,
+    "ovr": 37
+  }
+},
+{
+  "id": "2023-DIN23_008",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Daniil Fomin",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 25,
+  "number": 74,
+  "initials": "DF",
+  "stats": {
+    "pac": 61,
+    "sho": 58,
+    "pas": 56,
+    "dri": 59,
+    "def": 62,
+    "phy": 62,
+    "ovr": 60
+  }
+},
+{
+  "id": "2023-DIN23_009",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Dmitry Skopintsev",
+  "positions": [
+    "ЛЗ",
+    "ЛФЗ",
+    "ЛП"
+  ],
+  "age": 25,
+  "number": 7,
+  "initials": "DS",
+  "stats": {
+    "pac": 78,
+    "sho": 58,
+    "pas": 64,
+    "dri": 71,
+    "def": 45,
+    "phy": 56,
+    "ovr": 62
+  }
+},
+{
+  "id": "2023-DIN23_010",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Vyacheslav Grulev",
+  "positions": [
+    "ЛВ",
+    "ЦФД"
+  ],
+  "age": 23,
+  "number": 20,
+  "initials": "VG",
+  "stats": {
+    "pac": 65,
+    "sho": 62,
+    "pas": 45,
+    "dri": 62,
+    "def": 42,
+    "phy": 66,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-DIN23_011",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Denis Makarov",
+  "positions": [
+    "ПП",
+    "ПВ"
+  ],
+  "age": 24,
+  "number": 25,
+  "initials": "DM",
+  "stats": {
+    "pac": 72,
+    "sho": 68,
+    "pas": 49,
+    "dri": 56,
+    "def": 43,
+    "phy": 60,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-DIN23_012",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Konstantin Tyukavin",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 19,
+  "number": 70,
+  "initials": "KT",
+  "stats": {
+    "pac": 55,
+    "sho": 58,
+    "pas": 48,
+    "dri": 64,
+    "def": 38,
+    "phy": 57,
+    "ovr": 53
+  }
+},
+{
+  "id": "2023-DIN23_013",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Saba Sazonov",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 20,
+  "number": 15,
+  "initials": "SS",
+  "stats": {
+    "pac": 62,
+    "sho": 49,
+    "pas": 32,
+    "dri": 35,
+    "def": 62,
+    "phy": 70,
+    "ovr": 52
+  }
+},
+{
+  "id": "2023-DIN23_014",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Alexandr Kutitskiy",
+  "positions": [
+    "ЦЗ",
+    "ЦОП"
+  ],
+  "age": 20,
+  "number": 0,
+  "initials": "AK",
+  "stats": {
+    "pac": 56,
+    "sho": 40,
+    "pas": 35,
+    "dri": 30,
+    "def": 64,
+    "phy": 61,
+    "ovr": 48
+  }
+},
+{
+  "id": "2023-DIN23_015",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Daniil Lesovoy",
+  "positions": [
+    "ЛП",
+    "ЛВ"
+  ],
+  "age": 24,
+  "number": 11,
+  "initials": "DL",
+  "stats": {
+    "pac": 68,
+    "sho": 68,
+    "pas": 58,
+    "dri": 72,
+    "def": 35,
+    "phy": 52,
+    "ovr": 59
+  }
+},
+{
+  "id": "2023-DIN23_016",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Diego Laxalt",
+  "positions": [
+    "ЛЗ",
+    "ЛФЗ",
+    "ЛП"
+  ],
+  "age": 29,
+  "number": 93,
+  "initials": "DL",
+  "stats": {
+    "pac": 72,
+    "sho": 54,
+    "pas": 52,
+    "dri": 64,
+    "def": 62,
+    "phy": 57,
+    "ovr": 60
+  }
+},
+{
+  "id": "2023-DIN23_017",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Nicolás Marichal",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 21,
+  "number": 18,
+  "initials": "NM",
+  "stats": {
+    "pac": 62,
+    "sho": 58,
+    "pas": 56,
+    "dri": 56,
+    "def": 63,
+    "phy": 54,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-DIN23_018",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Roberto Fernández",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 22,
+  "number": 6,
+  "initials": "RF",
+  "stats": {
+    "pac": 64,
+    "sho": 38,
+    "pas": 51,
+    "dri": 48,
+    "def": 55,
+    "phy": 65,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-DIN23_019",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Arsen Zakharyan",
+  "positions": [
+    "ПВ",
+    "ЛВ",
+    "ЦАП"
+  ],
+  "age": 19,
+  "number": 47,
+  "initials": "AZ",
+  "stats": {
+    "pac": 62,
+    "sho": 74,
+    "pas": 70,
+    "dri": 64,
+    "def": 32,
+    "phy": 54,
+    "ovr": 59
+  }
+},
+{
+  "id": "2023-DIN23_020",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Luka Gagnidze",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 19,
+  "number": 34,
+  "initials": "LG",
+  "stats": {
+    "pac": 61,
+    "sho": 49,
+    "pas": 59,
+    "dri": 65,
+    "def": 47,
+    "phy": 43,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-DIN23_021",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Yan Tses'",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 18,
+  "number": 92,
+  "initials": "YT",
+  "stats": {
+    "pac": 0,
+    "sho": 0,
+    "pas": 22,
+    "dri": 20,
+    "def": 48,
+    "phy": 68,
+    "ovr": 40
+  }
+},
+{
+  "id": "2023-DIN23_022",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Ulvi Babaev",
+  "positions": [
+    "ПВ"
+  ],
+  "age": 18,
+  "number": 32,
+  "initials": "UB",
+  "stats": {
+    "pac": 54,
+    "sho": 45,
+    "pas": 35,
+    "dri": 49,
+    "def": 0,
+    "phy": 30,
+    "ovr": 43
+  }
+},
+{
+  "id": "2023-DIN23_023",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Denis Davydov",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 18,
+  "number": 85,
+  "initials": "DD",
+  "stats": {
+    "pac": 0,
+    "sho": 0,
+    "pas": 0,
+    "dri": 0,
+    "def": 0,
+    "phy": 0,
+    "ovr": 0
+  }
+},
+{
+  "id": "2023-DIN23_024",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Stanislav Bessmertny",
+  "positions": [
+    "ПЗ",
+    "ПП"
+  ],
+  "age": 18,
+  "number": 80,
+  "initials": "SB",
+  "stats": {
+    "pac": 0,
+    "sho": 0,
+    "pas": 58,
+    "dri": 48,
+    "def": 20,
+    "phy": 42,
+    "ovr": 42
+  }
+},
+{
+  "id": "2023-DIN23_025",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Alexey Teplyakov",
+  "positions": [
+    "ЦОП"
+  ],
+  "age": 18,
+  "number": 0,
+  "initials": "AT",
+  "stats": {
+    "pac": 0,
+    "sho": 60,
+    "pas": 39,
+    "dri": 28,
+    "def": 60,
+    "phy": 38,
+    "ovr": 45
+  }
+},
+{
+  "id": "2023-DIN23_026",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Alexandr Chupaev",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 17,
+  "number": 38,
+  "initials": "AC",
+  "stats": {
+    "pac": 48,
+    "sho": 52,
+    "pas": 31,
+    "dri": 45,
+    "def": 0,
+    "phy": 36,
+    "ovr": 42
+  }
+},
+{
+  "id": "2023-DIN23_027",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Stepan Obryvkov",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 18,
+  "number": 63,
+  "initials": "SO",
+  "stats": {
+    "pac": 62,
+    "sho": 36,
+    "pas": 25,
+    "dri": 35,
+    "def": 0,
+    "phy": 24,
+    "ovr": 36
+  }
+},
+{
+  "id": "2023-DIN23_028",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Leon Zaidenzal",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 17,
+  "number": 56,
+  "initials": "LZ",
+  "stats": {
+    "pac": 0,
+    "sho": 0,
+    "pas": 45,
+    "dri": 40,
+    "def": 52,
+    "phy": 30,
+    "ovr": 42
+  }
+},
+{
+  "id": "2023-DIN23_029",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Evgeny Ibragimov",
+  "positions": [
+    "ЛЗ"
+  ],
+  "age": 18,
+  "number": 58,
+  "initials": "EI",
+  "stats": {
+    "pac": 0,
+    "sho": 0,
+    "pas": 22,
+    "dri": 38,
+    "def": 49,
+    "phy": 32,
+    "ovr": 35
+  }
+},
+{
+  "id": "2023-DIN23_030",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Oleg Donskov",
+  "positions": [
+    "ЦОП"
+  ],
+  "age": 18,
+  "number": 97,
+  "initials": "OD",
+  "stats": {
+    "pac": 0,
+    "sho": 48,
+    "pas": 36,
+    "dri": 55,
+    "def": 38,
+    "phy": 51,
+    "ovr": 46
+  }
+},
+{
+  "id": "2023-DIN23_031",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Matvey Kozhin",
+  "positions": [
+    "ЛВ"
+  ],
+  "age": 17,
+  "number": 65,
+  "initials": "MK",
+  "stats": {
+    "pac": 68,
+    "sho": 50,
+    "pas": 52,
+    "dri": 55,
+    "def": 0,
+    "phy": 15,
+    "ovr": 48
+  }
+},
+{
+  "id": "2023-DIN23_032",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Roman Yermolin",
+  "positions": [
+    "ЦП"
+  ],
+  "age": 18,
+  "number": 72,
+  "initials": "RY",
+  "stats": {
+    "pac": 0,
+    "sho": 65,
+    "pas": 39,
+    "dri": 32,
+    "def": 55,
+    "phy": 36,
+    "ovr": 45
+  }
+},
+{
+  "id": "2023-DIN23_033",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Artur Kasabov",
+  "positions": [
+    "ЦОП"
+  ],
+  "age": 18,
+  "number": 73,
+  "initials": "AK",
+  "stats": {
+    "pac": 0,
+    "sho": 20,
+    "pas": 49,
+    "dri": 62,
+    "def": 70,
+    "phy": 35,
+    "ovr": 47
+  }
+},
+{
+  "id": "2023-DIN23_034",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Semyon Loktionov",
+  "positions": [
+    "ЦАП"
+  ],
+  "age": 18,
+  "number": 68,
+  "initials": "SL",
+  "stats": {
+    "pac": 72,
+    "sho": 22,
+    "pas": 19,
+    "dri": 30,
+    "def": 0,
+    "phy": 36,
+    "ovr": 36
+  }
+},
+{
+  "id": "2023-DIN23_035",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Alexandr Vyaznikov",
+  "positions": [
+    "ЛП"
+  ],
+  "age": 18,
+  "number": 98,
+  "initials": "AV",
+  "stats": {
+    "pac": 0,
+    "sho": 48,
+    "pas": 26,
+    "dri": 50,
+    "def": 20,
+    "phy": 36,
+    "ovr": 36
+  }
+},
+{
+  "id": "2023-DIN23_036",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Richard Golovachev",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 17,
+  "number": 86,
+  "initials": "RG",
+  "stats": {
+    "pac": 0,
+    "sho": 0,
+    "pas": 20,
+    "dri": 12,
+    "def": 53,
+    "phy": 29,
+    "ovr": 28
+  }
+},
+{
+  "id": "2023-DIN23_037",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Rodion Podguzov",
+  "positions": [
+    "ПП"
+  ],
+  "age": 18,
+  "number": 83,
+  "initials": "RP",
+  "stats": {
+    "pac": 0,
+    "sho": 25,
+    "pas": 38,
+    "dri": 60,
+    "def": 15,
+    "phy": 35,
+    "ovr": 35
+  }
+},
+{
+  "id": "2023-DIN23_038",
+  "clubCode": "ДИН",
+  "clubName": "ФК «Динамо» Москва",
+  "season": 2023,
+  "name": "Ibragim Umarov",
+  "positions": [
+    "ЛВ"
+  ],
+  "age": 18,
+  "number": 39,
+  "initials": "IU",
+  "stats": {
+    "pac": 36,
+    "sho": 38,
+    "pas": 30,
+    "dri": 44,
+    "def": 0,
+    "phy": 26,
+    "ovr": 35
+  }
+},
+{
+  "id": "2023-ZEN23_001",
+  "clubCode": "ЗЕН",
+  "clubName": "ФК «Зенит»",
+  "season": 2023,
+  "name": "Mikhail Kerzhakov",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 35,
+  "number": 41,
+  "initials": "MK",
+  "stats": {
+    "pac": 59,
+    "sho": 10,
+    "pas": 38,
+    "dri": 33,
+    "def": 28,
+    "phy": 59,
+    "ovr": 38
+  }
+},
+{
+  "id": "2023-ZEN23_002",
+  "clubCode": "ЗЕН",
+  "clubName": "ФК «Зенит»",
+  "season": 2023,
+  "name": "Douglas Santos",
+  "positions": [
+    "ЛЗ",
+    "ЦЗ",
+    "ЛФЗ",
+    "ЦОП"
+  ],
+  "age": 28,
+  "number": 3,
+  "initials": "DS",
+  "stats": {
+    "pac": 63,
+    "sho": 72,
+    "pas": 70,
+    "dri": 69,
+    "def": 63,
+    "phy": 59,
+    "ovr": 66
+  }
+},
+{
+  "id": "2023-ZEN23_003",
+  "clubCode": "ЗЕН",
+  "clubName": "ФК «Зенит»",
+  "season": 2023,
+  "name": "Malcom",
+  "positions": [
+    "ПП",
+    "ПВ",
+    "ЛВ",
+    "ЦАП"
+  ],
+  "age": 25,
+  "number": 10,
+  "initials": "M",
+  "stats": {
+    "pac": 75,
+    "sho": 76,
+    "pas": 74,
+    "dri": 77,
+    "def": 28,
+    "phy": 47,
+    "ovr": 63
+  }
+},
+{
+  "id": "2023-ZEN23_004",
+  "clubCode": "ЗЕН",
+  "clubName": "ФК «Зенит»",
+  "season": 2023,
+  "name": "Claudinho",
+  "positions": [
+    "ЦП",
+    "ПВ",
+    "ЛВ",
+    "ЦАП"
+  ],
+  "age": 25,
+  "number": 11,
+  "initials": "C",
+  "stats": {
+    "pac": 76,
+    "sho": 69,
+    "pas": 67,
+    "dri": 77,
+    "def": 44,
+    "phy": 48,
+    "ovr": 64
+  }
+},
+{
+  "id": "2023-ZEN23_005",
+  "clubCode": "ЗЕН",
+  "clubName": "ФК «Зенит»",
+  "season": 2023,
+  "name": "Ivan",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 24,
+  "number": 1,
+  "initials": "I",
+  "stats": {
+    "pac": 54,
+    "sho": 18,
+    "pas": 34,
+    "dri": 48,
+    "def": 28,
+    "phy": 59,
+    "ovr": 40
+  }
+},
+{
+  "id": "2023-ZEN23_006",
+  "clubCode": "ЗЕН",
+  "clubName": "ФК «Зенит»",
+  "season": 2023,
+  "name": "Rodrigão",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 26,
+  "number": 55,
+  "initials": "R",
+  "stats": {
+    "pac": 54,
+    "sho": 35,
+    "pas": 42,
+    "dri": 46,
+    "def": 67,
+    "phy": 65,
+    "ovr": 52
+  }
+},
+{
+  "id": "2023-ZEN23_007",
+  "clubCode": "ЗЕН",
+  "clubName": "ФК «Зенит»",
+  "season": 2023,
+  "name": "Gustavo Mantuan",
+  "positions": [
+    "ПП",
+    "ПВ",
+    "ЛВ",
+    "ЦАП"
+  ],
+  "age": 20,
+  "number": 31,
+  "initials": "GM",
+  "stats": {
+    "pac": 63,
+    "sho": 63,
+    "pas": 50,
+    "dri": 69,
+    "def": 39,
+    "phy": 53,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-ZEN23_008",
+  "clubCode": "ЗЕН",
+  "clubName": "ФК «Зенит»",
+  "season": 2023,
+  "name": "Dejan Lovren",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 32,
+  "number": 6,
+  "initials": "DL",
+  "stats": {
+    "pac": 60,
+    "sho": 53,
+    "pas": 56,
+    "dri": 56,
+    "def": 73,
+    "phy": 71,
+    "ovr": 62
+  }
+},
+{
+  "id": "2023-ZEN23_009",
+  "clubCode": "ЗЕН",
+  "clubName": "ФК «Зенит»",
+  "season": 2023,
+  "name": "Vyacheslav Karavaev",
+  "positions": [
+    "ПЗ"
+  ],
+  "age": 27,
+  "number": 15,
+  "initials": "VK",
+  "stats": {
+    "pac": 74,
+    "sho": 53,
+    "pas": 59,
+    "dri": 60,
+    "def": 62,
+    "phy": 61,
+    "ovr": 62
+  }
+},
+{
+  "id": "2023-ZEN23_010",
+  "clubCode": "ЗЕН",
+  "clubName": "ФК «Зенит»",
+  "season": 2023,
+  "name": "Alexey Sutormin",
+  "positions": [
+    "ПЗ",
+    "ПФЗ",
+    "ПП",
+    "ПВ"
+  ],
+  "age": 28,
+  "number": 19,
+  "initials": "AS",
+  "stats": {
+    "pac": 69,
+    "sho": 59,
+    "pas": 57,
+    "dri": 59,
+    "def": 48,
+    "phy": 59,
+    "ovr": 59
+  }
+},
+{
+  "id": "2023-ZEN23_011",
+  "clubCode": "ЗЕН",
+  "clubName": "ФК «Зенит»",
+  "season": 2023,
+  "name": "Dmitry Chistyakov",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 28,
+  "number": 2,
+  "initials": "DC",
+  "stats": {
+    "pac": 61,
+    "sho": 33,
+    "pas": 39,
+    "dri": 50,
+    "def": 70,
+    "phy": 59,
+    "ovr": 52
+  }
+},
+{
+  "id": "2023-ZEN23_012",
+  "clubCode": "ЗЕН",
+  "clubName": "ФК «Зенит»",
+  "season": 2023,
+  "name": "Daler Kuzyaev",
+  "positions": [
+    "ЦОП",
+    "ПП",
+    "ЦП"
+  ],
+  "age": 29,
+  "number": 14,
+  "initials": "DK",
+  "stats": {
+    "pac": 70,
+    "sho": 59,
+    "pas": 64,
+    "dri": 60,
+    "def": 60,
+    "phy": 57,
+    "ovr": 62
+  }
+},
+{
+  "id": "2023-ZEN23_013",
+  "clubCode": "ЗЕН",
+  "clubName": "ФК «Зенит»",
+  "season": 2023,
+  "name": "Zelimkhan Bakaev",
+  "positions": [
+    "ПВ",
+    "ЛВ",
+    "ЦАП"
+  ],
+  "age": 25,
+  "number": 7,
+  "initials": "ZB",
+  "stats": {
+    "pac": 75,
+    "sho": 63,
+    "pas": 61,
+    "dri": 68,
+    "def": 35,
+    "phy": 54,
+    "ovr": 59
+  }
+},
+{
+  "id": "2023-ZEN23_014",
+  "clubCode": "ЗЕН",
+  "clubName": "ФК «Зенит»",
+  "season": 2023,
+  "name": "Ivan Sergeev",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 27,
+  "number": 33,
+  "initials": "IS",
+  "stats": {
+    "pac": 63,
+    "sho": 68,
+    "pas": 51,
+    "dri": 61,
+    "def": 32,
+    "phy": 62,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-ZEN23_015",
+  "clubCode": "ЗЕН",
+  "clubName": "ФК «Зенит»",
+  "season": 2023,
+  "name": "Andrey Mostovoy",
+  "positions": [
+    "ПП",
+    "ЛП",
+    "ПВ",
+    "ЛВ"
+  ],
+  "age": 24,
+  "number": 17,
+  "initials": "AM",
+  "stats": {
+    "pac": 68,
+    "sho": 72,
+    "pas": 64,
+    "dri": 68,
+    "def": 42,
+    "phy": 56,
+    "ovr": 62
+  }
+},
+{
+  "id": "2023-ZEN23_016",
+  "clubCode": "ЗЕН",
+  "clubName": "ФК «Зенит»",
+  "season": 2023,
+  "name": "Danil Krugovoy",
+  "positions": [
+    "ЛЗ",
+    "ЛФЗ"
+  ],
+  "age": 24,
+  "number": 4,
+  "initials": "DK",
+  "stats": {
+    "pac": 65,
+    "sho": 69,
+    "pas": 64,
+    "dri": 63,
+    "def": 63,
+    "phy": 57,
+    "ovr": 64
+  }
+},
+{
+  "id": "2023-ZEN23_017",
+  "clubCode": "ЗЕН",
+  "clubName": "ФК «Зенит»",
+  "season": 2023,
+  "name": "Arsen Adamov",
+  "positions": [
+    "ПЗ",
+    "ЛЗ",
+    "ЦЗ"
+  ],
+  "age": 22,
+  "number": 23,
+  "initials": "AA",
+  "stats": {
+    "pac": 65,
+    "sho": 47,
+    "pas": 50,
+    "dri": 59,
+    "def": 68,
+    "phy": 59,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-ZEN23_018",
+  "clubCode": "ЗЕН",
+  "clubName": "ФК «Зенит»",
+  "season": 2023,
+  "name": "Alexandr Yerokhin",
+  "positions": [
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 32,
+  "number": 21,
+  "initials": "AY",
+  "stats": {
+    "pac": 56,
+    "sho": 59,
+    "pas": 57,
+    "dri": 57,
+    "def": 58,
+    "phy": 63,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-ZEN23_019",
+  "clubCode": "ЗЕН",
+  "clubName": "ФК «Зенит»",
+  "season": 2023,
+  "name": "Nüraly Älip",
+  "positions": [
+    "ЛЗ",
+    "ЦЗ",
+    "ЦОП"
+  ],
+  "age": 22,
+  "number": 28,
+  "initials": "NÄ",
+  "stats": {
+    "pac": 60,
+    "sho": 39,
+    "pas": 38,
+    "dri": 40,
+    "def": 63,
+    "phy": 62,
+    "ovr": 50
+  }
+},
+{
+  "id": "2023-ZEN23_020",
+  "clubCode": "ЗЕН",
+  "clubName": "ФК «Зенит»",
+  "season": 2023,
+  "name": "Wílmar Barrios",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 28,
+  "number": 5,
+  "initials": "WB",
+  "stats": {
+    "pac": 69,
+    "sho": 44,
+    "pas": 52,
+    "dri": 63,
+    "def": 80,
+    "phy": 68,
+    "ovr": 63
+  }
+},
+{
+  "id": "2023-ZEN23_021",
+  "clubCode": "ЗЕН",
+  "clubName": "ФК «Зенит»",
+  "season": 2023,
+  "name": "Mateo Cassierra",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 25,
+  "number": 30,
+  "initials": "MC",
+  "stats": {
+    "pac": 68,
+    "sho": 67,
+    "pas": 55,
+    "dri": 64,
+    "def": 22,
+    "phy": 59,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-ZEN23_022",
+  "clubCode": "ЗЕН",
+  "clubName": "ФК «Зенит»",
+  "season": 2023,
+  "name": "Wendel",
+  "positions": [
+    "ЦОП",
+    "ЛП",
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 24,
+  "number": 8,
+  "initials": "W",
+  "stats": {
+    "pac": 63,
+    "sho": 68,
+    "pas": 73,
+    "dri": 68,
+    "def": 58,
+    "phy": 60,
+    "ovr": 65
+  }
+},
+{
+  "id": "2023-KRA23_001",
+  "clubCode": "КРА",
+  "clubName": "ФК «Краснодар»",
+  "season": 2023,
+  "name": "Olakunle Olusegun",
+  "positions": [
+    "ПВ",
+    "ЛВ",
+    "ЦФД"
+  ],
+  "age": 20,
+  "number": 40,
+  "initials": "OO",
+  "stats": {
+    "pac": 89,
+    "sho": 52,
+    "pas": 45,
+    "dri": 68,
+    "def": 27,
+    "phy": 39,
+    "ovr": 53
+  }
+},
+{
+  "id": "2023-KRA23_002",
+  "clubCode": "КРА",
+  "clubName": "ФК «Краснодар»",
+  "season": 2023,
+  "name": "Alexey Ionov",
+  "positions": [
+    "ПВ",
+    "ЛВ"
+  ],
+  "age": 33,
+  "number": 11,
+  "initials": "AI",
+  "stats": {
+    "pac": 70,
+    "sho": 68,
+    "pas": 60,
+    "dri": 59,
+    "def": 35,
+    "phy": 52,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-KRA23_003",
+  "clubCode": "КРА",
+  "clubName": "ФК «Краснодар»",
+  "season": 2023,
+  "name": "Sergey Petrov",
+  "positions": [
+    "ПЗ"
+  ],
+  "age": 31,
+  "number": 98,
+  "initials": "SP",
+  "stats": {
+    "pac": 61,
+    "sho": 38,
+    "pas": 52,
+    "dri": 58,
+    "def": 60,
+    "phy": 52,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-KRA23_004",
+  "clubCode": "КРА",
+  "clubName": "ФК «Краснодар»",
+  "season": 2023,
+  "name": "Yegor Sorokin",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 26,
+  "number": 80,
+  "initials": "YS",
+  "stats": {
+    "pac": 55,
+    "sho": 48,
+    "pas": 43,
+    "dri": 43,
+    "def": 62,
+    "phy": 65,
+    "ovr": 53
+  }
+},
+{
+  "id": "2023-KRA23_005",
+  "clubCode": "КРА",
+  "clubName": "ФК «Краснодар»",
+  "season": 2023,
+  "name": "Ilzat Akhmetov",
+  "positions": [
+    "ЦОП",
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 24,
+  "number": 7,
+  "initials": "IA",
+  "stats": {
+    "pac": 63,
+    "sho": 60,
+    "pas": 64,
+    "dri": 71,
+    "def": 53,
+    "phy": 49,
+    "ovr": 60
+  }
+},
+{
+  "id": "2023-KRA23_006",
+  "clubCode": "КРА",
+  "clubName": "ФК «Краснодар»",
+  "season": 2023,
+  "name": "Matvey Safonov",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 23,
+  "number": 39,
+  "initials": "MS",
+  "stats": {
+    "pac": 53,
+    "sho": 23,
+    "pas": 39,
+    "dri": 47,
+    "def": 31,
+    "phy": 56,
+    "ovr": 42
+  }
+},
+{
+  "id": "2023-KRA23_007",
+  "clubCode": "КРА",
+  "clubName": "ФК «Краснодар»",
+  "season": 2023,
+  "name": "Sergey Borodin",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 23,
+  "number": 44,
+  "initials": "SB",
+  "stats": {
+    "pac": 60,
+    "sho": 49,
+    "pas": 54,
+    "dri": 54,
+    "def": 57,
+    "phy": 65,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-KRA23_008",
+  "clubCode": "КРА",
+  "clubName": "ФК «Краснодар»",
+  "season": 2023,
+  "name": "Vyacheslav Yakimov",
+  "positions": [
+    "ЦОП"
+  ],
+  "age": 24,
+  "number": 23,
+  "initials": "VY",
+  "stats": {
+    "pac": 71,
+    "sho": 40,
+    "pas": 52,
+    "dri": 62,
+    "def": 55,
+    "phy": 47,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-KRA23_009",
+  "clubCode": "КРА",
+  "clubName": "ФК «Краснодар»",
+  "season": 2023,
+  "name": "Alex Matsukatov",
+  "positions": [
+    "ЦП"
+  ],
+  "age": 23,
+  "number": 15,
+  "initials": "AM",
+  "stats": {
+    "pac": 50,
+    "sho": 57,
+    "pas": 49,
+    "dri": 65,
+    "def": 55,
+    "phy": 52,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-KRA23_010",
+  "clubCode": "КРА",
+  "clubName": "ФК «Краснодар»",
+  "season": 2023,
+  "name": "Maxim Kutovoy",
+  "positions": [
+    "ПВ",
+    "ЦФД"
+  ],
+  "age": 20,
+  "number": 67,
+  "initials": "MK",
+  "stats": {
+    "pac": 50,
+    "sho": 71,
+    "pas": 54,
+    "dri": 59,
+    "def": 15,
+    "phy": 59,
+    "ovr": 51
+  }
+},
+{
+  "id": "2023-KRA23_011",
+  "clubCode": "КРА",
+  "clubName": "ФК «Краснодар»",
+  "season": 2023,
+  "name": "Alexandr Chernikov",
+  "positions": [
+    "ЦОП"
+  ],
+  "age": 22,
+  "number": 8,
+  "initials": "AC",
+  "stats": {
+    "pac": 61,
+    "sho": 48,
+    "pas": 51,
+    "dri": 55,
+    "def": 66,
+    "phy": 71,
+    "ovr": 59
+  }
+},
+{
+  "id": "2023-KRA23_012",
+  "clubCode": "КРА",
+  "clubName": "ФК «Краснодар»",
+  "season": 2023,
+  "name": "Oleg Isaenko",
+  "positions": [
+    "ПЗ",
+    "ЛЗ"
+  ],
+  "age": 22,
+  "number": 0,
+  "initials": "OI",
+  "stats": {
+    "pac": 70,
+    "sho": 33,
+    "pas": 41,
+    "dri": 48,
+    "def": 50,
+    "phy": 37,
+    "ovr": 47
+  }
+},
+{
+  "id": "2023-KRA23_013",
+  "clubCode": "КРА",
+  "clubName": "ФК «Краснодар»",
+  "season": 2023,
+  "name": "Eduard Spertsyan",
+  "positions": [
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 22,
+  "number": 10,
+  "initials": "ES",
+  "stats": {
+    "pac": 64,
+    "sho": 63,
+    "pas": 66,
+    "dri": 67,
+    "def": 49,
+    "phy": 47,
+    "ovr": 59
+  }
+},
+{
+  "id": "2023-KRA23_014",
+  "clubCode": "КРА",
+  "clubName": "ФК «Краснодар»",
+  "season": 2023,
+  "name": "Vyacheslav Litvinov",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 21,
+  "number": 84,
+  "initials": "VL",
+  "stats": {
+    "pac": 75,
+    "sho": 21,
+    "pas": 42,
+    "dri": 43,
+    "def": 62,
+    "phy": 49,
+    "ovr": 49
+  }
+},
+{
+  "id": "2023-KRA23_015",
+  "clubCode": "КРА",
+  "clubName": "ФК «Краснодар»",
+  "season": 2023,
+  "name": "Sergey Volkov",
+  "positions": [
+    "ПЗ"
+  ],
+  "age": 19,
+  "number": 82,
+  "initials": "SV",
+  "stats": {
+    "pac": 59,
+    "sho": 45,
+    "pas": 44,
+    "dri": 45,
+    "def": 58,
+    "phy": 59,
+    "ovr": 52
+  }
+},
+{
+  "id": "2023-KRA23_016",
+  "clubCode": "КРА",
+  "clubName": "ФК «Краснодар»",
+  "season": 2023,
+  "name": "Stanislav Agkatsev",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 20,
+  "number": 1,
+  "initials": "SA",
+  "stats": {
+    "pac": 46,
+    "sho": 15,
+    "pas": 38,
+    "dri": 25,
+    "def": 30,
+    "phy": 58,
+    "ovr": 35
+  }
+},
+{
+  "id": "2023-KRA23_017",
+  "clubCode": "КРА",
+  "clubName": "ФК «Краснодар»",
+  "season": 2023,
+  "name": "Irakly Manelov",
+  "positions": [
+    "ПВ"
+  ],
+  "age": 19,
+  "number": 69,
+  "initials": "IM",
+  "stats": {
+    "pac": 65,
+    "sho": 41,
+    "pas": 48,
+    "dri": 66,
+    "def": 23,
+    "phy": 33,
+    "ovr": 46
+  }
+},
+{
+  "id": "2023-KRA23_018",
+  "clubCode": "КРА",
+  "clubName": "ФК «Краснодар»",
+  "season": 2023,
+  "name": "Mihajlo Banjac",
+  "positions": [
+    "ЦОП",
+    "ПП",
+    "ЦП",
+    "ПВ"
+  ],
+  "age": 23,
+  "number": 14,
+  "initials": "MB",
+  "stats": {
+    "pac": 64,
+    "sho": 56,
+    "pas": 64,
+    "dri": 63,
+    "def": 53,
+    "phy": 49,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-KRA23_019",
+  "clubCode": "КРА",
+  "clubName": "ФК «Краснодар»",
+  "season": 2023,
+  "name": "Jhon Córdoba",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 29,
+  "number": 9,
+  "initials": "JC",
+  "stats": {
+    "pac": 73,
+    "sho": 58,
+    "pas": 53,
+    "dri": 59,
+    "def": 33,
+    "phy": 86,
+    "ovr": 60
+  }
+},
+{
+  "id": "2023-KRA23_020",
+  "clubCode": "КРА",
+  "clubName": "ФК «Краснодар»",
+  "season": 2023,
+  "name": "Kaio Fernando",
+  "positions": [
+    "ЦЗ",
+    "ЦОП"
+  ],
+  "age": 26,
+  "number": 31,
+  "initials": "KF",
+  "stats": {
+    "pac": 66,
+    "sho": 49,
+    "pas": 56,
+    "dri": 64,
+    "def": 65,
+    "phy": 66,
+    "ovr": 61
+  }
+},
+{
+  "id": "2023-KRA23_021",
+  "clubCode": "КРА",
+  "clubName": "ФК «Краснодар»",
+  "season": 2023,
+  "name": "Batxi",
+  "positions": [
+    "ПВ",
+    "ЛВ"
+  ],
+  "age": 24,
+  "number": 19,
+  "initials": "B",
+  "stats": {
+    "pac": 78,
+    "sho": 49,
+    "pas": 62,
+    "dri": 63,
+    "def": 34,
+    "phy": 53,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-KRA23_022",
+  "clubCode": "КРА",
+  "clubName": "ФК «Краснодар»",
+  "season": 2023,
+  "name": "Kevin Pina",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 25,
+  "number": 16,
+  "initials": "KP",
+  "stats": {
+    "pac": 61,
+    "sho": 38,
+    "pas": 56,
+    "dri": 59,
+    "def": 57,
+    "phy": 66,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-KRA23_023",
+  "clubCode": "КРА",
+  "clubName": "ФК «Краснодар»",
+  "season": 2023,
+  "name": "Cristian Ramírez",
+  "positions": [
+    "ПЗ",
+    "ЛЗ",
+    "ЛФЗ"
+  ],
+  "age": 27,
+  "number": 6,
+  "initials": "CR",
+  "stats": {
+    "pac": 74,
+    "sho": 50,
+    "pas": 59,
+    "dri": 66,
+    "def": 55,
+    "phy": 56,
+    "ovr": 60
+  }
+},
+{
+  "id": "2023-KRA23_024",
+  "clubCode": "КРА",
+  "clubName": "ФК «Краснодар»",
+  "season": 2023,
+  "name": "Nikita Krivtsov",
+  "positions": [
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 19,
+  "number": 88,
+  "initials": "NK",
+  "stats": {
+    "pac": 59,
+    "sho": 46,
+    "pas": 57,
+    "dri": 60,
+    "def": 55,
+    "phy": 56,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-KRY23_001",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Evgeny Frolov",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 34,
+  "number": 39,
+  "initials": "EF",
+  "stats": {
+    "pac": 45,
+    "sho": 19,
+    "pas": 32,
+    "dri": 36,
+    "def": 28,
+    "phy": 60,
+    "ovr": 37
+  }
+},
+{
+  "id": "2023-KRY23_002",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Aleksandar Ćirković",
+  "positions": [
+    "ЛП",
+    "ЛВ",
+    "ЦФД"
+  ],
+  "age": 20,
+  "number": 30,
+  "initials": "AĆ",
+  "stats": {
+    "pac": 60,
+    "sho": 43,
+    "pas": 41,
+    "dri": 59,
+    "def": 43,
+    "phy": 51,
+    "ovr": 50
+  }
+},
+{
+  "id": "2023-KRY23_003",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Fernando Costanza",
+  "positions": [
+    "ПЗ",
+    "ПФЗ",
+    "ЦОП"
+  ],
+  "age": 23,
+  "number": 22,
+  "initials": "FC",
+  "stats": {
+    "pac": 63,
+    "sho": 52,
+    "pas": 60,
+    "dri": 63,
+    "def": 54,
+    "phy": 57,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-KRY23_004",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Mateo Barac",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 27,
+  "number": 44,
+  "initials": "MB",
+  "stats": {
+    "pac": 53,
+    "sho": 38,
+    "pas": 46,
+    "dri": 38,
+    "def": 66,
+    "phy": 70,
+    "ovr": 52
+  }
+},
+{
+  "id": "2023-KRY23_005",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Glenn Bijl",
+  "positions": [
+    "ПЗ",
+    "ПФЗ",
+    "ЦОП",
+    "ПП"
+  ],
+  "age": 26,
+  "number": 23,
+  "initials": "GB",
+  "stats": {
+    "pac": 55,
+    "sho": 56,
+    "pas": 60,
+    "dri": 58,
+    "def": 60,
+    "phy": 65,
+    "ovr": 59
+  }
+},
+{
+  "id": "2023-KRY23_006",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Georgy Zotov",
+  "positions": [
+    "ПЗ",
+    "ЛЗ",
+    "ПФЗ",
+    "ЛФЗ"
+  ],
+  "age": 32,
+  "number": 31,
+  "initials": "GZ",
+  "stats": {
+    "pac": 68,
+    "sho": 44,
+    "pas": 58,
+    "dri": 56,
+    "def": 55,
+    "phy": 56,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-KRY23_007",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Denis Yakuba",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 26,
+  "number": 10,
+  "initials": "DY",
+  "stats": {
+    "pac": 55,
+    "sho": 45,
+    "pas": 50,
+    "dri": 61,
+    "def": 58,
+    "phy": 52,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-KRY23_008",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Roman Yezhov",
+  "positions": [
+    "ПП",
+    "ПВ"
+  ],
+  "age": 24,
+  "number": 11,
+  "initials": "RY",
+  "stats": {
+    "pac": 65,
+    "sho": 60,
+    "pas": 58,
+    "dri": 66,
+    "def": 37,
+    "phy": 62,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-KRY23_009",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Alexandr Soldatenkov",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 25,
+  "number": 4,
+  "initials": "AS",
+  "stats": {
+    "pac": 61,
+    "sho": 30,
+    "pas": 47,
+    "dri": 45,
+    "def": 58,
+    "phy": 61,
+    "ovr": 50
+  }
+},
+{
+  "id": "2023-KRY23_010",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Ivan Lomaev",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 23,
+  "number": 1,
+  "initials": "IL",
+  "stats": {
+    "pac": 50,
+    "sho": 18,
+    "pas": 41,
+    "dri": 39,
+    "def": 31,
+    "phy": 47,
+    "ovr": 38
+  }
+},
+{
+  "id": "2023-KRY23_011",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Ilja Gaponov",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 24,
+  "number": 95,
+  "initials": "IG",
+  "stats": {
+    "pac": 63,
+    "sho": 53,
+    "pas": 52,
+    "dri": 54,
+    "def": 61,
+    "phy": 62,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-KRY23_012",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Maxim Vityugov",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 24,
+  "number": 8,
+  "initials": "MV",
+  "stats": {
+    "pac": 63,
+    "sho": 37,
+    "pas": 53,
+    "dri": 55,
+    "def": 48,
+    "phy": 54,
+    "ovr": 52
+  }
+},
+{
+  "id": "2023-KRY23_013",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Roman Yevgenjev",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 23,
+  "number": 24,
+  "initials": "RY",
+  "stats": {
+    "pac": 53,
+    "sho": 46,
+    "pas": 49,
+    "dri": 37,
+    "def": 77,
+    "phy": 71,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-KRY23_014",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Maxim Glushenkov",
+  "positions": [
+    "ПВ",
+    "ЦАП",
+    "ЦФД"
+  ],
+  "age": 22,
+  "number": 15,
+  "initials": "MG",
+  "stats": {
+    "pac": 69,
+    "sho": 63,
+    "pas": 57,
+    "dri": 66,
+    "def": 36,
+    "phy": 54,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-KRY23_015",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Yury Gorshkov",
+  "positions": [
+    "ЛЗ"
+  ],
+  "age": 23,
+  "number": 5,
+  "initials": "YG",
+  "stats": {
+    "pac": 70,
+    "sho": 54,
+    "pas": 57,
+    "dri": 53,
+    "def": 56,
+    "phy": 49,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-KRY23_016",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Dmitry Tsypchenko",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 22,
+  "number": 7,
+  "initials": "DT",
+  "stats": {
+    "pac": 58,
+    "sho": 53,
+    "pas": 44,
+    "dri": 63,
+    "def": 40,
+    "phy": 56,
+    "ovr": 52
+  }
+},
+{
+  "id": "2023-KRY23_017",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Bogdan Ovsyannikov",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 23,
+  "number": 81,
+  "initials": "BO",
+  "stats": {
+    "pac": 53,
+    "sho": 50,
+    "pas": 52,
+    "dri": 47,
+    "def": 55,
+    "phy": 61,
+    "ovr": 53
+  }
+},
+{
+  "id": "2023-KRY23_018",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Vladimir Khubulov",
+  "positions": [
+    "ЛВ",
+    "ЦАП",
+    "ЦФД"
+  ],
+  "age": 21,
+  "number": 17,
+  "initials": "VK",
+  "stats": {
+    "pac": 70,
+    "sho": 57,
+    "pas": 46,
+    "dri": 66,
+    "def": 30,
+    "phy": 43,
+    "ovr": 52
+  }
+},
+{
+  "id": "2023-KRY23_019",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Sergey Babkin",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 19,
+  "number": 6,
+  "initials": "SB",
+  "stats": {
+    "pac": 59,
+    "sho": 54,
+    "pas": 53,
+    "dri": 56,
+    "def": 56,
+    "phy": 53,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-KRY23_020",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Nikita Khlusov",
+  "positions": [
+    "ПВ",
+    "ЦФД"
+  ],
+  "age": 22,
+  "number": 19,
+  "initials": "NK",
+  "stats": {
+    "pac": 65,
+    "sho": 38,
+    "pas": 35,
+    "dri": 55,
+    "def": 0,
+    "phy": 37,
+    "ovr": 46
+  }
+},
+{
+  "id": "2023-KRY23_021",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Artem Sokolov",
+  "positions": [
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 19,
+  "number": 18,
+  "initials": "AS",
+  "stats": {
+    "pac": 56,
+    "sho": 54,
+    "pas": 61,
+    "dri": 61,
+    "def": 33,
+    "phy": 43,
+    "ovr": 51
+  }
+},
+{
+  "id": "2023-KRY23_022",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Sergey Pinyaev",
+  "positions": [
+    "ЛП",
+    "ПВ",
+    "ЛВ",
+    "ЦФД"
+  ],
+  "age": 17,
+  "number": 9,
+  "initials": "SP",
+  "stats": {
+    "pac": 68,
+    "sho": 43,
+    "pas": 54,
+    "dri": 71,
+    "def": 30,
+    "phy": 25,
+    "ovr": 49
+  }
+},
+{
+  "id": "2023-KRY23_023",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Amar Rahmanović",
+  "positions": [
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 28,
+  "number": 20,
+  "initials": "AR",
+  "stats": {
+    "pac": 58,
+    "sho": 69,
+    "pas": 63,
+    "dri": 58,
+    "def": 50,
+    "phy": 59,
+    "ovr": 60
+  }
+},
+{
+  "id": "2023-KRY23_024",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Dmytro Ivanisenya",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 28,
+  "number": 21,
+  "initials": "DI",
+  "stats": {
+    "pac": 68,
+    "sho": 51,
+    "pas": 62,
+    "dri": 60,
+    "def": 63,
+    "phy": 64,
+    "ovr": 61
+  }
+},
+{
+  "id": "2023-KRY23_025",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Vladislav Shitov",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 19,
+  "number": 73,
+  "initials": "VS",
+  "stats": {
+    "pac": 69,
+    "sho": 58,
+    "pas": 49,
+    "dri": 56,
+    "def": 18,
+    "phy": 50,
+    "ovr": 50
+  }
+},
+{
+  "id": "2023-KRY23_026",
+  "clubCode": "КС",
+  "clubName": "ПФК «Крылья Советов»",
+  "season": 2023,
+  "name": "Alexandr Kovalenko",
+  "positions": [
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 18,
+  "number": 14,
+  "initials": "AK",
+  "stats": {
+    "pac": 59,
+    "sho": 53,
+    "pas": 54,
+    "dri": 64,
+    "def": 57,
+    "phy": 51,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-LOK23_001",
+  "clubCode": "ЛОК",
+  "clubName": "ФК «Локомотив»",
+  "season": 2023,
+  "name": "Guilherme",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 36,
+  "number": 1,
+  "initials": "G",
+  "stats": {
+    "pac": 51,
+    "sho": 15,
+    "pas": 42,
+    "dri": 34,
+    "def": 28,
+    "phy": 59,
+    "ovr": 38
+  }
+},
+{
+  "id": "2023-LOK23_002",
+  "clubCode": "ЛОК",
+  "clubName": "ФК «Локомотив»",
+  "season": 2023,
+  "name": "Fasson",
+  "positions": [
+    "ЛЗ",
+    "ЦЗ"
+  ],
+  "age": 21,
+  "number": 3,
+  "initials": "F",
+  "stats": {
+    "pac": 63,
+    "sho": 56,
+    "pas": 56,
+    "dri": 58,
+    "def": 60,
+    "phy": 52,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-LOK23_003",
+  "clubCode": "ЛОК",
+  "clubName": "ФК «Локомотив»",
+  "season": 2023,
+  "name": "Pedrinho",
+  "positions": [
+    "ПВ",
+    "ЛВ"
+  ],
+  "age": 22,
+  "number": 29,
+  "initials": "P",
+  "stats": {
+    "pac": 65,
+    "sho": 59,
+    "pas": 59,
+    "dri": 64,
+    "def": 42,
+    "phy": 55,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-LOK23_004",
+  "clubCode": "ЛОК",
+  "clubName": "ФК «Локомотив»",
+  "season": 2023,
+  "name": "Tin Jedvaj",
+  "positions": [
+    "ПЗ",
+    "ЦЗ"
+  ],
+  "age": 26,
+  "number": 16,
+  "initials": "TJ",
+  "stats": {
+    "pac": 66,
+    "sho": 48,
+    "pas": 51,
+    "dri": 57,
+    "def": 63,
+    "phy": 61,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-LOK23_005",
+  "clubCode": "ЛОК",
+  "clubName": "ФК «Локомотив»",
+  "season": 2023,
+  "name": "François Kamano",
+  "positions": [
+    "ПВ",
+    "ЛВ",
+    "ЦФД"
+  ],
+  "age": 26,
+  "number": 25,
+  "initials": "FK",
+  "stats": {
+    "pac": 79,
+    "sho": 56,
+    "pas": 54,
+    "dri": 69,
+    "def": 31,
+    "phy": 51,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-LOK23_006",
+  "clubCode": "ЛОК",
+  "clubName": "ФК «Локомотив»",
+  "season": 2023,
+  "name": "Gyrano Kerk",
+  "positions": [
+    "ПП",
+    "ПВ",
+    "ЦФД"
+  ],
+  "age": 26,
+  "number": 7,
+  "initials": "GK",
+  "stats": {
+    "pac": 73,
+    "sho": 66,
+    "pas": 59,
+    "dri": 62,
+    "def": 38,
+    "phy": 67,
+    "ovr": 61
+  }
+},
+{
+  "id": "2023-LOK23_007",
+  "clubCode": "ЛОК",
+  "clubName": "ФК «Локомотив»",
+  "season": 2023,
+  "name": "Wilson Isidor",
+  "positions": [
+    "ПВ",
+    "ЛВ",
+    "ЦФД"
+  ],
+  "age": 21,
+  "number": 10,
+  "initials": "WI",
+  "stats": {
+    "pac": 74,
+    "sho": 60,
+    "pas": 58,
+    "dri": 65,
+    "def": 38,
+    "phy": 58,
+    "ovr": 59
+  }
+},
+{
+  "id": "2023-LOK23_008",
+  "clubCode": "ЛОК",
+  "clubName": "ФК «Локомотив»",
+  "season": 2023,
+  "name": "Dmitry Zhivoglyadov",
+  "positions": [
+    "ПЗ",
+    "ПФЗ"
+  ],
+  "age": 28,
+  "number": 2,
+  "initials": "DZ",
+  "stats": {
+    "pac": 73,
+    "sho": 44,
+    "pas": 53,
+    "dri": 53,
+    "def": 62,
+    "phy": 56,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-LOK23_009",
+  "clubCode": "ЛОК",
+  "clubName": "ФК «Локомотив»",
+  "season": 2023,
+  "name": "Anton Miranchuk",
+  "positions": [
+    "ПП",
+    "ЛП",
+    "ЦП",
+    "ЛВ"
+  ],
+  "age": 26,
+  "number": 11,
+  "initials": "AM",
+  "stats": {
+    "pac": 70,
+    "sho": 58,
+    "pas": 68,
+    "dri": 63,
+    "def": 48,
+    "phy": 53,
+    "ovr": 60
+  }
+},
+{
+  "id": "2023-LOK23_010",
+  "clubCode": "ЛОК",
+  "clubName": "ФК «Локомотив»",
+  "season": 2023,
+  "name": "Dmitry Barinov",
+  "positions": [
+    "ЦЗ",
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 25,
+  "number": 6,
+  "initials": "DB",
+  "stats": {
+    "pac": 64,
+    "sho": 56,
+    "pas": 49,
+    "dri": 63,
+    "def": 68,
+    "phy": 62,
+    "ovr": 60
+  }
+},
+{
+  "id": "2023-LOK23_011",
+  "clubCode": "ЛОК",
+  "clubName": "ФК «Локомотив»",
+  "season": 2023,
+  "name": "Rifat Zhemaletdinov",
+  "positions": [
+    "ПП",
+    "ЦП",
+    "ПВ",
+    "ЛВ"
+  ],
+  "age": 25,
+  "number": 17,
+  "initials": "RZ",
+  "stats": {
+    "pac": 68,
+    "sho": 68,
+    "pas": 63,
+    "dri": 63,
+    "def": 43,
+    "phy": 59,
+    "ovr": 61
+  }
+},
+{
+  "id": "2023-LOK23_012",
+  "clubCode": "ЛОК",
+  "clubName": "ФК «Локомотив»",
+  "season": 2023,
+  "name": "Maxim Nenakhov",
+  "positions": [
+    "ПЗ",
+    "ЛЗ"
+  ],
+  "age": 23,
+  "number": 24,
+  "initials": "MN",
+  "stats": {
+    "pac": 60,
+    "sho": 43,
+    "pas": 50,
+    "dri": 55,
+    "def": 58,
+    "phy": 61,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-LOK23_013",
+  "clubCode": "ЛОК",
+  "clubName": "ФК «Локомотив»",
+  "season": 2023,
+  "name": "Ivan Ignatjev",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 23,
+  "number": 9,
+  "initials": "II",
+  "stats": {
+    "pac": 65,
+    "sho": 58,
+    "pas": 52,
+    "dri": 55,
+    "def": 44,
+    "phy": 52,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-LOK23_014",
+  "clubCode": "ЛОК",
+  "clubName": "ФК «Локомотив»",
+  "season": 2023,
+  "name": "Daniil Kulikov",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 23,
+  "number": 69,
+  "initials": "DK",
+  "stats": {
+    "pac": 68,
+    "sho": 41,
+    "pas": 58,
+    "dri": 55,
+    "def": 62,
+    "phy": 60,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-LOK23_015",
+  "clubCode": "ЛОК",
+  "clubName": "ФК «Локомотив»",
+  "season": 2023,
+  "name": "Nayair Tiknizyan",
+  "positions": [
+    "ЛЗ",
+    "ЛФЗ",
+    "ЛП",
+    "ЛВ"
+  ],
+  "age": 23,
+  "number": 71,
+  "initials": "NT",
+  "stats": {
+    "pac": 68,
+    "sho": 44,
+    "pas": 53,
+    "dri": 55,
+    "def": 58,
+    "phy": 60,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-LOK23_016",
+  "clubCode": "ЛОК",
+  "clubName": "ФК «Локомотив»",
+  "season": 2023,
+  "name": "Stanislav Magkeev",
+  "positions": [
+    "ЦЗ",
+    "ЦОП"
+  ],
+  "age": 23,
+  "number": 4,
+  "initials": "SM",
+  "stats": {
+    "pac": 55,
+    "sho": 44,
+    "pas": 51,
+    "dri": 45,
+    "def": 65,
+    "phy": 68,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-LOK23_017",
+  "clubCode": "ЛОК",
+  "clubName": "ФК «Локомотив»",
+  "season": 2023,
+  "name": "Konstantin Maradishvili",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 22,
+  "number": 5,
+  "initials": "KM",
+  "stats": {
+    "pac": 63,
+    "sho": 43,
+    "pas": 41,
+    "dri": 64,
+    "def": 66,
+    "phy": 66,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-LOK23_018",
+  "clubCode": "ЛОК",
+  "clubName": "ФК «Локомотив»",
+  "season": 2023,
+  "name": "Ivan Kuzmichev",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 21,
+  "number": 20,
+  "initials": "IK",
+  "stats": {
+    "pac": 50,
+    "sho": 35,
+    "pas": 37,
+    "dri": 33,
+    "def": 68,
+    "phy": 59,
+    "ovr": 47
+  }
+},
+{
+  "id": "2023-LOK23_019",
+  "clubCode": "ЛОК",
+  "clubName": "ФК «Локомотив»",
+  "season": 2023,
+  "name": "Marko Rakonjac",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 22,
+  "number": 77,
+  "initials": "MR",
+  "stats": {
+    "pac": 61,
+    "sho": 50,
+    "pas": 56,
+    "dri": 56,
+    "def": 32,
+    "phy": 62,
+    "ovr": 53
+  }
+},
+{
+  "id": "2023-LOK23_020",
+  "clubCode": "ЛОК",
+  "clubName": "ФК «Локомотив»",
+  "season": 2023,
+  "name": "Mario Mitaj",
+  "positions": [
+    "ЛЗ",
+    "ЦЗ",
+    "ЛФЗ"
+  ],
+  "age": 18,
+  "number": 12,
+  "initials": "MM",
+  "stats": {
+    "pac": 68,
+    "sho": 35,
+    "pas": 45,
+    "dri": 58,
+    "def": 57,
+    "phy": 53,
+    "ovr": 53
+  }
+},
+{
+  "id": "2023-LOK23_021",
+  "clubCode": "ЛОК",
+  "clubName": "ФК «Локомотив»",
+  "season": 2023,
+  "name": "Mark Mampassi",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 19,
+  "number": 18,
+  "initials": "MM",
+  "stats": {
+    "pac": 60,
+    "sho": 53,
+    "pas": 50,
+    "dri": 55,
+    "def": 61,
+    "phy": 69,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-LOK23_022",
+  "clubCode": "ЛОК",
+  "clubName": "ФК «Локомотив»",
+  "season": 2023,
+  "name": "Daniil Khudyakov",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 18,
+  "number": 53,
+  "initials": "DK",
+  "stats": {
+    "pac": 58,
+    "sho": 31,
+    "pas": 44,
+    "dri": 39,
+    "def": 24,
+    "phy": 61,
+    "ovr": 43
+  }
+},
+{
+  "id": "2023-LOK23_023",
+  "clubCode": "ЛОК",
+  "clubName": "ФК «Локомотив»",
+  "season": 2023,
+  "name": "Artem Karpukas",
+  "positions": [
+    "ЦОП"
+  ],
+  "age": 19,
+  "number": 93,
+  "initials": "AK",
+  "stats": {
+    "pac": 50,
+    "sho": 48,
+    "pas": 40,
+    "dri": 59,
+    "def": 66,
+    "phy": 61,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-ORE23_001",
+  "clubCode": "ОРЕ",
+  "clubName": "ФК «Оренбург»",
+  "season": 2023,
+  "name": "Mikhail Sivakov",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 34,
+  "number": 3,
+  "initials": "MS",
+  "stats": {
+    "pac": 50,
+    "sho": 53,
+    "pas": 43,
+    "dri": 51,
+    "def": 62,
+    "phy": 61,
+    "ovr": 53
+  }
+},
+{
+  "id": "2023-ORE23_002",
+  "clubCode": "ОРЕ",
+  "clubName": "ФК «Оренбург»",
+  "season": 2023,
+  "name": "Andrey Malykh",
+  "positions": [
+    "ПЗ",
+    "ПФЗ"
+  ],
+  "age": 33,
+  "number": 12,
+  "initials": "AM",
+  "stats": {
+    "pac": 63,
+    "sho": 36,
+    "pas": 52,
+    "dri": 49,
+    "def": 60,
+    "phy": 55,
+    "ovr": 53
+  }
+},
+{
+  "id": "2023-ORE23_003",
+  "clubCode": "ОРЕ",
+  "clubName": "ФК «Оренбург»",
+  "season": 2023,
+  "name": "Brian Mansilla",
+  "positions": [
+    "ЛВ",
+    "ЦФД"
+  ],
+  "age": 25,
+  "number": 9,
+  "initials": "BM",
+  "stats": {
+    "pac": 68,
+    "sho": 71,
+    "pas": 63,
+    "dri": 64,
+    "def": 55,
+    "phy": 62,
+    "ovr": 64
+  }
+},
+{
+  "id": "2023-ORE23_004",
+  "clubCode": "ОРЕ",
+  "clubName": "ФК «Оренбург»",
+  "season": 2023,
+  "name": "Lucas Vera",
+  "positions": [
+    "ЦП",
+    "ПВ",
+    "ЦАП"
+  ],
+  "age": 25,
+  "number": 23,
+  "initials": "LV",
+  "stats": {
+    "pac": 65,
+    "sho": 68,
+    "pas": 65,
+    "dri": 67,
+    "def": 33,
+    "phy": 54,
+    "ovr": 59
+  }
+},
+{
+  "id": "2023-ORE23_005",
+  "clubCode": "ОРЕ",
+  "clubName": "ФК «Оренбург»",
+  "season": 2023,
+  "name": "Gabriel Florentin",
+  "positions": [
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 23,
+  "number": 21,
+  "initials": "GF",
+  "stats": {
+    "pac": 63,
+    "sho": 67,
+    "pas": 64,
+    "dri": 69,
+    "def": 58,
+    "phy": 46,
+    "ovr": 61
+  }
+},
+{
+  "id": "2023-ORE23_006",
+  "clubCode": "ОРЕ",
+  "clubName": "ФК «Оренбург»",
+  "season": 2023,
+  "name": "Yuriy Kovalev",
+  "positions": [
+    "ПП",
+    "ЛП",
+    "ПВ",
+    "ЛВ"
+  ],
+  "age": 29,
+  "number": 17,
+  "initials": "YK",
+  "stats": {
+    "pac": 68,
+    "sho": 56,
+    "pas": 61,
+    "dri": 63,
+    "def": 41,
+    "phy": 47,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-ORE23_007",
+  "clubCode": "ОРЕ",
+  "clubName": "ФК «Оренбург»",
+  "season": 2023,
+  "name": "Alexandr Pavlovets",
+  "positions": [
+    "ЦЗ",
+    "ЦОП"
+  ],
+  "age": 25,
+  "number": 22,
+  "initials": "AP",
+  "stats": {
+    "pac": 49,
+    "sho": 36,
+    "pas": 44,
+    "dri": 51,
+    "def": 63,
+    "phy": 66,
+    "ovr": 52
+  }
+},
+{
+  "id": "2023-ORE23_008",
+  "clubCode": "ОРЕ",
+  "clubName": "ФК «Оренбург»",
+  "season": 2023,
+  "name": "Kirill Pechenin",
+  "positions": [
+    "ЛЗ"
+  ],
+  "age": 25,
+  "number": 25,
+  "initials": "KP",
+  "stats": {
+    "pac": 64,
+    "sho": 42,
+    "pas": 57,
+    "dri": 61,
+    "def": 52,
+    "phy": 56,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-ORE23_009",
+  "clubCode": "ОРЕ",
+  "clubName": "ФК «Оренбург»",
+  "season": 2023,
+  "name": "Renato Gojkovic",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 26,
+  "number": 15,
+  "initials": "RG",
+  "stats": {
+    "pac": 50,
+    "sho": 36,
+    "pas": 43,
+    "dri": 43,
+    "def": 62,
+    "phy": 69,
+    "ovr": 51
+  }
+},
+{
+  "id": "2023-ORE23_010",
+  "clubCode": "ОРЕ",
+  "clubName": "ФК «Оренбург»",
+  "season": 2023,
+  "name": "Mateo Stamatov",
+  "positions": [
+    "ЛЗ",
+    "ЛФЗ"
+  ],
+  "age": 23,
+  "number": 11,
+  "initials": "MS",
+  "stats": {
+    "pac": 73,
+    "sho": 48,
+    "pas": 55,
+    "dri": 63,
+    "def": 53,
+    "phy": 56,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-ORE23_011",
+  "clubCode": "ОРЕ",
+  "clubName": "ФК «Оренбург»",
+  "season": 2023,
+  "name": "Vladimir Poluyakhtov",
+  "positions": [
+    "ПЗ",
+    "ЛЗ"
+  ],
+  "age": 32,
+  "number": 2,
+  "initials": "VP",
+  "stats": {
+    "pac": 61,
+    "sho": 37,
+    "pas": 48,
+    "dri": 54,
+    "def": 63,
+    "phy": 58,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-ORE23_012",
+  "clubCode": "ОРЕ",
+  "clubName": "ФК «Оренбург»",
+  "season": 2023,
+  "name": "Vladimir Obukhov",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 30,
+  "number": 13,
+  "initials": "VO",
+  "stats": {
+    "pac": 55,
+    "sho": 60,
+    "pas": 54,
+    "dri": 66,
+    "def": 33,
+    "phy": 53,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-ORE23_013",
+  "clubCode": "ОРЕ",
+  "clubName": "ФК «Оренбург»",
+  "season": 2023,
+  "name": "Timur Ayupov",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 28,
+  "number": 5,
+  "initials": "TA",
+  "stats": {
+    "pac": 58,
+    "sho": 58,
+    "pas": 50,
+    "dri": 54,
+    "def": 67,
+    "phy": 61,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-ORE23_014",
+  "clubCode": "ОРЕ",
+  "clubName": "ФК «Оренбург»",
+  "season": 2023,
+  "name": "Dmitry Vorobjov",
+  "positions": [
+    "ЛВ",
+    "ЦАП",
+    "ЦФД"
+  ],
+  "age": 24,
+  "number": 10,
+  "initials": "DV",
+  "stats": {
+    "pac": 60,
+    "sho": 58,
+    "pas": 56,
+    "dri": 66,
+    "def": 41,
+    "phy": 53,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-ORE23_015",
+  "clubCode": "ОРЕ",
+  "clubName": "ФК «Оренбург»",
+  "season": 2023,
+  "name": "Evgeny Goshev",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 24,
+  "number": 1,
+  "initials": "EG",
+  "stats": {
+    "pac": 65,
+    "sho": 13,
+    "pas": 31,
+    "dri": 28,
+    "def": 60,
+    "phy": 39,
+    "ovr": 39
+  }
+},
+{
+  "id": "2023-ORE23_016",
+  "clubCode": "ОРЕ",
+  "clubName": "ФК «Оренбург»",
+  "season": 2023,
+  "name": "Batraz Gurtsiev",
+  "positions": [
+    "ПП",
+    "ПВ",
+    "ЦАП"
+  ],
+  "age": 23,
+  "number": 70,
+  "initials": "BG",
+  "stats": {
+    "pac": 68,
+    "sho": 47,
+    "pas": 46,
+    "dri": 60,
+    "def": 33,
+    "phy": 36,
+    "ovr": 48
+  }
+},
+{
+  "id": "2023-ORE23_017",
+  "clubCode": "ОРЕ",
+  "clubName": "ФК «Оренбург»",
+  "season": 2023,
+  "name": "Alexandr Ektov",
+  "positions": [
+    "ЛЗ",
+    "ПФЗ",
+    "ПП",
+    "ЛП"
+  ],
+  "age": 26,
+  "number": 19,
+  "initials": "AE",
+  "stats": {
+    "pac": 53,
+    "sho": 50,
+    "pas": 54,
+    "dri": 59,
+    "def": 44,
+    "phy": 59,
+    "ovr": 53
+  }
+},
+{
+  "id": "2023-ORE23_018",
+  "clubCode": "ОРЕ",
+  "clubName": "ФК «Оренбург»",
+  "season": 2023,
+  "name": "Alexey Kenyaikin",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 23,
+  "number": 90,
+  "initials": "AK",
+  "stats": {
+    "pac": 23,
+    "sho": 24,
+    "pas": 41,
+    "dri": 37,
+    "def": 33,
+    "phy": 64,
+    "ovr": 37
+  }
+},
+{
+  "id": "2023-ORE23_019",
+  "clubCode": "ОРЕ",
+  "clubName": "ФК «Оренбург»",
+  "season": 2023,
+  "name": "Kirill Kaplenko",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 22,
+  "number": 55,
+  "initials": "KK",
+  "stats": {
+    "pac": 66,
+    "sho": 40,
+    "pas": 52,
+    "dri": 58,
+    "def": 58,
+    "phy": 56,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-ORE23_020",
+  "clubCode": "ОРЕ",
+  "clubName": "ФК «Оренбург»",
+  "season": 2023,
+  "name": "Nikolay Titkov",
+  "positions": [
+    "ПП",
+    "ЦП",
+    "ПВ",
+    "ЦАП"
+  ],
+  "age": 21,
+  "number": 38,
+  "initials": "NT",
+  "stats": {
+    "pac": 58,
+    "sho": 58,
+    "pas": 54,
+    "dri": 61,
+    "def": 44,
+    "phy": 54,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-ORE23_021",
+  "clubCode": "ОРЕ",
+  "clubName": "ФК «Оренбург»",
+  "season": 2023,
+  "name": "Danila Khotulev",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 19,
+  "number": 4,
+  "initials": "DK",
+  "stats": {
+    "pac": 59,
+    "sho": 38,
+    "pas": 39,
+    "dri": 41,
+    "def": 66,
+    "phy": 61,
+    "ovr": 51
+  }
+},
+{
+  "id": "2023-ORE23_022",
+  "clubCode": "ОРЕ",
+  "clubName": "ФК «Оренбург»",
+  "season": 2023,
+  "name": "Jimmy Marín",
+  "positions": [
+    "ПП",
+    "ЛП",
+    "ПВ",
+    "ЛВ"
+  ],
+  "age": 24,
+  "number": 80,
+  "initials": "JM",
+  "stats": {
+    "pac": 60,
+    "sho": 60,
+    "pas": 58,
+    "dri": 64,
+    "def": 36,
+    "phy": 45,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-ORE23_023",
+  "clubCode": "ОРЕ",
+  "clubName": "ФК «Оренбург»",
+  "season": 2023,
+  "name": "Ivan Bašić",
+  "positions": [
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 20,
+  "number": 8,
+  "initials": "IB",
+  "stats": {
+    "pac": 63,
+    "sho": 70,
+    "pas": 46,
+    "dri": 66,
+    "def": 38,
+    "phy": 45,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-ORE23_024",
+  "clubCode": "ОРЕ",
+  "clubName": "ФК «Оренбург»",
+  "season": 2023,
+  "name": "Vladimir Sychevoy",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 26,
+  "number": 77,
+  "initials": "VS",
+  "stats": {
+    "pac": 53,
+    "sho": 60,
+    "pas": 46,
+    "dri": 59,
+    "def": 38,
+    "phy": 67,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-PNN23_001",
+  "clubCode": "ПНН",
+  "clubName": "ФК «Пари НН»",
+  "season": 2023,
+  "name": "Milson",
+  "positions": [
+    "ПП",
+    "ПВ",
+    "ЛВ",
+    "ЦАП"
+  ],
+  "age": 22,
+  "number": 10,
+  "initials": "M",
+  "stats": {
+    "pac": 79,
+    "sho": 54,
+    "pas": 51,
+    "dri": 67,
+    "def": 23,
+    "phy": 40,
+    "ovr": 52
+  }
+},
+{
+  "id": "2023-PNN23_002",
+  "clubCode": "ПНН",
+  "clubName": "ФК «Пари НН»",
+  "season": 2023,
+  "name": "Momo Yansané",
+  "positions": [
+    "ПВ",
+    "ЛВ",
+    "ЦФД"
+  ],
+  "age": 24,
+  "number": 99,
+  "initials": "MY",
+  "stats": {
+    "pac": 73,
+    "sho": 60,
+    "pas": 59,
+    "dri": 68,
+    "def": 38,
+    "phy": 58,
+    "ovr": 59
+  }
+},
+{
+  "id": "2023-PNN23_003",
+  "clubCode": "ПНН",
+  "clubName": "ФК «Пари НН»",
+  "season": 2023,
+  "name": "Lucas Masoero",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 27,
+  "number": 5,
+  "initials": "LM",
+  "stats": {
+    "pac": 54,
+    "sho": 38,
+    "pas": 44,
+    "dri": 51,
+    "def": 60,
+    "phy": 66,
+    "ovr": 52
+  }
+},
+{
+  "id": "2023-PNN23_004",
+  "clubCode": "ПНН",
+  "clubName": "ФК «Пари НН»",
+  "season": 2023,
+  "name": "Artur Nigmatullin",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 31,
+  "number": 25,
+  "initials": "AN",
+  "stats": {
+    "pac": 38,
+    "sho": 23,
+    "pas": 28,
+    "dri": 41,
+    "def": 27,
+    "phy": 62,
+    "ovr": 37
+  }
+},
+{
+  "id": "2023-PNN23_005",
+  "clubCode": "ПНН",
+  "clubName": "ФК «Пари НН»",
+  "season": 2023,
+  "name": "Kirill Gotsuk",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 29,
+  "number": 24,
+  "initials": "KG",
+  "stats": {
+    "pac": 46,
+    "sho": 42,
+    "pas": 41,
+    "dri": 43,
+    "def": 60,
+    "phy": 67,
+    "ovr": 50
+  }
+},
+{
+  "id": "2023-PNN23_006",
+  "clubCode": "ПНН",
+  "clubName": "ФК «Пари НН»",
+  "season": 2023,
+  "name": "Dmitry Stotskiy",
+  "positions": [
+    "ПЗ",
+    "ЛЗ",
+    "ПФЗ",
+    "ПП"
+  ],
+  "age": 32,
+  "number": 89,
+  "initials": "DS",
+  "stats": {
+    "pac": 61,
+    "sho": 45,
+    "pas": 52,
+    "dri": 56,
+    "def": 52,
+    "phy": 51,
+    "ovr": 53
+  }
+},
+{
+  "id": "2023-PNN23_007",
+  "clubCode": "ПНН",
+  "clubName": "ФК «Пари НН»",
+  "season": 2023,
+  "name": "Nikolay Kalinskiy",
+  "positions": [
+    "ЦОП",
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 28,
+  "number": 78,
+  "initials": "NK",
+  "stats": {
+    "pac": 60,
+    "sho": 72,
+    "pas": 60,
+    "dri": 57,
+    "def": 54,
+    "phy": 56,
+    "ovr": 60
+  }
+},
+{
+  "id": "2023-PNN23_008",
+  "clubCode": "ПНН",
+  "clubName": "ФК «Пари НН»",
+  "season": 2023,
+  "name": "Artur Anisimov",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 29,
+  "number": 1,
+  "initials": "AA",
+  "stats": {
+    "pac": 55,
+    "sho": 45,
+    "pas": 39,
+    "dri": 42,
+    "def": 65,
+    "phy": 52,
+    "ovr": 50
+  }
+},
+{
+  "id": "2023-PNN23_009",
+  "clubCode": "ПНН",
+  "clubName": "ФК «Пари НН»",
+  "season": 2023,
+  "name": "Albert Sharipov",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 29,
+  "number": 37,
+  "initials": "AS",
+  "stats": {
+    "pac": 50,
+    "sho": 57,
+    "pas": 58,
+    "dri": 60,
+    "def": 62,
+    "phy": 49,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-PNN23_010",
+  "clubCode": "ПНН",
+  "clubName": "ФК «Пари НН»",
+  "season": 2023,
+  "name": "Vyacheslav Krotov",
+  "positions": [
+    "ЦАП",
+    "ЦФД"
+  ],
+  "age": 29,
+  "number": 9,
+  "initials": "VK",
+  "stats": {
+    "pac": 66,
+    "sho": 54,
+    "pas": 57,
+    "dri": 63,
+    "def": 34,
+    "phy": 48,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-PNN23_011",
+  "clubCode": "ПНН",
+  "clubName": "ФК «Пари НН»",
+  "season": 2023,
+  "name": "Elmir Nabiullin",
+  "positions": [
+    "ЛЗ",
+    "ЛФЗ"
+  ],
+  "age": 27,
+  "number": 17,
+  "initials": "EN",
+  "stats": {
+    "pac": 71,
+    "sho": 41,
+    "pas": 48,
+    "dri": 61,
+    "def": 52,
+    "phy": 51,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-PNN23_012",
+  "clubCode": "ПНН",
+  "clubName": "ФК «Пари НН»",
+  "season": 2023,
+  "name": "Ilja Zhigulev",
+  "positions": [
+    "ЦОП",
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 26,
+  "number": 4,
+  "initials": "IZ",
+  "stats": {
+    "pac": 68,
+    "sho": 44,
+    "pas": 61,
+    "dri": 56,
+    "def": 40,
+    "phy": 57,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-PNN23_013",
+  "clubCode": "ПНН",
+  "clubName": "ФК «Пари НН»",
+  "season": 2023,
+  "name": "Dmitry Rybchinskiy",
+  "positions": [
+    "ПП",
+    "ЛП",
+    "ПВ",
+    "ЛВ"
+  ],
+  "age": 23,
+  "number": 94,
+  "initials": "DR",
+  "stats": {
+    "pac": 69,
+    "sho": 53,
+    "pas": 58,
+    "dri": 65,
+    "def": 50,
+    "phy": 51,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-PNN23_014",
+  "clubCode": "ПНН",
+  "clubName": "ФК «Пари НН»",
+  "season": 2023,
+  "name": "Nikita Goilo",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 23,
+  "number": 13,
+  "initials": "NG",
+  "stats": {
+    "pac": 48,
+    "sho": 20,
+    "pas": 45,
+    "dri": 28,
+    "def": 60,
+    "phy": 50,
+    "ovr": 42
+  }
+},
+{
+  "id": "2023-PNN23_015",
+  "clubCode": "ПНН",
+  "clubName": "ФК «Пари НН»",
+  "season": 2023,
+  "name": "Daniil Penchikov",
+  "positions": [
+    "ПЗ"
+  ],
+  "age": 24,
+  "number": 23,
+  "initials": "DP",
+  "stats": {
+    "pac": 60,
+    "sho": 38,
+    "pas": 48,
+    "dri": 55,
+    "def": 57,
+    "phy": 49,
+    "ovr": 51
+  }
+},
+{
+  "id": "2023-PNN23_016",
+  "clubCode": "ПНН",
+  "clubName": "ФК «Пари НН»",
+  "season": 2023,
+  "name": "Nikita Kakkoev",
+  "positions": [
+    "ЦЗ",
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 22,
+  "number": 22,
+  "initials": "NK",
+  "stats": {
+    "pac": 60,
+    "sho": 45,
+    "pas": 51,
+    "dri": 51,
+    "def": 62,
+    "phy": 50,
+    "ovr": 53
+  }
+},
+{
+  "id": "2023-PNN23_017",
+  "clubCode": "ПНН",
+  "clubName": "ФК «Пари НН»",
+  "season": 2023,
+  "name": "Ilja Berkovskiy",
+  "positions": [
+    "ЦП",
+    "ПВ",
+    "ЦАП"
+  ],
+  "age": 22,
+  "number": 11,
+  "initials": "IB",
+  "stats": {
+    "pac": 58,
+    "sho": 57,
+    "pas": 63,
+    "dri": 70,
+    "def": 45,
+    "phy": 50,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-PNN23_018",
+  "clubCode": "ПНН",
+  "clubName": "ФК «Пари НН»",
+  "season": 2023,
+  "name": "David Kobesov",
+  "positions": [
+    "ЦП",
+    "ЦАП",
+    "ЦФД"
+  ],
+  "age": 22,
+  "number": 18,
+  "initials": "DK",
+  "stats": {
+    "pac": 63,
+    "sho": 47,
+    "pas": 45,
+    "dri": 54,
+    "def": 45,
+    "phy": 48,
+    "ovr": 50
+  }
+},
+{
+  "id": "2023-PNN23_019",
+  "clubCode": "ПНН",
+  "clubName": "ФК «Пари НН»",
+  "season": 2023,
+  "name": "Timur Suleimanov",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 22,
+  "number": 93,
+  "initials": "TS",
+  "stats": {
+    "pac": 56,
+    "sho": 49,
+    "pas": 41,
+    "dri": 58,
+    "def": 33,
+    "phy": 63,
+    "ovr": 50
+  }
+},
+{
+  "id": "2023-PNN23_020",
+  "clubCode": "ПНН",
+  "clubName": "ФК «Пари НН»",
+  "season": 2023,
+  "name": "Ilja Agapov",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 21,
+  "number": 86,
+  "initials": "IA",
+  "stats": {
+    "pac": 58,
+    "sho": 18,
+    "pas": 33,
+    "dri": 45,
+    "def": 57,
+    "phy": 53,
+    "ovr": 44
+  }
+},
+{
+  "id": "2023-PNN23_021",
+  "clubCode": "ПНН",
+  "clubName": "ФК «Пари НН»",
+  "season": 2023,
+  "name": "Daniil Kornyushin",
+  "positions": [
+    "ПЗ"
+  ],
+  "age": 20,
+  "number": 44,
+  "initials": "DK",
+  "stats": {
+    "pac": 60,
+    "sho": 33,
+    "pas": 46,
+    "dri": 58,
+    "def": 57,
+    "phy": 54,
+    "ovr": 51
+  }
+},
+{
+  "id": "2023-PNN23_022",
+  "clubCode": "ПНН",
+  "clubName": "ФК «Пари НН»",
+  "season": 2023,
+  "name": "Ibrohimxalil Yo'ldoshev",
+  "positions": [
+    "ЛЗ",
+    "ЛФЗ"
+  ],
+  "age": 21,
+  "number": 6,
+  "initials": "IY",
+  "stats": {
+    "pac": 66,
+    "sho": 27,
+    "pas": 49,
+    "dri": 65,
+    "def": 53,
+    "phy": 46,
+    "ovr": 51
+  }
+},
+{
+  "id": "2023-PNN23_023",
+  "clubCode": "ПНН",
+  "clubName": "ФК «Пари НН»",
+  "season": 2023,
+  "name": "Mamadou Maïga",
+  "positions": [
+    "ЦЗ",
+    "ЦОП"
+  ],
+  "age": 27,
+  "number": 8,
+  "initials": "MM",
+  "stats": {
+    "pac": 60,
+    "sho": 45,
+    "pas": 44,
+    "dri": 63,
+    "def": 63,
+    "phy": 62,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-PNN23_024",
+  "clubCode": "ПНН",
+  "clubName": "ФК «Пари НН»",
+  "season": 2023,
+  "name": "Yaroslav Mikhailov",
+  "positions": [
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 19,
+  "number": 14,
+  "initials": "YM",
+  "stats": {
+    "pac": 53,
+    "sho": 68,
+    "pas": 64,
+    "dri": 63,
+    "def": 38,
+    "phy": 52,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-ROS23_001",
+  "clubCode": "РОС",
+  "clubName": "ФК «Ростов»",
+  "season": 2023,
+  "name": "Alexandr Selyava",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 30,
+  "number": 38,
+  "initials": "AS",
+  "stats": {
+    "pac": 59,
+    "sho": 48,
+    "pas": 50,
+    "dri": 52,
+    "def": 57,
+    "phy": 52,
+    "ovr": 53
+  }
+},
+{
+  "id": "2023-ROS23_002",
+  "clubCode": "РОС",
+  "clubName": "ФК «Ростов»",
+  "season": 2023,
+  "name": "Sergey Pesjakov",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 33,
+  "number": 30,
+  "initials": "SP",
+  "stats": {
+    "pac": 46,
+    "sho": 20,
+    "pas": 40,
+    "dri": 38,
+    "def": 29,
+    "phy": 62,
+    "ovr": 39
+  }
+},
+{
+  "id": "2023-ROS23_003",
+  "clubCode": "РОС",
+  "clubName": "ФК «Ростов»",
+  "season": 2023,
+  "name": "Dmitry Poloz",
+  "positions": [
+    "ПВ",
+    "ЛВ",
+    "ЦФД"
+  ],
+  "age": 30,
+  "number": 7,
+  "initials": "DP",
+  "stats": {
+    "pac": 65,
+    "sho": 63,
+    "pas": 60,
+    "dri": 59,
+    "def": 33,
+    "phy": 56,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-ROS23_004",
+  "clubCode": "РОС",
+  "clubName": "ФК «Ростов»",
+  "season": 2023,
+  "name": "Denis Terentjev",
+  "positions": [
+    "ПЗ",
+    "ЛЗ",
+    "ПФЗ"
+  ],
+  "age": 29,
+  "number": 5,
+  "initials": "DT",
+  "stats": {
+    "pac": 70,
+    "sho": 41,
+    "pas": 61,
+    "dri": 54,
+    "def": 58,
+    "phy": 58,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-ROS23_005",
+  "clubCode": "РОС",
+  "clubName": "ФК «Ростов»",
+  "season": 2023,
+  "name": "Khoren Bairamyan",
+  "positions": [
+    "ЛФЗ",
+    "ЛП",
+    "ЦП",
+    "ЛВ"
+  ],
+  "age": 30,
+  "number": 19,
+  "initials": "KB",
+  "stats": {
+    "pac": 68,
+    "sho": 56,
+    "pas": 61,
+    "dri": 58,
+    "def": 49,
+    "phy": 49,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-ROS23_006",
+  "clubCode": "РОС",
+  "clubName": "ФК «Ростов»",
+  "season": 2023,
+  "name": "Evgeny Chernov",
+  "positions": [
+    "ЛЗ",
+    "ЛФЗ"
+  ],
+  "age": 29,
+  "number": 28,
+  "initials": "EC",
+  "stats": {
+    "pac": 73,
+    "sho": 34,
+    "pas": 57,
+    "dri": 56,
+    "def": 60,
+    "phy": 54,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-ROS23_007",
+  "clubCode": "РОС",
+  "clubName": "ФК «Ростов»",
+  "season": 2023,
+  "name": "Nikolay Komlichenko",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 26,
+  "number": 27,
+  "initials": "NK",
+  "stats": {
+    "pac": 55,
+    "sho": 61,
+    "pas": 45,
+    "dri": 47,
+    "def": 55,
+    "phy": 73,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-ROS23_008",
+  "clubCode": "РОС",
+  "clubName": "ФК «Ростов»",
+  "season": 2023,
+  "name": "Nikita Medvedev",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 27,
+  "number": 1,
+  "initials": "NM",
+  "stats": {
+    "pac": 55,
+    "sho": 16,
+    "pas": 37,
+    "dri": 26,
+    "def": 24,
+    "phy": 57,
+    "ovr": 36
+  }
+},
+{
+  "id": "2023-ROS23_009",
+  "clubCode": "РОС",
+  "clubName": "ФК «Ростов»",
+  "season": 2023,
+  "name": "Maxim Osipenko",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 28,
+  "number": 55,
+  "initials": "MO",
+  "stats": {
+    "pac": 60,
+    "sho": 48,
+    "pas": 46,
+    "dri": 54,
+    "def": 72,
+    "phy": 65,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-ROS23_010",
+  "clubCode": "РОС",
+  "clubName": "ФК «Ростов»",
+  "season": 2023,
+  "name": "Daniil Utkin",
+  "positions": [
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 22,
+  "number": 47,
+  "initials": "DU",
+  "stats": {
+    "pac": 68,
+    "sho": 59,
+    "pas": 74,
+    "dri": 61,
+    "def": 46,
+    "phy": 54,
+    "ovr": 60
+  }
+},
+{
+  "id": "2023-ROS23_011",
+  "clubCode": "РОС",
+  "clubName": "ФК «Ростов»",
+  "season": 2023,
+  "name": "Yegor Golenkov",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 22,
+  "number": 69,
+  "initials": "YG",
+  "stats": {
+    "pac": 56,
+    "sho": 42,
+    "pas": 43,
+    "dri": 53,
+    "def": 42,
+    "phy": 59,
+    "ovr": 49
+  }
+},
+{
+  "id": "2023-ROS23_012",
+  "clubCode": "РОС",
+  "clubName": "ФК «Ростов»",
+  "season": 2023,
+  "name": "Roman Tugarev",
+  "positions": [
+    "ПП",
+    "ПВ",
+    "ЛВ"
+  ],
+  "age": 23,
+  "number": 23,
+  "initials": "RT",
+  "stats": {
+    "pac": 71,
+    "sho": 58,
+    "pas": 56,
+    "dri": 64,
+    "def": 34,
+    "phy": 43,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-ROS23_013",
+  "clubCode": "РОС",
+  "clubName": "ФК «Ростов»",
+  "season": 2023,
+  "name": "Nikolay Poyarkov",
+  "positions": [
+    "ЛЗ"
+  ],
+  "age": 22,
+  "number": 71,
+  "initials": "NP",
+  "stats": {
+    "pac": 65,
+    "sho": 36,
+    "pas": 49,
+    "dri": 53,
+    "def": 61,
+    "phy": 59,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-ROS23_014",
+  "clubCode": "РОС",
+  "clubName": "ФК «Ростов»",
+  "season": 2023,
+  "name": "Danil Glebov",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 22,
+  "number": 15,
+  "initials": "DG",
+  "stats": {
+    "pac": 66,
+    "sho": 47,
+    "pas": 54,
+    "dri": 56,
+    "def": 67,
+    "phy": 55,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-ROS23_015",
+  "clubCode": "РОС",
+  "clubName": "ФК «Ростов»",
+  "season": 2023,
+  "name": "Alexey Mironov",
+  "positions": [
+    "ЦОП",
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 22,
+  "number": 8,
+  "initials": "AM",
+  "stats": {
+    "pac": 55,
+    "sho": 67,
+    "pas": 55,
+    "dri": 58,
+    "def": 47,
+    "phy": 54,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-ROS23_016",
+  "clubCode": "РОС",
+  "clubName": "ФК «Ростов»",
+  "season": 2023,
+  "name": "Danila Prokhin",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 21,
+  "number": 18,
+  "initials": "DP",
+  "stats": {
+    "pac": 59,
+    "sho": 54,
+    "pas": 48,
+    "dri": 47,
+    "def": 58,
+    "phy": 62,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-ROS23_017",
+  "clubCode": "РОС",
+  "clubName": "ФК «Ростов»",
+  "season": 2023,
+  "name": "Alexandr Siljanov",
+  "positions": [
+    "ПЗ",
+    "ЛЗ"
+  ],
+  "age": 21,
+  "number": 45,
+  "initials": "AS",
+  "stats": {
+    "pac": 66,
+    "sho": 42,
+    "pas": 54,
+    "dri": 58,
+    "def": 62,
+    "phy": 64,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-ROS23_018",
+  "clubCode": "РОС",
+  "clubName": "ФК «Ростов»",
+  "season": 2023,
+  "name": "Nikita Kolotievskiy",
+  "positions": [
+    "ЛВ"
+  ],
+  "age": 21,
+  "number": 33,
+  "initials": "NK",
+  "stats": {
+    "pac": 65,
+    "sho": 33,
+    "pas": 38,
+    "dri": 52,
+    "def": 0,
+    "phy": 36,
+    "ovr": 45
+  }
+},
+{
+  "id": "2023-ROS23_019",
+  "clubCode": "РОС",
+  "clubName": "ФК «Ростов»",
+  "season": 2023,
+  "name": "Kirill Schetinin",
+  "positions": [
+    "ЛП",
+    "ЦП",
+    "ЛВ"
+  ],
+  "age": 20,
+  "number": 88,
+  "initials": "KS",
+  "stats": {
+    "pac": 60,
+    "sho": 73,
+    "pas": 63,
+    "dri": 63,
+    "def": 48,
+    "phy": 51,
+    "ovr": 60
+  }
+},
+{
+  "id": "2023-ROS23_020",
+  "clubCode": "РОС",
+  "clubName": "ФК «Ростов»",
+  "season": 2023,
+  "name": "Stepan Melnikov",
+  "positions": [
+    "ПВ",
+    "ЛВ"
+  ],
+  "age": 20,
+  "number": 77,
+  "initials": "SM",
+  "stats": {
+    "pac": 58,
+    "sho": 63,
+    "pas": 55,
+    "dri": 53,
+    "def": 23,
+    "phy": 52,
+    "ovr": 51
+  }
+},
+{
+  "id": "2023-ROS23_021",
+  "clubCode": "РОС",
+  "clubName": "ФК «Ростов»",
+  "season": 2023,
+  "name": "Andrey Langovich",
+  "positions": [
+    "ПЗ"
+  ],
+  "age": 19,
+  "number": 87,
+  "initials": "AL",
+  "stats": {
+    "pac": 56,
+    "sho": 48,
+    "pas": 48,
+    "dri": 46,
+    "def": 58,
+    "phy": 51,
+    "ovr": 51
+  }
+},
+{
+  "id": "2023-ROS23_022",
+  "clubCode": "РОС",
+  "clubName": "ФК «Ростов»",
+  "season": 2023,
+  "name": "Victor Melekhin",
+  "positions": [
+    "ЦЗ",
+    "ЦОП"
+  ],
+  "age": 18,
+  "number": 92,
+  "initials": "VM",
+  "stats": {
+    "pac": 56,
+    "sho": 53,
+    "pas": 54,
+    "dri": 52,
+    "def": 67,
+    "phy": 56,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-SOC23_001",
+  "clubCode": "СОЧ",
+  "clubName": "ФК «Сочи»",
+  "season": 2023,
+  "name": "Victorien Angban",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 25,
+  "number": 5,
+  "initials": "VA",
+  "stats": {
+    "pac": 58,
+    "sho": 55,
+    "pas": 54,
+    "dri": 56,
+    "def": 64,
+    "phy": 70,
+    "ovr": 60
+  }
+},
+{
+  "id": "2023-SOC23_002",
+  "clubCode": "СОЧ",
+  "clubName": "ФК «Сочи»",
+  "season": 2023,
+  "name": "Joãozinho",
+  "positions": [
+    "ЛП",
+    "ЦП",
+    "ЛВ",
+    "ЦАП"
+  ],
+  "age": 33,
+  "number": 22,
+  "initials": "J",
+  "stats": {
+    "pac": 58,
+    "sho": 63,
+    "pas": 60,
+    "dri": 59,
+    "def": 48,
+    "phy": 44,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-SOC23_003",
+  "clubCode": "СОЧ",
+  "clubName": "ФК «Сочи»",
+  "season": 2023,
+  "name": "Artem Meschaninov",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 26,
+  "number": 26,
+  "initials": "AM",
+  "stats": {
+    "pac": 60,
+    "sho": 36,
+    "pas": 41,
+    "dri": 38,
+    "def": 63,
+    "phy": 72,
+    "ovr": 52
+  }
+},
+{
+  "id": "2023-SOC23_004",
+  "clubCode": "СОЧ",
+  "clubName": "ФК «Сочи»",
+  "season": 2023,
+  "name": "Moussa Sissako",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 21,
+  "number": 4,
+  "initials": "MS",
+  "stats": {
+    "pac": 55,
+    "sho": 52,
+    "pas": 49,
+    "dri": 49,
+    "def": 66,
+    "phy": 71,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-SOC23_005",
+  "clubCode": "СОЧ",
+  "clubName": "ФК «Сочи»",
+  "season": 2023,
+  "name": "Artur Yusupov",
+  "positions": [
+    "ЦОП",
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 32,
+  "number": 6,
+  "initials": "AY",
+  "stats": {
+    "pac": 63,
+    "sho": 61,
+    "pas": 64,
+    "dri": 58,
+    "def": 61,
+    "phy": 58,
+    "ovr": 61
+  }
+},
+{
+  "id": "2023-SOC23_006",
+  "clubCode": "СОЧ",
+  "clubName": "ФК «Сочи»",
+  "season": 2023,
+  "name": "Soslan Djanaev",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 35,
+  "number": 35,
+  "initials": "SD",
+  "stats": {
+    "pac": 45,
+    "sho": 27,
+    "pas": 34,
+    "dri": 36,
+    "def": 25,
+    "phy": 66,
+    "ovr": 39
+  }
+},
+{
+  "id": "2023-SOC23_007",
+  "clubCode": "СОЧ",
+  "clubName": "ФК «Сочи»",
+  "season": 2023,
+  "name": "Nikita Burmistrov",
+  "positions": [
+    "ПП",
+    "ЦП",
+    "ПВ",
+    "ЦАП"
+  ],
+  "age": 32,
+  "number": 18,
+  "initials": "NB",
+  "stats": {
+    "pac": 61,
+    "sho": 50,
+    "pas": 59,
+    "dri": 63,
+    "def": 40,
+    "phy": 59,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-SOC23_008",
+  "clubCode": "СОЧ",
+  "clubName": "ФК «Сочи»",
+  "season": 2023,
+  "name": "Nikolay Zabolotny",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 32,
+  "number": 12,
+  "initials": "NZ",
+  "stats": {
+    "pac": 56,
+    "sho": 18,
+    "pas": 36,
+    "dri": 43,
+    "def": 36,
+    "phy": 51,
+    "ovr": 40
+  }
+},
+{
+  "id": "2023-SOC23_009",
+  "clubCode": "СОЧ",
+  "clubName": "ФК «Сочи»",
+  "season": 2023,
+  "name": "Christian Noboa",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 37,
+  "number": 16,
+  "initials": "CN",
+  "stats": {
+    "pac": 56,
+    "sho": 58,
+    "pas": 66,
+    "dri": 63,
+    "def": 60,
+    "phy": 56,
+    "ovr": 60
+  }
+},
+{
+  "id": "2023-SOC23_010",
+  "clubCode": "СОЧ",
+  "clubName": "ФК «Сочи»",
+  "season": 2023,
+  "name": "Sergey Terekhov",
+  "positions": [
+    "ЛЗ",
+    "ЦЗ",
+    "ЛФЗ"
+  ],
+  "age": 31,
+  "number": 13,
+  "initials": "ST",
+  "stats": {
+    "pac": 65,
+    "sho": 53,
+    "pas": 61,
+    "dri": 50,
+    "def": 61,
+    "phy": 58,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-SOC23_011",
+  "clubCode": "СОЧ",
+  "clubName": "ФК «Сочи»",
+  "season": 2023,
+  "name": "Ibragim Tsallagov",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 31,
+  "number": 15,
+  "initials": "IT",
+  "stats": {
+    "pac": 63,
+    "sho": 58,
+    "pas": 51,
+    "dri": 54,
+    "def": 65,
+    "phy": 57,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-SOC23_012",
+  "clubCode": "СОЧ",
+  "clubName": "ФК «Сочи»",
+  "season": 2023,
+  "name": "Kirill Zaika",
+  "positions": [
+    "ЛЗ",
+    "ПФЗ",
+    "ЛФЗ"
+  ],
+  "age": 29,
+  "number": 27,
+  "initials": "KZ",
+  "stats": {
+    "pac": 65,
+    "sho": 43,
+    "pas": 48,
+    "dri": 61,
+    "def": 57,
+    "phy": 48,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-SOC23_013",
+  "clubCode": "СОЧ",
+  "clubName": "ФК «Сочи»",
+  "season": 2023,
+  "name": "Igor Yurganov",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 28,
+  "number": 20,
+  "initials": "IY",
+  "stats": {
+    "pac": 54,
+    "sho": 44,
+    "pas": 41,
+    "dri": 46,
+    "def": 63,
+    "phy": 63,
+    "ovr": 52
+  }
+},
+{
+  "id": "2023-SOC23_014",
+  "clubCode": "СОЧ",
+  "clubName": "ФК «Сочи»",
+  "season": 2023,
+  "name": "Timofey Margasov",
+  "positions": [
+    "ПЗ",
+    "ЛЗ",
+    "ПФЗ",
+    "ЛФЗ"
+  ],
+  "age": 30,
+  "number": 34,
+  "initials": "TM",
+  "stats": {
+    "pac": 63,
+    "sho": 48,
+    "pas": 55,
+    "dri": 52,
+    "def": 55,
+    "phy": 60,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-SOC23_015",
+  "clubCode": "СОЧ",
+  "clubName": "ФК «Сочи»",
+  "season": 2023,
+  "name": "Vladislav Sarveli",
+  "positions": [
+    "ЦАП",
+    "ЦФД"
+  ],
+  "age": 24,
+  "number": 10,
+  "initials": "VS",
+  "stats": {
+    "pac": 53,
+    "sho": 68,
+    "pas": 64,
+    "dri": 68,
+    "def": 40,
+    "phy": 47,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-SOC23_016",
+  "clubCode": "СОЧ",
+  "clubName": "ФК «Сочи»",
+  "season": 2023,
+  "name": "Georgy Melkadze",
+  "positions": [
+    "ЛВ",
+    "ЦАП",
+    "ЦФД"
+  ],
+  "age": 25,
+  "number": 9,
+  "initials": "GM",
+  "stats": {
+    "pac": 64,
+    "sho": 52,
+    "pas": 52,
+    "dri": 65,
+    "def": 40,
+    "phy": 63,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-SOC23_017",
+  "clubCode": "СОЧ",
+  "clubName": "ФК «Сочи»",
+  "season": 2023,
+  "name": "Denis Adamov",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 24,
+  "number": 1,
+  "initials": "DA",
+  "stats": {
+    "pac": 49,
+    "sho": 18,
+    "pas": 44,
+    "dri": 31,
+    "def": 27,
+    "phy": 55,
+    "ovr": 37
+  }
+},
+{
+  "id": "2023-SOC23_018",
+  "clubCode": "СОЧ",
+  "clubName": "ФК «Сочи»",
+  "season": 2023,
+  "name": "Artem Makarchuk",
+  "positions": [
+    "ЛЗ",
+    "ЛФЗ",
+    "ЛП"
+  ],
+  "age": 26,
+  "number": 17,
+  "initials": "AM",
+  "stats": {
+    "pac": 63,
+    "sho": 52,
+    "pas": 60,
+    "dri": 59,
+    "def": 53,
+    "phy": 61,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-SOC23_019",
+  "clubCode": "СОЧ",
+  "clubName": "ФК «Сочи»",
+  "season": 2023,
+  "name": "Kirill Kravtsov",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 19,
+  "number": 8,
+  "initials": "KK",
+  "stats": {
+    "pac": 55,
+    "sho": 53,
+    "pas": 67,
+    "dri": 56,
+    "def": 48,
+    "phy": 55,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-SOC23_020",
+  "clubCode": "СОЧ",
+  "clubName": "ФК «Сочи»",
+  "season": 2023,
+  "name": "Luka Đorđević",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 27,
+  "number": 11,
+  "initials": "LĐ",
+  "stats": {
+    "pac": 63,
+    "sho": 59,
+    "pas": 61,
+    "dri": 55,
+    "def": 36,
+    "phy": 62,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-SOC23_021",
+  "clubCode": "СОЧ",
+  "clubName": "ФК «Сочи»",
+  "season": 2023,
+  "name": "Ivan Miladinović",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 27,
+  "number": 45,
+  "initials": "IM",
+  "stats": {
+    "pac": 56,
+    "sho": 37,
+    "pas": 43,
+    "dri": 45,
+    "def": 63,
+    "phy": 59,
+    "ovr": 51
+  }
+},
+{
+  "id": "2023-SOC23_022",
+  "clubCode": "СОЧ",
+  "clubName": "ФК «Сочи»",
+  "season": 2023,
+  "name": "Vanja Drkušić",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 22,
+  "number": 3,
+  "initials": "VD",
+  "stats": {
+    "pac": 48,
+    "sho": 45,
+    "pas": 54,
+    "dri": 49,
+    "def": 66,
+    "phy": 67,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-SPM23_001",
+  "clubCode": "СПМ",
+  "clubName": "ФК «Спартак» Москва",
+  "season": 2023,
+  "name": "Quincy Promes",
+  "positions": [
+    "ЛП",
+    "ПВ",
+    "ЛВ",
+    "ЦАП"
+  ],
+  "age": 30,
+  "number": 10,
+  "initials": "QP",
+  "stats": {
+    "pac": 81,
+    "sho": 64,
+    "pas": 59,
+    "dri": 73,
+    "def": 43,
+    "phy": 47,
+    "ovr": 61
+  }
+},
+{
+  "id": "2023-SPM23_002",
+  "clubCode": "СПМ",
+  "clubName": "ФК «Спартак» Москва",
+  "season": 2023,
+  "name": "Victor Moses",
+  "positions": [
+    "ПФЗ",
+    "ПП",
+    "ПВ"
+  ],
+  "age": 31,
+  "number": 8,
+  "initials": "VM",
+  "stats": {
+    "pac": 81,
+    "sho": 53,
+    "pas": 59,
+    "dri": 68,
+    "def": 40,
+    "phy": 53,
+    "ovr": 59
+  }
+},
+{
+  "id": "2023-SPM23_003",
+  "clubCode": "СПМ",
+  "clubName": "ФК «Спартак» Москва",
+  "season": 2023,
+  "name": "Christopher Martins Pereira",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 25,
+  "number": 35,
+  "initials": "CM",
+  "stats": {
+    "pac": 60,
+    "sho": 60,
+    "pas": 56,
+    "dri": 62,
+    "def": 66,
+    "phy": 75,
+    "ovr": 63
+  }
+},
+{
+  "id": "2023-SPM23_004",
+  "clubCode": "СПМ",
+  "clubName": "ФК «Спартак» Москва",
+  "season": 2023,
+  "name": "Keita Baldé",
+  "positions": [
+    "ПВ",
+    "ЛВ",
+    "ЦАП",
+    "ЦФД"
+  ],
+  "age": 27,
+  "number": 9,
+  "initials": "KB",
+  "stats": {
+    "pac": 79,
+    "sho": 58,
+    "pas": 61,
+    "dri": 71,
+    "def": 18,
+    "phy": 60,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-SPM23_005",
+  "clubCode": "СПМ",
+  "clubName": "ФК «Спартак» Москва",
+  "season": 2023,
+  "name": "Maciej Rybus",
+  "positions": [
+    "ЛЗ",
+    "ЛФЗ",
+    "ЛП"
+  ],
+  "age": 32,
+  "number": 13,
+  "initials": "MR",
+  "stats": {
+    "pac": 66,
+    "sho": 50,
+    "pas": 54,
+    "dri": 61,
+    "def": 60,
+    "phy": 51,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-SPM23_006",
+  "clubCode": "СПМ",
+  "clubName": "ФК «Спартак» Москва",
+  "season": 2023,
+  "name": "Roman Zobnin",
+  "positions": [
+    "ПФЗ",
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 28,
+  "number": 47,
+  "initials": "RZ",
+  "stats": {
+    "pac": 63,
+    "sho": 54,
+    "pas": 59,
+    "dri": 66,
+    "def": 62,
+    "phy": 72,
+    "ovr": 63
+  }
+},
+{
+  "id": "2023-SPM23_007",
+  "clubCode": "СПМ",
+  "clubName": "ФК «Спартак» Москва",
+  "season": 2023,
+  "name": "Georgy Djikia",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 28,
+  "number": 14,
+  "initials": "GD",
+  "stats": {
+    "pac": 68,
+    "sho": 58,
+    "pas": 49,
+    "dri": 59,
+    "def": 67,
+    "phy": 72,
+    "ovr": 62
+  }
+},
+{
+  "id": "2023-SPM23_008",
+  "clubCode": "СПМ",
+  "clubName": "ФК «Спартак» Москва",
+  "season": 2023,
+  "name": "Alexandr Selikhov",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 28,
+  "number": 57,
+  "initials": "AS",
+  "stats": {
+    "pac": 35,
+    "sho": 19,
+    "pas": 31,
+    "dri": 44,
+    "def": 27,
+    "phy": 61,
+    "ovr": 36
+  }
+},
+{
+  "id": "2023-SPM23_009",
+  "clubCode": "СПМ",
+  "clubName": "ФК «Спартак» Москва",
+  "season": 2023,
+  "name": "Anton Zinkovskiy",
+  "positions": [
+    "ЛП",
+    "ЛВ"
+  ],
+  "age": 26,
+  "number": 17,
+  "initials": "AZ",
+  "stats": {
+    "pac": 70,
+    "sho": 68,
+    "pas": 65,
+    "dri": 67,
+    "def": 42,
+    "phy": 49,
+    "ovr": 60
+  }
+},
+{
+  "id": "2023-SPM23_010",
+  "clubCode": "СПМ",
+  "clubName": "ФК «Спартак» Москва",
+  "season": 2023,
+  "name": "Nikita Chernov",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 26,
+  "number": 23,
+  "initials": "NC",
+  "stats": {
+    "pac": 55,
+    "sho": 38,
+    "pas": 40,
+    "dri": 49,
+    "def": 67,
+    "phy": 63,
+    "ovr": 52
+  }
+},
+{
+  "id": "2023-SPM23_011",
+  "clubCode": "СПМ",
+  "clubName": "ФК «Спартак» Москва",
+  "season": 2023,
+  "name": "Alexandr Maximenko",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 24,
+  "number": 98,
+  "initials": "AM",
+  "stats": {
+    "pac": 43,
+    "sho": 23,
+    "pas": 37,
+    "dri": 44,
+    "def": 28,
+    "phy": 61,
+    "ovr": 39
+  }
+},
+{
+  "id": "2023-SPM23_012",
+  "clubCode": "СПМ",
+  "clubName": "ФК «Спартак» Москва",
+  "season": 2023,
+  "name": "Nikolay Rasskazov",
+  "positions": [
+    "ПЗ"
+  ],
+  "age": 24,
+  "number": 92,
+  "initials": "NR",
+  "stats": {
+    "pac": 73,
+    "sho": 46,
+    "pas": 58,
+    "dri": 61,
+    "def": 50,
+    "phy": 52,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-SPM23_013",
+  "clubCode": "СПМ",
+  "clubName": "ФК «Спартак» Москва",
+  "season": 2023,
+  "name": "Pavel Maslov",
+  "positions": [
+    "ПЗ",
+    "ЦЗ"
+  ],
+  "age": 22,
+  "number": 39,
+  "initials": "PM",
+  "stats": {
+    "pac": 60,
+    "sho": 48,
+    "pas": 59,
+    "dri": 55,
+    "def": 58,
+    "phy": 64,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-SPM23_014",
+  "clubCode": "СПМ",
+  "clubName": "ФК «Спартак» Москва",
+  "season": 2023,
+  "name": "Anton Shitov",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 22,
+  "number": 31,
+  "initials": "AS",
+  "stats": {
+    "pac": 35,
+    "sho": 50,
+    "pas": 43,
+    "dri": 47,
+    "def": 35,
+    "phy": 56,
+    "ovr": 44
+  }
+},
+{
+  "id": "2023-SPM23_015",
+  "clubCode": "СПМ",
+  "clubName": "ФК «Спартак» Москва",
+  "season": 2023,
+  "name": "Alexandr Sobolev",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 25,
+  "number": 7,
+  "initials": "AS",
+  "stats": {
+    "pac": 53,
+    "sho": 75,
+    "pas": 59,
+    "dri": 62,
+    "def": 45,
+    "phy": 69,
+    "ovr": 61
+  }
+},
+{
+  "id": "2023-SPM23_016",
+  "clubCode": "СПМ",
+  "clubName": "ФК «Спартак» Москва",
+  "season": 2023,
+  "name": "Mikhail Ignatov",
+  "positions": [
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 22,
+  "number": 22,
+  "initials": "MI",
+  "stats": {
+    "pac": 55,
+    "sho": 70,
+    "pas": 65,
+    "dri": 72,
+    "def": 37,
+    "phy": 58,
+    "ovr": 60
+  }
+},
+{
+  "id": "2023-SPM23_017",
+  "clubCode": "СПМ",
+  "clubName": "ФК «Спартак» Москва",
+  "season": 2023,
+  "name": "Danil Prutsev",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 22,
+  "number": 25,
+  "initials": "DP",
+  "stats": {
+    "pac": 70,
+    "sho": 41,
+    "pas": 64,
+    "dri": 61,
+    "def": 49,
+    "phy": 49,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-SPM23_018",
+  "clubCode": "СПМ",
+  "clubName": "ФК «Спартак» Москва",
+  "season": 2023,
+  "name": "Nail Umyarov",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 21,
+  "number": 18,
+  "initials": "NU",
+  "stats": {
+    "pac": 58,
+    "sho": 58,
+    "pas": 66,
+    "dri": 66,
+    "def": 55,
+    "phy": 59,
+    "ovr": 60
+  }
+},
+{
+  "id": "2023-SPM23_019",
+  "clubCode": "СПМ",
+  "clubName": "ФК «Спартак» Москва",
+  "season": 2023,
+  "name": "Daniil Khlusevich",
+  "positions": [
+    "ПЗ",
+    "ПФЗ",
+    "ПП",
+    "ПВ"
+  ],
+  "age": 21,
+  "number": 82,
+  "initials": "DK",
+  "stats": {
+    "pac": 65,
+    "sho": 63,
+    "pas": 50,
+    "dri": 58,
+    "def": 52,
+    "phy": 66,
+    "ovr": 59
+  }
+},
+{
+  "id": "2023-SPM23_020",
+  "clubCode": "СПМ",
+  "clubName": "ФК «Спартак» Москва",
+  "season": 2023,
+  "name": "Ruslan Litvinov",
+  "positions": [
+    "ЦЗ",
+    "ЦОП"
+  ],
+  "age": 20,
+  "number": 68,
+  "initials": "RL",
+  "stats": {
+    "pac": 70,
+    "sho": 43,
+    "pas": 54,
+    "dri": 54,
+    "def": 50,
+    "phy": 70,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-SPM23_021",
+  "clubCode": "СПМ",
+  "clubName": "ФК «Спартак» Москва",
+  "season": 2023,
+  "name": "Daniil Denisov",
+  "positions": [
+    "ПЗ",
+    "ЦЗ",
+    "ЦОП"
+  ],
+  "age": 19,
+  "number": 97,
+  "initials": "DD",
+  "stats": {
+    "pac": 56,
+    "sho": 43,
+    "pas": 45,
+    "dri": 50,
+    "def": 53,
+    "phy": 66,
+    "ovr": 52
+  }
+},
+{
+  "id": "2023-SPM23_022",
+  "clubCode": "СПМ",
+  "clubName": "ФК «Спартак» Москва",
+  "season": 2023,
+  "name": "Miha Mevlja",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 32,
+  "number": 32,
+  "initials": "MM",
+  "stats": {
+    "pac": 55,
+    "sho": 39,
+    "pas": 47,
+    "dri": 40,
+    "def": 66,
+    "phy": 63,
+    "ovr": 52
+  }
+},
+{
+  "id": "2023-SPM23_023",
+  "clubCode": "СПМ",
+  "clubName": "ФК «Спартак» Москва",
+  "season": 2023,
+  "name": "Shamar Nicholson",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 25,
+  "number": 11,
+  "initials": "SN",
+  "stats": {
+    "pac": 65,
+    "sho": 61,
+    "pas": 55,
+    "dri": 57,
+    "def": 33,
+    "phy": 68,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-SPM23_024",
+  "clubCode": "СПМ",
+  "clubName": "ФК «Спартак» Москва",
+  "season": 2023,
+  "name": "Leon Klassen",
+  "positions": [
+    "ПЗ",
+    "ЛЗ",
+    "ЛФЗ"
+  ],
+  "age": 22,
+  "number": 5,
+  "initials": "LK",
+  "stats": {
+    "pac": 68,
+    "sho": 43,
+    "pas": 53,
+    "dri": 53,
+    "def": 52,
+    "phy": 49,
+    "ovr": 53
+  }
+},
+{
+  "id": "2023-TOR23_001",
+  "clubCode": "ТОР",
+  "clubName": "ФК «Торпедо» Москва",
+  "season": 2023,
+  "name": "Igor Lebedenko",
+  "positions": [
+    "ЦП",
+    "ЛВ",
+    "ЦАП",
+    "ЦФД"
+  ],
+  "age": 39,
+  "number": 10,
+  "initials": "IL",
+  "stats": {
+    "pac": 56,
+    "sho": 45,
+    "pas": 53,
+    "dri": 56,
+    "def": 42,
+    "phy": 55,
+    "ovr": 51
+  }
+},
+{
+  "id": "2023-TOR23_002",
+  "clubCode": "ТОР",
+  "clubName": "ФК «Торпедо» Москва",
+  "season": 2023,
+  "name": "Alexandr Ryazantsev",
+  "positions": [
+    "ЦОП",
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 35,
+  "number": 7,
+  "initials": "AR",
+  "stats": {
+    "pac": 49,
+    "sho": 50,
+    "pas": 59,
+    "dri": 53,
+    "def": 45,
+    "phy": 41,
+    "ovr": 50
+  }
+},
+{
+  "id": "2023-TOR23_003",
+  "clubCode": "ТОР",
+  "clubName": "ФК «Торпедо» Москва",
+  "season": 2023,
+  "name": "Denis Laptev",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 30,
+  "number": 55,
+  "initials": "DL",
+  "stats": {
+    "pac": 48,
+    "sho": 47,
+    "pas": 48,
+    "dri": 41,
+    "def": 53,
+    "phy": 66,
+    "ovr": 51
+  }
+},
+{
+  "id": "2023-TOR23_004",
+  "clubCode": "ТОР",
+  "clubName": "ФК «Торпедо» Москва",
+  "season": 2023,
+  "name": "Mario Ćurić",
+  "positions": [
+    "ЦОП",
+    "ЛП",
+    "ЦП",
+    "ЛВ"
+  ],
+  "age": 23,
+  "number": 97,
+  "initials": "MĆ",
+  "stats": {
+    "pac": 60,
+    "sho": 57,
+    "pas": 53,
+    "dri": 64,
+    "def": 42,
+    "phy": 68,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-TOR23_005",
+  "clubCode": "ТОР",
+  "clubName": "ФК «Торпедо» Москва",
+  "season": 2023,
+  "name": "Alexandr Dovbnya",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 35,
+  "number": 56,
+  "initials": "AD",
+  "stats": {
+    "pac": 53,
+    "sho": 35,
+    "pas": 45,
+    "dri": 40,
+    "def": 70,
+    "phy": 58,
+    "ovr": 50
+  }
+},
+{
+  "id": "2023-TOR23_006",
+  "clubCode": "ТОР",
+  "clubName": "ФК «Торпедо» Москва",
+  "season": 2023,
+  "name": "Damien Le Tallec",
+  "positions": [
+    "ЦЗ",
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 32,
+  "number": 21,
+  "initials": "DL",
+  "stats": {
+    "pac": 46,
+    "sho": 47,
+    "pas": 52,
+    "dri": 54,
+    "def": 63,
+    "phy": 69,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-TOR23_007",
+  "clubCode": "ТОР",
+  "clubName": "ФК «Торпедо» Москва",
+  "season": 2023,
+  "name": "Márk Koszta",
+  "positions": [
+    "ПВ",
+    "ЛВ",
+    "ЦАП",
+    "ЦФД"
+  ],
+  "age": 25,
+  "number": 26,
+  "initials": "MK",
+  "stats": {
+    "pac": 55,
+    "sho": 61,
+    "pas": 62,
+    "dri": 58,
+    "def": 43,
+    "phy": 51,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-TOR23_008",
+  "clubCode": "ТОР",
+  "clubName": "ФК «Торпедо» Москва",
+  "season": 2023,
+  "name": "Artem Samsonov",
+  "positions": [
+    "ПЗ",
+    "ЛЗ",
+    "ЛФЗ"
+  ],
+  "age": 33,
+  "number": 44,
+  "initials": "AS",
+  "stats": {
+    "pac": 50,
+    "sho": 60,
+    "pas": 48,
+    "dri": 48,
+    "def": 52,
+    "phy": 54,
+    "ovr": 52
+  }
+},
+{
+  "id": "2023-TOR23_009",
+  "clubCode": "ТОР",
+  "clubName": "ФК «Торпедо» Москва",
+  "season": 2023,
+  "name": "Igor Smolnikov",
+  "positions": [
+    "ПЗ",
+    "ПФЗ"
+  ],
+  "age": 33,
+  "number": 28,
+  "initials": "IS",
+  "stats": {
+    "pac": 71,
+    "sho": 45,
+    "pas": 54,
+    "dri": 59,
+    "def": 58,
+    "phy": 56,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-TOR23_010",
+  "clubCode": "ТОР",
+  "clubName": "ФК «Торпедо» Москва",
+  "season": 2023,
+  "name": "Ilja Kutepov",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 28,
+  "number": 3,
+  "initials": "IK",
+  "stats": {
+    "pac": 55,
+    "sho": 48,
+    "pas": 36,
+    "dri": 51,
+    "def": 67,
+    "phy": 67,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-TOR23_011",
+  "clubCode": "ТОР",
+  "clubName": "ФК «Торпедо» Москва",
+  "season": 2023,
+  "name": "Muhammad Sultonov",
+  "positions": [
+    "ПП",
+    "ПВ"
+  ],
+  "age": 29,
+  "number": 14,
+  "initials": "MS",
+  "stats": {
+    "pac": 68,
+    "sho": 61,
+    "pas": 53,
+    "dri": 56,
+    "def": 46,
+    "phy": 58,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-TOR23_012",
+  "clubCode": "ТОР",
+  "clubName": "ФК «Торпедо» Москва",
+  "season": 2023,
+  "name": "Yegor Baburin",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 28,
+  "number": 12,
+  "initials": "YB",
+  "stats": {
+    "pac": 50,
+    "sho": 20,
+    "pas": 37,
+    "dri": 35,
+    "def": 31,
+    "phy": 61,
+    "ovr": 39
+  }
+},
+{
+  "id": "2023-TOR23_013",
+  "clubCode": "ТОР",
+  "clubName": "ФК «Торпедо» Москва",
+  "season": 2023,
+  "name": "Ravil Netfullin",
+  "positions": [
+    "ПЗ",
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 29,
+  "number": 52,
+  "initials": "RN",
+  "stats": {
+    "pac": 55,
+    "sho": 48,
+    "pas": 48,
+    "dri": 62,
+    "def": 58,
+    "phy": 58,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-TOR23_014",
+  "clubCode": "ТОР",
+  "clubName": "ФК «Торпедо» Москва",
+  "season": 2023,
+  "name": "Ivan Yenin",
+  "positions": [
+    "ЦОП"
+  ],
+  "age": 28,
+  "number": 35,
+  "initials": "IY",
+  "stats": {
+    "pac": 60,
+    "sho": 57,
+    "pas": 55,
+    "dri": 61,
+    "def": 43,
+    "phy": 62,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-TOR23_015",
+  "clubCode": "ТОР",
+  "clubName": "ФК «Торпедо» Москва",
+  "season": 2023,
+  "name": "Artem Simonyan",
+  "positions": [
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 27,
+  "number": 23,
+  "initials": "AS",
+  "stats": {
+    "pac": 58,
+    "sho": 60,
+    "pas": 50,
+    "dri": 59,
+    "def": 42,
+    "phy": 57,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-TOR23_016",
+  "clubCode": "ТОР",
+  "clubName": "ФК «Торпедо» Москва",
+  "season": 2023,
+  "name": "David Karaev",
+  "positions": [
+    "ЦАП",
+    "ЦФД"
+  ],
+  "age": 27,
+  "number": 18,
+  "initials": "DK",
+  "stats": {
+    "pac": 68,
+    "sho": 59,
+    "pas": 53,
+    "dri": 60,
+    "def": 36,
+    "phy": 59,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-TOR23_017",
+  "clubCode": "ТОР",
+  "clubName": "ФК «Торпедо» Москва",
+  "season": 2023,
+  "name": "Oleg Kozhemyakin",
+  "positions": [
+    "ПЗ",
+    "ЦЗ",
+    "ЦОП"
+  ],
+  "age": 27,
+  "number": 4,
+  "initials": "OK",
+  "stats": {
+    "pac": 60,
+    "sho": 51,
+    "pas": 45,
+    "dri": 47,
+    "def": 62,
+    "phy": 61,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-TOR23_018",
+  "clubCode": "ТОР",
+  "clubName": "ФК «Торпедо» Москва",
+  "season": 2023,
+  "name": "Vitaly Botnar'",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 21,
+  "number": 51,
+  "initials": "VB",
+  "stats": {
+    "pac": 25,
+    "sho": 40,
+    "pas": 40,
+    "dri": 42,
+    "def": 70,
+    "phy": 62,
+    "ovr": 47
+  }
+},
+{
+  "id": "2023-TOR23_019",
+  "clubCode": "ТОР",
+  "clubName": "ФК «Торпедо» Москва",
+  "season": 2023,
+  "name": "Andrey Yevdokimov",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 23,
+  "number": 99,
+  "initials": "AY",
+  "stats": {
+    "pac": 58,
+    "sho": 43,
+    "pas": 49,
+    "dri": 40,
+    "def": 60,
+    "phy": 64,
+    "ovr": 52
+  }
+},
+{
+  "id": "2023-TOR23_020",
+  "clubCode": "ТОР",
+  "clubName": "ФК «Торпедо» Москва",
+  "season": 2023,
+  "name": "Bogdan Reichman",
+  "positions": [
+    "ЦП"
+  ],
+  "age": 20,
+  "number": 8,
+  "initials": "BR",
+  "stats": {
+    "pac": 63,
+    "sho": 51,
+    "pas": 57,
+    "dri": 53,
+    "def": 44,
+    "phy": 54,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-TOR23_021",
+  "clubCode": "ТОР",
+  "clubName": "ФК «Торпедо» Москва",
+  "season": 2023,
+  "name": "Mihail Caimacov",
+  "positions": [
+    "ЦОП",
+    "ПП",
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 23,
+  "number": 27,
+  "initials": "MC",
+  "stats": {
+    "pac": 61,
+    "sho": 43,
+    "pas": 57,
+    "dri": 58,
+    "def": 42,
+    "phy": 57,
+    "ovr": 53
+  }
+},
+{
+  "id": "2023-TOR23_022",
+  "clubCode": "ТОР",
+  "clubName": "ФК «Торпедо» Москва",
+  "season": 2023,
+  "name": "Stefan Šapić",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 25,
+  "number": 13,
+  "initials": "SŠ",
+  "stats": {
+    "pac": 44,
+    "sho": 25,
+    "pas": 38,
+    "dri": 39,
+    "def": 67,
+    "phy": 63,
+    "ovr": 46
+  }
+},
+{
+  "id": "2023-TOR23_023",
+  "clubCode": "ТОР",
+  "clubName": "ФК «Торпедо» Москва",
+  "season": 2023,
+  "name": "Bojan Roganović",
+  "positions": [
+    "ЛЗ",
+    "ЛФЗ"
+  ],
+  "age": 21,
+  "number": 90,
+  "initials": "BR",
+  "stats": {
+    "pac": 50,
+    "sho": 48,
+    "pas": 55,
+    "dri": 63,
+    "def": 60,
+    "phy": 59,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-TOR23_024",
+  "clubCode": "ТОР",
+  "clubName": "ФК «Торпедо» Москва",
+  "season": 2023,
+  "name": "Hojimat Erkinov",
+  "positions": [
+    "ЛП",
+    "ЛВ"
+  ],
+  "age": 21,
+  "number": 22,
+  "initials": "HE",
+  "stats": {
+    "pac": 55,
+    "sho": 52,
+    "pas": 49,
+    "dri": 66,
+    "def": 50,
+    "phy": 46,
+    "ovr": 53
+  }
+},
+{
+  "id": "2023-TOR23_025",
+  "clubCode": "ТОР",
+  "clubName": "ФК «Торпедо» Москва",
+  "season": 2023,
+  "name": "Igor Savić",
+  "positions": [
+    "ЦОП"
+  ],
+  "age": 21,
+  "number": 24,
+  "initials": "IS",
+  "stats": {
+    "pac": 55,
+    "sho": 35,
+    "pas": 31,
+    "dri": 35,
+    "def": 70,
+    "phy": 49,
+    "ovr": 46
+  }
+},
+{
+  "id": "2023-URA23_001",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Denys Kulakov",
+  "positions": [
+    "ПЗ",
+    "ПФЗ",
+    "ПП"
+  ],
+  "age": 36,
+  "number": 15,
+  "initials": "DK",
+  "stats": {
+    "pac": 70,
+    "sho": 48,
+    "pas": 56,
+    "dri": 53,
+    "def": 63,
+    "phy": 62,
+    "ovr": 59
+  }
+},
+{
+  "id": "2023-URA23_002",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Egor Filipenko",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 34,
+  "number": 24,
+  "initials": "EF",
+  "stats": {
+    "pac": 40,
+    "sho": 35,
+    "pas": 42,
+    "dri": 34,
+    "def": 65,
+    "phy": 63,
+    "ovr": 46
+  }
+},
+{
+  "id": "2023-URA23_003",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Ibrahima Cissé",
+  "positions": [
+    "ЦЗ",
+    "ЦОП"
+  ],
+  "age": 28,
+  "number": 6,
+  "initials": "IC",
+  "stats": {
+    "pac": 69,
+    "sho": 48,
+    "pas": 52,
+    "dri": 64,
+    "def": 62,
+    "phy": 64,
+    "ovr": 60
+  }
+},
+{
+  "id": "2023-URA23_004",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Danijel Miskic",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 28,
+  "number": 19,
+  "initials": "DM",
+  "stats": {
+    "pac": 55,
+    "sho": 60,
+    "pas": 55,
+    "dri": 63,
+    "def": 58,
+    "phy": 52,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-URA23_005",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Silvije Begic",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 29,
+  "number": 2,
+  "initials": "SB",
+  "stats": {
+    "pac": 48,
+    "sho": 45,
+    "pas": 35,
+    "dri": 49,
+    "def": 63,
+    "phy": 72,
+    "ovr": 52
+  }
+},
+{
+  "id": "2023-URA23_006",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Rai Vloet",
+  "positions": [
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 27,
+  "number": 20,
+  "initials": "RV",
+  "stats": {
+    "pac": 68,
+    "sho": 59,
+    "pas": 61,
+    "dri": 64,
+    "def": 24,
+    "phy": 62,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-URA23_007",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Eric Bicfalvi",
+  "positions": [
+    "ЦП",
+    "ЦАП",
+    "ЦФД"
+  ],
+  "age": 34,
+  "number": 10,
+  "initials": "EB",
+  "stats": {
+    "pac": 54,
+    "sho": 60,
+    "pas": 54,
+    "dri": 62,
+    "def": 48,
+    "phy": 54,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-URA23_008",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Oleg Shatov",
+  "positions": [
+    "ЦП",
+    "ПП",
+    "ЛП",
+    "ПВ"
+  ],
+  "age": 31,
+  "number": 27,
+  "initials": "OS",
+  "stats": {
+    "pac": 64,
+    "sho": 54,
+    "pas": 62,
+    "dri": 68,
+    "def": 46,
+    "phy": 50,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-URA23_009",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Yury Gazinskiy",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 32,
+  "number": 18,
+  "initials": "YG",
+  "stats": {
+    "pac": 58,
+    "sho": 51,
+    "pas": 61,
+    "dri": 55,
+    "def": 53,
+    "phy": 58,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-URA23_010",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Alexey Gerasimov",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 29,
+  "number": 93,
+  "initials": "AG",
+  "stats": {
+    "pac": 54,
+    "sho": 39,
+    "pas": 47,
+    "dri": 44,
+    "def": 53,
+    "phy": 65,
+    "ovr": 50
+  }
+},
+{
+  "id": "2023-URA23_011",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Oleg Baklov",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 27,
+  "number": 0,
+  "initials": "OB",
+  "stats": {
+    "pac": 52,
+    "sho": 15,
+    "pas": 27,
+    "dri": 35,
+    "def": 55,
+    "phy": 45,
+    "ovr": 38
+  }
+},
+{
+  "id": "2023-URA23_012",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Vyacheslav Podberezkin",
+  "positions": [
+    "ЦП",
+    "ПП",
+    "ЛП",
+    "ПВ"
+  ],
+  "age": 29,
+  "number": 21,
+  "initials": "VP",
+  "stats": {
+    "pac": 50,
+    "sho": 55,
+    "pas": 65,
+    "dri": 58,
+    "def": 49,
+    "phy": 58,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-URA23_013",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Ilja Pomazun",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 25,
+  "number": 1,
+  "initials": "IP",
+  "stats": {
+    "pac": 55,
+    "sho": 17,
+    "pas": 36,
+    "dri": 36,
+    "def": 27,
+    "phy": 61,
+    "ovr": 39
+  }
+},
+{
+  "id": "2023-URA23_014",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Alexandr Yushin",
+  "positions": [
+    "ЛП",
+    "ПП",
+    "ПВ",
+    "ЛВ"
+  ],
+  "age": 27,
+  "number": 7,
+  "initials": "AY",
+  "stats": {
+    "pac": 68,
+    "sho": 52,
+    "pas": 58,
+    "dri": 56,
+    "def": 39,
+    "phy": 38,
+    "ovr": 52
+  }
+},
+{
+  "id": "2023-URA23_015",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Igor Konovalov",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 25,
+  "number": 11,
+  "initials": "IK",
+  "stats": {
+    "pac": 54,
+    "sho": 48,
+    "pas": 59,
+    "dri": 64,
+    "def": 48,
+    "phy": 53,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-URA23_016",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Leo Goglichidze",
+  "positions": [
+    "ЛЗ",
+    "ЛФЗ"
+  ],
+  "age": 25,
+  "number": 3,
+  "initials": "LG",
+  "stats": {
+    "pac": 65,
+    "sho": 54,
+    "pas": 48,
+    "dri": 56,
+    "def": 58,
+    "phy": 56,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-URA23_017",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Andrey Yegorychev",
+  "positions": [
+    "ПП",
+    "ЦП",
+    "ПВ",
+    "ЦАП"
+  ],
+  "age": 29,
+  "number": 5,
+  "initials": "AY",
+  "stats": {
+    "pac": 65,
+    "sho": 61,
+    "pas": 54,
+    "dri": 62,
+    "def": 46,
+    "phy": 58,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-URA23_018",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Artem Mamin",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 24,
+  "number": 46,
+  "initials": "AM",
+  "stats": {
+    "pac": 42,
+    "sho": 52,
+    "pas": 45,
+    "dri": 45,
+    "def": 55,
+    "phy": 65,
+    "ovr": 51
+  }
+},
+{
+  "id": "2023-URA23_019",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Mingiyan Beveev",
+  "positions": [
+    "ПЗ",
+    "ПФЗ",
+    "ПП"
+  ],
+  "age": 26,
+  "number": 22,
+  "initials": "MB",
+  "stats": {
+    "pac": 75,
+    "sho": 35,
+    "pas": 52,
+    "dri": 45,
+    "def": 47,
+    "phy": 53,
+    "ovr": 51
+  }
+},
+{
+  "id": "2023-URA23_020",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Alexey Kashtanov",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 26,
+  "number": 79,
+  "initials": "AK",
+  "stats": {
+    "pac": 48,
+    "sho": 60,
+    "pas": 49,
+    "dri": 51,
+    "def": 48,
+    "phy": 69,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-URA23_021",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Ramazan Gadjimuradov",
+  "positions": [
+    "ПП",
+    "ЛП",
+    "ЦП",
+    "ПВ"
+  ],
+  "age": 24,
+  "number": 70,
+  "initials": "RG",
+  "stats": {
+    "pac": 74,
+    "sho": 52,
+    "pas": 49,
+    "dri": 68,
+    "def": 39,
+    "phy": 46,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-URA23_022",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Fanil Sungatulin",
+  "positions": [
+    "ЦОП"
+  ],
+  "age": 20,
+  "number": 75,
+  "initials": "FS",
+  "stats": {
+    "pac": 48,
+    "sho": 48,
+    "pas": 45,
+    "dri": 58,
+    "def": 48,
+    "phy": 54,
+    "ovr": 50
+  }
+},
+{
+  "id": "2023-URA23_023",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Oston Orunov",
+  "positions": [
+    "ПП",
+    "ЦАП"
+  ],
+  "age": 21,
+  "number": 77,
+  "initials": "OO",
+  "stats": {
+    "pac": 62,
+    "sho": 67,
+    "pas": 59,
+    "dri": 69,
+    "def": 47,
+    "phy": 54,
+    "ovr": 60
+  }
+},
+{
+  "id": "2023-URA23_024",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Lazar Ranđelović",
+  "positions": [
+    "ПП",
+    "ПВ"
+  ],
+  "age": 24,
+  "number": 9,
+  "initials": "LR",
+  "stats": {
+    "pac": 72,
+    "sho": 58,
+    "pas": 55,
+    "dri": 57,
+    "def": 38,
+    "phy": 56,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-URA23_025",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Vladis Emmersón",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 26,
+  "number": 4,
+  "initials": "VE",
+  "stats": {
+    "pac": 50,
+    "sho": 36,
+    "pas": 35,
+    "dri": 37,
+    "def": 67,
+    "phy": 70,
+    "ovr": 49
+  }
+},
+{
+  "id": "2023-URA23_026",
+  "clubCode": "УРЛ",
+  "clubName": "ФК «Урал» Екатеринбург",
+  "season": 2023,
+  "name": "Luka Tsulukidze",
+  "positions": [
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 18,
+  "number": 17,
+  "initials": "LT",
+  "stats": {
+    "pac": 60,
+    "sho": 29,
+    "pas": 44,
+    "dri": 52,
+    "def": 47,
+    "phy": 40,
+    "ovr": 45
+  }
+},
+{
+  "id": "2023-FAK23_001",
+  "clubCode": "ФАК",
+  "clubName": "ФК «Факел»",
+  "season": 2023,
+  "name": "Maxim Maximov",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 26,
+  "number": 9,
+  "initials": "MM",
+  "stats": {
+    "pac": 59,
+    "sho": 49,
+    "pas": 38,
+    "dri": 54,
+    "def": 32,
+    "phy": 60,
+    "ovr": 49
+  }
+},
+{
+  "id": "2023-FAK23_002",
+  "clubCode": "ФАК",
+  "clubName": "ФК «Факел»",
+  "season": 2023,
+  "name": "Mikhail Smirnov",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 32,
+  "number": 25,
+  "initials": "MS",
+  "stats": {
+    "pac": 55,
+    "sho": 32,
+    "pas": 38,
+    "dri": 32,
+    "def": 60,
+    "phy": 57,
+    "ovr": 46
+  }
+},
+{
+  "id": "2023-FAK23_003",
+  "clubCode": "ФАК",
+  "clubName": "ФК «Факел»",
+  "season": 2023,
+  "name": "Aslan Dashaev",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 33,
+  "number": 4,
+  "initials": "AD",
+  "stats": {
+    "pac": 52,
+    "sho": 55,
+    "pas": 36,
+    "dri": 44,
+    "def": 53,
+    "phy": 61,
+    "ovr": 50
+  }
+},
+{
+  "id": "2023-FAK23_004",
+  "clubCode": "ФАК",
+  "clubName": "ФК «Факел»",
+  "season": 2023,
+  "name": "Roman Akbashev",
+  "positions": [
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 30,
+  "number": 7,
+  "initials": "RA",
+  "stats": {
+    "pac": 58,
+    "sho": 66,
+    "pas": 58,
+    "dri": 62,
+    "def": 42,
+    "phy": 50,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-FAK23_005",
+  "clubCode": "ФАК",
+  "clubName": "ФК «Факел»",
+  "season": 2023,
+  "name": "Irakli Kvekveskiri",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 32,
+  "number": 33,
+  "initials": "IK",
+  "stats": {
+    "pac": 58,
+    "sho": 55,
+    "pas": 45,
+    "dri": 52,
+    "def": 57,
+    "phy": 58,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-FAK23_006",
+  "clubCode": "ФАК",
+  "clubName": "ФК «Факел»",
+  "season": 2023,
+  "name": "Sergey Bryzgalov",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 29,
+  "number": 92,
+  "initials": "SB",
+  "stats": {
+    "pac": 55,
+    "sho": 40,
+    "pas": 41,
+    "dri": 50,
+    "def": 65,
+    "phy": 58,
+    "ovr": 52
+  }
+},
+{
+  "id": "2023-FAK23_007",
+  "clubCode": "ФАК",
+  "clubName": "ФК «Факел»",
+  "season": 2023,
+  "name": "Evgeny Shlyakov",
+  "positions": [
+    "ЛЗ"
+  ],
+  "age": 30,
+  "number": 5,
+  "initials": "ES",
+  "stats": {
+    "pac": 58,
+    "sho": 50,
+    "pas": 49,
+    "dri": 52,
+    "def": 56,
+    "phy": 65,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-FAK23_008",
+  "clubCode": "ФАК",
+  "clubName": "ФК «Факел»",
+  "season": 2023,
+  "name": "Kirill Suslov",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 30,
+  "number": 15,
+  "initials": "KS",
+  "stats": {
+    "pac": 58,
+    "sho": 40,
+    "pas": 30,
+    "dri": 48,
+    "def": 58,
+    "phy": 51,
+    "ovr": 48
+  }
+},
+{
+  "id": "2023-FAK23_009",
+  "clubCode": "ФАК",
+  "clubName": "ФК «Факел»",
+  "season": 2023,
+  "name": "Ilnur Alshin",
+  "positions": [
+    "ЛФЗ",
+    "ПП",
+    "ЛП",
+    "ПВ"
+  ],
+  "age": 28,
+  "number": 10,
+  "initials": "IA",
+  "stats": {
+    "pac": 58,
+    "sho": 52,
+    "pas": 48,
+    "dri": 61,
+    "def": 37,
+    "phy": 42,
+    "ovr": 50
+  }
+},
+{
+  "id": "2023-FAK23_010",
+  "clubCode": "ФАК",
+  "clubName": "ФК «Факел»",
+  "season": 2023,
+  "name": "Alikhan Shavaev",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 29,
+  "number": 8,
+  "initials": "AS",
+  "stats": {
+    "pac": 58,
+    "sho": 60,
+    "pas": 50,
+    "dri": 59,
+    "def": 43,
+    "phy": 47,
+    "ovr": 53
+  }
+},
+{
+  "id": "2023-FAK23_011",
+  "clubCode": "ФАК",
+  "clubName": "ФК «Факел»",
+  "season": 2023,
+  "name": "Alexey Gorodovoy",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 28,
+  "number": 93,
+  "initials": "AG",
+  "stats": {
+    "pac": 48,
+    "sho": 10,
+    "pas": 32,
+    "dri": 30,
+    "def": 70,
+    "phy": 53,
+    "ovr": 40
+  }
+},
+{
+  "id": "2023-FAK23_012",
+  "clubCode": "ФАК",
+  "clubName": "ФК «Факел»",
+  "season": 2023,
+  "name": "Khyzyr Appaev",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 32,
+  "number": 14,
+  "initials": "KA",
+  "stats": {
+    "pac": 68,
+    "sho": 50,
+    "pas": 52,
+    "dri": 51,
+    "def": 40,
+    "phy": 64,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-FAK23_013",
+  "clubCode": "ФАК",
+  "clubName": "ФК «Факел»",
+  "season": 2023,
+  "name": "Sergey Bozhin",
+  "positions": [
+    "ЛЗ",
+    "ЦЗ"
+  ],
+  "age": 27,
+  "number": 47,
+  "initials": "SB",
+  "stats": {
+    "pac": 62,
+    "sho": 46,
+    "pas": 52,
+    "dri": 45,
+    "def": 64,
+    "phy": 58,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-FAK23_014",
+  "clubCode": "ФАК",
+  "clubName": "ФК «Факел»",
+  "season": 2023,
+  "name": "Vasily Cherov",
+  "positions": [
+    "ПЗ",
+    "ЦЗ"
+  ],
+  "age": 26,
+  "number": 2,
+  "initials": "VC",
+  "stats": {
+    "pac": 52,
+    "sho": 45,
+    "pas": 50,
+    "dri": 50,
+    "def": 57,
+    "phy": 63,
+    "ovr": 53
+  }
+},
+{
+  "id": "2023-FAK23_015",
+  "clubCode": "ФАК",
+  "clubName": "ФК «Факел»",
+  "season": 2023,
+  "name": "Vladislav Masternoy",
+  "positions": [
+    "ПЗ",
+    "ЛЗ",
+    "ПФЗ",
+    "ЛФЗ"
+  ],
+  "age": 26,
+  "number": 88,
+  "initials": "VM",
+  "stats": {
+    "pac": 58,
+    "sho": 52,
+    "pas": 46,
+    "dri": 52,
+    "def": 50,
+    "phy": 61,
+    "ovr": 53
+  }
+},
+{
+  "id": "2023-FAK23_016",
+  "clubCode": "ФАК",
+  "clubName": "ФК «Факел»",
+  "season": 2023,
+  "name": "Andrey Mendel'",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 27,
+  "number": 18,
+  "initials": "AM",
+  "stats": {
+    "pac": 62,
+    "sho": 40,
+    "pas": 51,
+    "dri": 54,
+    "def": 52,
+    "phy": 65,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-FAK23_017",
+  "clubCode": "ФАК",
+  "clubName": "ФК «Факел»",
+  "season": 2023,
+  "name": "Ruslan Magal",
+  "positions": [
+    "ПЗ",
+    "ПФЗ",
+    "ПП"
+  ],
+  "age": 30,
+  "number": 28,
+  "initials": "RM",
+  "stats": {
+    "pac": 60,
+    "sho": 47,
+    "pas": 45,
+    "dri": 59,
+    "def": 55,
+    "phy": 52,
+    "ovr": 53
+  }
+},
+{
+  "id": "2023-FAK23_018",
+  "clubCode": "ФАК",
+  "clubName": "ФК «Факел»",
+  "season": 2023,
+  "name": "Oleg Dmitriev",
+  "positions": [
+    "ЦОП",
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 26,
+  "number": 34,
+  "initials": "OD",
+  "stats": {
+    "pac": 55,
+    "sho": 55,
+    "pas": 51,
+    "dri": 62,
+    "def": 47,
+    "phy": 52,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-FAK23_019",
+  "clubCode": "ФАК",
+  "clubName": "ФК «Факел»",
+  "season": 2023,
+  "name": "Georgy Gongadze",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 26,
+  "number": 21,
+  "initials": "GG",
+  "stats": {
+    "pac": 70,
+    "sho": 38,
+    "pas": 40,
+    "dri": 58,
+    "def": 25,
+    "phy": 47,
+    "ovr": 46
+  }
+},
+{
+  "id": "2023-FAK23_020",
+  "clubCode": "ФАК",
+  "clubName": "ФК «Факел»",
+  "season": 2023,
+  "name": "Ilja Svinov",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 21,
+  "number": 1,
+  "initials": "IS",
+  "stats": {
+    "pac": 50,
+    "sho": 25,
+    "pas": 45,
+    "dri": 35,
+    "def": 75,
+    "phy": 40,
+    "ovr": 45
+  }
+},
+{
+  "id": "2023-FAK23_021",
+  "clubCode": "ФАК",
+  "clubName": "ФК «Факел»",
+  "season": 2023,
+  "name": "Daniil Chernyakov",
+  "positions": [
+    "ЦП"
+  ],
+  "age": 21,
+  "number": 78,
+  "initials": "DC",
+  "stats": {
+    "pac": 55,
+    "sho": 47,
+    "pas": 50,
+    "dri": 49,
+    "def": 52,
+    "phy": 51,
+    "ovr": 51
+  }
+},
+{
+  "id": "2023-FAK23_022",
+  "clubCode": "ФАК",
+  "clubName": "ФК «Факел»",
+  "season": 2023,
+  "name": "Evgeny Morozov",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 21,
+  "number": 85,
+  "initials": "EM",
+  "stats": {
+    "pac": 60,
+    "sho": 32,
+    "pas": 21,
+    "dri": 32,
+    "def": 60,
+    "phy": 54,
+    "ovr": 43
+  }
+},
+{
+  "id": "2023-FAK23_023",
+  "clubCode": "ФАК",
+  "clubName": "ФК «Факел»",
+  "season": 2023,
+  "name": "Igor Kalinin",
+  "positions": [
+    "ЛЗ",
+    "ЛФЗ"
+  ],
+  "age": 26,
+  "number": 13,
+  "initials": "IK",
+  "stats": {
+    "pac": 78,
+    "sho": 48,
+    "pas": 58,
+    "dri": 56,
+    "def": 52,
+    "phy": 64,
+    "ovr": 59
+  }
+},
+{
+  "id": "2023-FAK23_024",
+  "clubCode": "ФАК",
+  "clubName": "ФК «Факел»",
+  "season": 2023,
+  "name": "Denis Shepilov",
+  "positions": [
+    "ЦОП"
+  ],
+  "age": 21,
+  "number": 6,
+  "initials": "DS",
+  "stats": {
+    "pac": 65,
+    "sho": 48,
+    "pas": 64,
+    "dri": 55,
+    "def": 45,
+    "phy": 49,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-KHI23_001",
+  "clubCode": "ХИМ",
+  "clubName": "ФК «Химки»",
+  "season": 2023,
+  "name": "Denis Glushakov",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 35,
+  "number": 8,
+  "initials": "DG",
+  "stats": {
+    "pac": 60,
+    "sho": 63,
+    "pas": 56,
+    "dri": 61,
+    "def": 53,
+    "phy": 61,
+    "ovr": 59
+  }
+},
+{
+  "id": "2023-KHI23_002",
+  "clubCode": "ХИМ",
+  "clubName": "ФК «Химки»",
+  "season": 2023,
+  "name": "Zakhar Volkov",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 24,
+  "number": 23,
+  "initials": "ZV",
+  "stats": {
+    "pac": 50,
+    "sho": 45,
+    "pas": 48,
+    "dri": 48,
+    "def": 63,
+    "phy": 63,
+    "ovr": 53
+  }
+},
+{
+  "id": "2023-KHI23_003",
+  "clubCode": "ХИМ",
+  "clubName": "ФК «Химки»",
+  "season": 2023,
+  "name": "Mory Gbané",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 21,
+  "number": 42,
+  "initials": "MG",
+  "stats": {
+    "pac": 60,
+    "sho": 48,
+    "pas": 49,
+    "dri": 48,
+    "def": 56,
+    "phy": 69,
+    "ovr": 55
+  }
+},
+{
+  "id": "2023-KHI23_004",
+  "clubCode": "ХИМ",
+  "clubName": "ФК «Химки»",
+  "season": 2023,
+  "name": "Ilja Kukharchuk",
+  "positions": [
+    "ЛП",
+    "ЛВ",
+    "ЦАП",
+    "ЦФД"
+  ],
+  "age": 31,
+  "number": 44,
+  "initials": "IK",
+  "stats": {
+    "pac": 70,
+    "sho": 68,
+    "pas": 49,
+    "dri": 63,
+    "def": 32,
+    "phy": 63,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-KHI23_005",
+  "clubCode": "ХИМ",
+  "clubName": "ФК «Химки»",
+  "season": 2023,
+  "name": "Alexey Nikitin",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 30,
+  "number": 5,
+  "initials": "AN",
+  "stats": {
+    "pac": 50,
+    "sho": 40,
+    "pas": 40,
+    "dri": 44,
+    "def": 53,
+    "phy": 71,
+    "ovr": 50
+  }
+},
+{
+  "id": "2023-KHI23_006",
+  "clubCode": "ХИМ",
+  "clubName": "ФК «Химки»",
+  "season": 2023,
+  "name": "Dmitry Tikhiy",
+  "positions": [
+    "ПЗ",
+    "ЦЗ"
+  ],
+  "age": 29,
+  "number": 6,
+  "initials": "DT",
+  "stats": {
+    "pac": 58,
+    "sho": 46,
+    "pas": 43,
+    "dri": 44,
+    "def": 68,
+    "phy": 63,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-KHI23_007",
+  "clubCode": "ХИМ",
+  "clubName": "ФК «Химки»",
+  "season": 2023,
+  "name": "Brian Idowu",
+  "positions": [
+    "ЛЗ",
+    "ПФЗ",
+    "ЛФЗ"
+  ],
+  "age": 30,
+  "number": 4,
+  "initials": "BI",
+  "stats": {
+    "pac": 69,
+    "sho": 27,
+    "pas": 46,
+    "dri": 46,
+    "def": 53,
+    "phy": 56,
+    "ovr": 50
+  }
+},
+{
+  "id": "2023-KHI23_008",
+  "clubCode": "ХИМ",
+  "clubName": "ФК «Химки»",
+  "season": 2023,
+  "name": "Reziuan Mirzov",
+  "positions": [
+    "ЛП",
+    "ЛВ",
+    "ЦАП"
+  ],
+  "age": 28,
+  "number": 77,
+  "initials": "RM",
+  "stats": {
+    "pac": 70,
+    "sho": 64,
+    "pas": 54,
+    "dri": 69,
+    "def": 43,
+    "phy": 58,
+    "ovr": 60
+  }
+},
+{
+  "id": "2023-KHI23_009",
+  "clubCode": "ХИМ",
+  "clubName": "ФК «Химки»",
+  "season": 2023,
+  "name": "Vitaly Gudiev",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 27,
+  "number": 33,
+  "initials": "VG",
+  "stats": {
+    "pac": 58,
+    "sho": 18,
+    "pas": 31,
+    "dri": 34,
+    "def": 28,
+    "phy": 63,
+    "ovr": 39
+  }
+},
+{
+  "id": "2023-KHI23_010",
+  "clubCode": "ХИМ",
+  "clubName": "ФК «Химки»",
+  "season": 2023,
+  "name": "Ilja Lantratov",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 26,
+  "number": 22,
+  "initials": "IL",
+  "stats": {
+    "pac": 50,
+    "sho": 21,
+    "pas": 44,
+    "dri": 41,
+    "def": 33,
+    "phy": 59,
+    "ovr": 41
+  }
+},
+{
+  "id": "2023-KHI23_011",
+  "clubCode": "ХИМ",
+  "clubName": "ФК «Химки»",
+  "season": 2023,
+  "name": "Yegor Danilkin",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 26,
+  "number": 15,
+  "initials": "YD",
+  "stats": {
+    "pac": 48,
+    "sho": 42,
+    "pas": 41,
+    "dri": 46,
+    "def": 65,
+    "phy": 60,
+    "ovr": 50
+  }
+},
+{
+  "id": "2023-KHI23_012",
+  "clubCode": "ХИМ",
+  "clubName": "ФК «Химки»",
+  "season": 2023,
+  "name": "Anton Mitryushkin",
+  "positions": [
+    "ВРТ"
+  ],
+  "age": 26,
+  "number": 1,
+  "initials": "AM",
+  "stats": {
+    "pac": 34,
+    "sho": 19,
+    "pas": 34,
+    "dri": 39,
+    "def": 27,
+    "phy": 55,
+    "ovr": 35
+  }
+},
+{
+  "id": "2023-KHI23_013",
+  "clubCode": "ХИМ",
+  "clubName": "ФК «Химки»",
+  "season": 2023,
+  "name": "Ayaz Guliev",
+  "positions": [
+    "ЦОП",
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 25,
+  "number": 99,
+  "initials": "AG",
+  "stats": {
+    "pac": 68,
+    "sho": 56,
+    "pas": 59,
+    "dri": 63,
+    "def": 52,
+    "phy": 56,
+    "ovr": 59
+  }
+},
+{
+  "id": "2023-KHI23_014",
+  "clubCode": "ХИМ",
+  "clubName": "ФК «Химки»",
+  "season": 2023,
+  "name": "Alexandr Zuev",
+  "positions": [
+    "ЛП",
+    "ЛВ"
+  ],
+  "age": 25,
+  "number": 17,
+  "initials": "AZ",
+  "stats": {
+    "pac": 73,
+    "sho": 54,
+    "pas": 59,
+    "dri": 61,
+    "def": 41,
+    "phy": 47,
+    "ovr": 56
+  }
+},
+{
+  "id": "2023-KHI23_015",
+  "clubCode": "ХИМ",
+  "clubName": "ФК «Химки»",
+  "season": 2023,
+  "name": "Ilja Kamyshev",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 24,
+  "number": 21,
+  "initials": "IK",
+  "stats": {
+    "pac": 60,
+    "sho": 50,
+    "pas": 55,
+    "dri": 61,
+    "def": 58,
+    "phy": 58,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-KHI23_016",
+  "clubCode": "ХИМ",
+  "clubName": "ФК «Химки»",
+  "season": 2023,
+  "name": "Butta Magomedov",
+  "positions": [
+    "ЦОП",
+    "ЦП"
+  ],
+  "age": 24,
+  "number": 97,
+  "initials": "BM",
+  "stats": {
+    "pac": 55,
+    "sho": 67,
+    "pas": 61,
+    "dri": 60,
+    "def": 47,
+    "phy": 56,
+    "ovr": 58
+  }
+},
+{
+  "id": "2023-KHI23_017",
+  "clubCode": "ХИМ",
+  "clubName": "ФК «Химки»",
+  "season": 2023,
+  "name": "Alexandr Lomovitskiy",
+  "positions": [
+    "ПП",
+    "ЛП",
+    "ПВ",
+    "ЛВ"
+  ],
+  "age": 24,
+  "number": 11,
+  "initials": "AL",
+  "stats": {
+    "pac": 65,
+    "sho": 58,
+    "pas": 55,
+    "dri": 62,
+    "def": 45,
+    "phy": 54,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-KHI23_018",
+  "clubCode": "ХИМ",
+  "clubName": "ФК «Химки»",
+  "season": 2023,
+  "name": "Alexandr Rudenko",
+  "positions": [
+    "ПВ",
+    "ЛВ",
+    "ЦАП",
+    "ЦФД"
+  ],
+  "age": 23,
+  "number": 9,
+  "initials": "AR",
+  "stats": {
+    "pac": 66,
+    "sho": 52,
+    "pas": 53,
+    "dri": 69,
+    "def": 23,
+    "phy": 41,
+    "ovr": 51
+  }
+},
+{
+  "id": "2023-KHI23_019",
+  "clubCode": "ХИМ",
+  "clubName": "ФК «Химки»",
+  "season": 2023,
+  "name": "Alexandr Dolgov",
+  "positions": [
+    "ЦФД"
+  ],
+  "age": 23,
+  "number": 10,
+  "initials": "AD",
+  "stats": {
+    "pac": 58,
+    "sho": 40,
+    "pas": 41,
+    "dri": 61,
+    "def": 28,
+    "phy": 54,
+    "ovr": 47
+  }
+},
+{
+  "id": "2023-KHI23_020",
+  "clubCode": "ХИМ",
+  "clubName": "ФК «Химки»",
+  "season": 2023,
+  "name": "Kirill Bozhenov",
+  "positions": [
+    "ПЗ",
+    "ПФЗ"
+  ],
+  "age": 21,
+  "number": 87,
+  "initials": "KB",
+  "stats": {
+    "pac": 66,
+    "sho": 39,
+    "pas": 52,
+    "dri": 56,
+    "def": 52,
+    "phy": 56,
+    "ovr": 54
+  }
+},
+{
+  "id": "2023-KHI23_021",
+  "clubCode": "ХИМ",
+  "clubName": "ФК «Химки»",
+  "season": 2023,
+  "name": "Nemanja Glavčić",
+  "positions": [
+    "ЦОП",
+    "ЦП",
+    "ЦАП"
+  ],
+  "age": 25,
+  "number": 20,
+  "initials": "NG",
+  "stats": {
+    "pac": 68,
+    "sho": 52,
+    "pas": 56,
+    "dri": 67,
+    "def": 47,
+    "phy": 53,
+    "ovr": 57
+  }
+},
+{
+  "id": "2023-KHI23_022",
+  "clubCode": "ХИМ",
+  "clubName": "ФК «Химки»",
+  "season": 2023,
+  "name": "Alexandr Filin",
+  "positions": [
+    "ЦЗ"
+  ],
+  "age": 25,
+  "number": 25,
+  "initials": "AF",
+  "stats": {
+    "pac": 61,
+    "sho": 41,
+    "pas": 56,
+    "dri": 58,
+    "def": 57,
+    "phy": 64,
+    "ovr": 56
+  }
+}
 ];
