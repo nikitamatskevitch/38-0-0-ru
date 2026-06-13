@@ -779,10 +779,8 @@
     const wins = Number(entry?.wins);
     const draws = Number(entry?.draws);
     const losses = Number(entry?.losses);
-    const points = Number(entry?.points);
-
-    if ([wins, draws, losses, points].every(Number.isFinite) && (wins + draws + losses) === 38) {
-      return { wins, draws, losses, points };
+    if ([wins, draws, losses].every(Number.isFinite) && (wins + draws + losses) === 38) {
+      return { wins, draws, losses, points: (wins * 3) + draws };
     }
 
     return getProjectedSeason(fallbackScore);
