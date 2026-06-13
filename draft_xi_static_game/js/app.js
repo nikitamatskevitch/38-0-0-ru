@@ -461,7 +461,7 @@
     if (projectedWins) projectedWins.textContent = season.wins;
     if (projectedDraws) projectedDraws.textContent = season.draws;
     if (projectedLosses) projectedLosses.textContent = season.losses;
-    if (projectedPointsText) projectedPointsText.textContent = `Победы · Ничьи · Поражения за 38 матчей · ${season.points} очков`;
+    if (projectedPointsText) projectedPointsText.textContent = `38 матчей против случайных команд из базы · ${season.points} очков · голы ${season.goalsFor}:${season.goalsAgainst}`;
     if (seasonBadge) {
       seasonBadge.textContent = season.label;
       seasonBadge.dataset.tier = season.tier;
@@ -470,32 +470,120 @@
 
   function getProjectedSeason(rating) {
     const safeRating = Math.max(0, Math.min(100, Number(rating) || 0));
-
-    if (safeRating >= 100) {
-      return { wins: 38, draws: 0, losses: 0, points: 114, label: "38-0-0 сезон", tier: "perfect" };
-    }
-
-    const pointsTarget = Math.max(10, Math.min(108, Math.round((safeRating - 45) * 1.35)));
-    const drawTarget = Math.max(4, Math.min(14, Math.round(12 - ((safeRating - 70) * 0.12))));
-    let wins = Math.max(0, Math.min(37, Math.round((pointsTarget - drawTarget) / 3)));
-    let draws = Math.max(0, Math.min(38 - wins, drawTarget));
-    let losses = 38 - wins - draws;
-
-    while ((wins * 3) + draws > pointsTarget && wins > 0) {
-      wins -= 1;
-      losses += 1;
-    }
-
+    const opponents = pickSeasonOpponents(38);
+    const matches = opponents.map(opponent => simulateMatch(safeRating, opponent.rating));
+    const wins = matches.filter(match => match.result === "win").length;
+    const draws = matches.filter(match => match.result === "draw").length;
+    const losses = matches.filter(match => match.result === "loss").length;
     const points = (wins * 3) + draws;
-    const tier = points >= 88 ? "title" : points >= 65 ? "europe" : points >= 45 ? "mid" : "survival";
+    const goalsFor = matches.reduce((acc, match) => acc + match.goalsFor, 0);
+    const goalsAgainst = matches.reduce((acc, match) => acc + match.goalsAgainst, 0);
+    const tier = wins === 38 ? "perfect" : points >= 88 ? "title" : points >= 65 ? "europe" : points >= 45 ? "mid" : "survival";
     const labels = {
+      perfect: "38-0-0 сезон",
       title: "Гонка за титул",
       europe: "Еврокубковый темп",
       mid: "Середина таблицы",
       survival: "Борьба за выживание"
     };
 
-    return { wins, draws, losses, points, label: labels[tier], tier };
+    return { wins, draws, losses, points, goalsFor, goalsAgainst, label: labels[tier], tier };
+  }
+
+  function pickSeasonOpponents(count) {
+    const teams = getHistoricalTeamRatings();
+    if (!teams.length) return Array.from({ length: count }, () => ({ rating: 0 }));
+
+    const pool = shuffleArray(teams);
+    const opponents = [];
+    while (opponents.length < count) {
+      opponents.push(pool[opponents.length % pool.length]);
+      if (opponents.length % pool.length === 0) shuffleArray(pool);
+    }
+    return opponents;
+  }
+
+  function getHistoricalTeamRatings() {
+    const groupsMap = new Map();
+
+    DB.forEach(player => {
+      const rating = Number(player.stats && player.stats.ovr);
+      if (!Number.isFinite(rating)) return;
+
+      const key = `${player.clubCode}|${player.clubName}|${player.season}`;
+      if (!groupsMap.has(key)) {
+        groupsMap.set(key, {
+          clubCode: player.clubCode,
+          clubName: player.clubName,
+          season: player.season,
+          total: 0,
+          count: 0
+        });
+      }
+
+      const group = groupsMap.get(key);
+      group.total += rating;
+      group.count += 1;
+    });
+
+    return Array.from(groupsMap.values())
+      .filter(group => group.count > 0)
+      .map(group => ({
+        clubCode: group.clubCode,
+        clubName: group.clubName,
+        season: group.season,
+        rating: Math.round(group.total / group.count)
+      }));
+  }
+
+  function simulateMatch(teamRating, opponentRating) {
+    const diff = teamRating - opponentRating;
+    let result;
+
+    if (diff >= 4) {
+      result = "win";
+    } else if (Math.abs(diff) <= 3) {
+      result = randomItem(["win", "draw", "loss"]);
+    } else {
+      result = randomItem(["draw", "loss"]);
+    }
+
+    return { result, ...inventScore(result, diff) };
+  }
+
+  function inventScore(result, diff) {
+    const diffBonus = Math.min(3, Math.floor(Math.abs(diff) / 10));
+
+    if (result === "win") {
+      const goalsAgainst = randomInt(0, 2);
+      const margin = randomInt(1, Math.max(1, 2 + diffBonus));
+      return { goalsFor: goalsAgainst + margin, goalsAgainst };
+    }
+
+    if (result === "draw") {
+      const goals = randomInt(0, 3);
+      return { goalsFor: goals, goalsAgainst: goals };
+    }
+
+    const goalsFor = randomInt(0, 2);
+    const margin = randomInt(1, Math.max(1, 2 + diffBonus));
+    return { goalsFor, goalsAgainst: goalsFor + margin };
+  }
+
+  function randomItem(items) {
+    return items[Math.floor(Math.random() * items.length)];
+  }
+
+  function randomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  function shuffleArray(items) {
+    for (let index = items.length - 1; index > 0; index -= 1) {
+      const swapIndex = Math.floor(Math.random() * (index + 1));
+      [items[index], items[swapIndex]] = [items[swapIndex], items[index]];
+    }
+    return items;
   }
 
   function calculateTeamRating() {
