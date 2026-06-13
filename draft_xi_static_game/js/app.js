@@ -680,6 +680,92 @@
     `).join("");
   }
 
+  function generateMatchResults(season) {
+    const opponents = getOpponentPool();
+    const outcomes = shuffleDeterministic([
+      ...Array(season.wins).fill("win"),
+      ...Array(season.draws).fill("draw"),
+      ...Array(season.losses).fill("loss")
+    ], getSeasonSeed(season));
+
+    return outcomes.map((outcome, index) => {
+      const opponent = opponents[index % opponents.length] || { clubName: "Случайная команда", season: "—" };
+      return {
+        round: index + 1,
+        outcome,
+        opponent: opponent.clubName,
+        season: opponent.season,
+        score: getMatchScore(outcome, index, season)
+      };
+    });
+  }
+
+  function getOpponentPool() {
+    const seen = new Set();
+    const selectedClubSeasons = new Set(Object.values(state.placed).map(player => `${player.clubName}|${player.season}`));
+
+    return DB.reduce((items, player) => {
+      const key = `${player.clubName}|${player.season}`;
+      if (seen.has(key) || selectedClubSeasons.has(key)) return items;
+      seen.add(key);
+      items.push({ clubName: player.clubName, season: player.season });
+      return items;
+    }, []);
+  }
+
+  function getMatchScore(outcome, index, season) {
+    const variants = {
+      win: [[1, 0], [2, 0], [2, 1], [3, 0], [3, 1]],
+      draw: [[0, 0], [1, 1], [2, 2]],
+      loss: [[0, 1], [1, 2], [0, 2], [2, 3]]
+    };
+    const list = variants[outcome] || variants.draw;
+    const [forGoals, againstGoals] = list[(index + season.points) % list.length];
+    return `${forGoals}:${againstGoals}`;
+  }
+
+  function getSeasonSeed(season) {
+    return `${state.formation}|${season.wins}-${season.draws}-${season.losses}|${Object.values(state.placed).map(player => player.id).sort().join(",")}`;
+  }
+
+  function shuffleDeterministic(items, seedText) {
+    const shuffled = items.slice();
+    let seed = hashText(seedText);
+
+    for (let index = shuffled.length - 1; index > 0; index -= 1) {
+      seed = (seed * 1664525 + 1013904223) >>> 0;
+      const swapIndex = seed % (index + 1);
+      [shuffled[index], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[index]];
+    }
+
+    return shuffled;
+  }
+
+  function hashText(value) {
+    return String(value).split("").reduce((hash, char) => {
+      return ((hash << 5) - hash + char.charCodeAt(0)) >>> 0;
+    }, 2166136261);
+  }
+
+  function renderMatchResults(results) {
+    if (!matchResultsList) return;
+
+    if (!results.length) {
+      matchResultsList.innerHTML = `<div class="match-results-empty">Матчи появятся после завершения драфта.</div>`;
+      return;
+    }
+
+    matchResultsList.innerHTML = results.map(match => `
+      <div class="match-result-row ${match.outcome}">
+        <div class="match-result-meta">
+          <span>${match.round}. матч</span>
+          <strong>${escapeHtml(match.opponent)}, сезон ${escapeHtml(match.season)}</strong>
+        </div>
+        <div class="match-result-score">${escapeHtml(match.score)}</div>
+      </div>
+    `).join("");
+  }
+
   function calculateTeamRating() {
     const players = Object.values(state.placed);
     if (!players.length) return 0;
