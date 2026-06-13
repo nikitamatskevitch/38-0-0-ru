@@ -666,11 +666,21 @@
           <span>${escapeHtml(formatPlayedAtShort(entry.playedAt))}</span>
         </div>
         <div class="home-feed-result">
-          <strong>${formatHomeScore(entry.score)}</strong>
-          <span>схема: ${escapeHtml(entry.formation || "—")}</span>
+          <strong>${formatHomeRecord(entry.score)}</strong>
+          <span>${formatHomeScoreDetails(entry.score, entry.formation)}</span>
         </div>
       </div>
     `).join("");
+  }
+
+  function formatHomeRecord(score) {
+    const season = getProjectedSeason(score);
+    return `<span class="home-record-win">${season.wins}</span><span class="home-record-separator">-</span><span class="home-record-draw">${season.draws}</span><span class="home-record-separator">-</span><span class="home-record-loss">${season.losses}</span>`;
+  }
+
+  function formatHomeScoreDetails(score, formation) {
+    const season = getProjectedSeason(score);
+    return `${season.points} очков · схема: ${escapeHtml(formation || "—")}`;
   }
 
   function formatHomeScore(score) {

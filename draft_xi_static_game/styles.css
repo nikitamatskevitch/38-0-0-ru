@@ -278,8 +278,23 @@ button { cursor: pointer; }
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.home-feed-result { text-align: right; }
-.home-feed-result strong { color: var(--yellow); }
+.home-feed-result {
+  justify-items: end;
+  text-align: right;
+}
+.home-feed-result strong {
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+  color: var(--text);
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: -.05em;
+}
+.home-feed-result .home-record-win { color: var(--green); }
+.home-feed-result .home-record-draw { color: #a8a5c1; }
+.home-feed-result .home-record-loss { color: var(--pink); }
+.home-feed-result .home-record-separator { color: #777491; }
 .home-feed-player span,
 .home-feed-result span,
 .home-feed-empty {
@@ -287,6 +302,7 @@ button { cursor: pointer; }
   font-size: 12px;
   font-weight: 800;
 }
+.home-feed-result span { color: #b8b4ce; }
 .home-feed-empty {
   padding: 18px 12px;
   border: 1px dashed rgba(255,255,255,.14);
@@ -704,7 +720,7 @@ button { cursor: pointer; }
   .start-hero-layout { grid-template-columns: minmax(0, 1fr); }
   .home-feed-card { padding: 18px; border-radius: 20px; }
   .home-feed-row { grid-template-columns: 1fr; gap: 7px; }
-  .home-feed-result { text-align: left; }
+  .home-feed-result { justify-items: start; text-align: left; }
   .primary-btn.big { min-width: 0; width: 100%; }
   .game-screen { padding: 18px 10px 36px; }
   .players-head { align-items: stretch; flex-direction: column; }
