@@ -32,6 +32,10 @@ try {
     $pdo = createConnection();
 
     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+        if (isset($_GET['nickname'])) {
+            sendJson(['exists' => leaderboardNicknameExists($pdo, normalizeNickname($_GET['nickname']))]);
+        }
+
         sendJson(loadLeaderboard($pdo, getLeaderboardView(), getLeaderboardLimit()));
     }
 
@@ -130,6 +134,24 @@ function loadLeaderboard(PDO $pdo, string $view, int $limit): array
     }, $statement->fetchAll());
 }
 
+
+function leaderboardNicknameExists(PDO $pdo, string $nickname): bool
+{
+    if ($nickname === '') {
+        return false;
+    }
+
+    $statement = $pdo->prepare(
+        'SELECT 1
+         FROM leaderboard
+         WHERE nickname = :nickname
+         LIMIT 1'
+    );
+    $statement->execute([':nickname' => $nickname]);
+
+    return $statement->fetchColumn() !== false;
+}
+
 /**
  * @param array<string, mixed> $payload
  */
@@ -143,135 +165,67 @@ function saveLeaderboardEntry(PDO $pdo, array $payload): void
     $hasFormation = leaderboardHasColumn($pdo, 'formation');
     $hasSeasonRecord = leaderboardHasSeasonRecord($pdo);
 
-    if (updateExistingLeaderboardEntry($pdo, $nickname, $score, $formation, $playedAt, $seasonRecord, $hasFormation, $hasSeasonRecord)) {
-        return;
-    }
+    if ($hasFormation || $hasSeasonRecord) {
+        $columns = ['nickname', 'score'];
+        $placeholders = [':nickname', ':score'];
+        $values = [
+            ':nickname' => $nickname,
+            ':score' => $score,
+        ];
 
-    insertLeaderboardEntry($pdo, $nickname, $score, $formation, $playedAt, $seasonRecord, $hasFormation, $hasSeasonRecord);
-}
+        if ($hasFormation) {
+            $columns[] = 'formation';
+            $placeholders[] = ':formation';
+            $values[':formation'] = $formation;
+        }
 
-/**
- * @param array{wins: int, draws: int, losses: int, points: int} $seasonRecord
- */
-function insertLeaderboardEntry(
-    PDO $pdo,
-    string $nickname,
-    int $score,
-    string $formation,
-    string $playedAt,
-    array $seasonRecord,
-    bool $hasFormation,
-    bool $hasSeasonRecord
-): void {
-    $columns = ['nickname', 'score'];
-    $placeholders = [':nickname', ':score'];
-    $values = [
-        ':nickname' => $nickname,
-        ':score' => $score,
-    ];
+        if ($hasSeasonRecord) {
+            array_push($columns, 'wins', 'draws', 'losses', 'points');
+            array_push($placeholders, ':wins', ':draws', ':losses', ':points');
+            $values[':wins'] = $seasonRecord['wins'];
+            $values[':draws'] = $seasonRecord['draws'];
+            $values[':losses'] = $seasonRecord['losses'];
+            $values[':points'] = $seasonRecord['points'];
+        }
 
-    if ($hasFormation) {
-        $columns[] = 'formation';
-        $placeholders[] = ':formation';
-        $values[':formation'] = $formation;
-    }
+        $columns[] = 'played_at';
+        $placeholders[] = ':played_at';
+        $values[':played_at'] = $playedAt;
 
-    if ($hasSeasonRecord) {
-        array_push($columns, 'wins', 'draws', 'losses', 'points');
-        array_push($placeholders, ':wins', ':draws', ':losses', ':points');
-        $values[':wins'] = $seasonRecord['wins'];
-        $values[':draws'] = $seasonRecord['draws'];
-        $values[':losses'] = $seasonRecord['losses'];
-        $values[':points'] = $seasonRecord['points'];
-    }
-
-    $columns[] = 'played_at';
-    $placeholders[] = ':played_at';
-    $values[':played_at'] = $playedAt;
-
-    try {
         $statement = $pdo->prepare(sprintf(
             'INSERT INTO leaderboard (%s) VALUES (%s)',
             implode(', ', $columns),
             implode(', ', $placeholders)
         ));
-        $statement->execute($values);
-    } catch (PDOException $exception) {
-        if ($exception->getCode() !== '23000') {
-            throw $exception;
-        }
-
-        // Если между проверкой и INSERT такой никнейм уже появился, обновляем существующую запись.
-        updateExistingLeaderboardEntry($pdo, $nickname, $score, $formation, $playedAt, $seasonRecord, $hasFormation, $hasSeasonRecord);
+        executeLeaderboardInsert($statement, $values);
+        return;
     }
+
+    $statement = $pdo->prepare(
+        'INSERT INTO leaderboard (nickname, score, played_at)
+         VALUES (:nickname, :score, :played_at)'
+    );
+    executeLeaderboardInsert($statement, [
+        ':nickname' => $nickname,
+        ':score' => $score,
+        ':played_at' => $playedAt,
+    ]);
 }
 
 /**
- * @param array{wins: int, draws: int, losses: int, points: int} $seasonRecord
+ * @param array<string, mixed> $values
  */
-function updateExistingLeaderboardEntry(
-    PDO $pdo,
-    string $nickname,
-    int $score,
-    string $formation,
-    string $playedAt,
-    array $seasonRecord,
-    bool $hasFormation,
-    bool $hasSeasonRecord
-): bool {
-    $entryId = findLeaderboardEntryIdByNickname($pdo, $nickname);
-    if ($entryId === null) {
-        return false;
-    }
-
-    $sets = ['score = :score'];
-    $values = [
-        ':id' => $entryId,
-        ':score' => $score,
-        ':played_at' => $playedAt,
-    ];
-
-    if ($hasFormation) {
-        $sets[] = 'formation = :formation';
-        $values[':formation'] = $formation;
-    }
-
-    if ($hasSeasonRecord) {
-        array_push($sets, 'wins = :wins', 'draws = :draws', 'losses = :losses', 'points = :points');
-        $values[':wins'] = $seasonRecord['wins'];
-        $values[':draws'] = $seasonRecord['draws'];
-        $values[':losses'] = $seasonRecord['losses'];
-        $values[':points'] = $seasonRecord['points'];
-    }
-
-    $sets[] = 'played_at = :played_at';
-
-    $statement = $pdo->prepare(sprintf(
-        'UPDATE leaderboard SET %s WHERE id = :id',
-        implode(', ', $sets)
-    ));
-    $statement->execute($values);
-
-    return true;
-}
-
-function findLeaderboardEntryIdByNickname(PDO $pdo, string $nickname): ?int
+function executeLeaderboardInsert(PDOStatement $statement, array $values): void
 {
-    $statement = $pdo->prepare(
-        'SELECT id
-         FROM leaderboard
-         WHERE nickname = :nickname
-         ORDER BY id ASC
-         LIMIT 1'
-    );
-    $statement->execute([':nickname' => $nickname]);
-    $entryId = $statement->fetchColumn();
+    try {
+        $statement->execute($values);
+    } catch (PDOException $exception) {
+        if ($exception->getCode() === '23000') {
+            throw new InvalidArgumentException('Никнейм уже занят. Придумай другой, чтобы начать игру.');
+        }
 
-    if ($entryId === false) {
-        return null;
+        throw $exception;
     }
-
-    return (int) $entryId;
 }
 
 /**
