@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# 0. Редирект /index.html на корень сайта /
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^index\.html$ https://38-0-0.ru/ [R=301,L]
+
+# 1. Редирект с www на версию без www, кроме API.
+# API должен отвечать и на www, чтобы старый закэшированный фронтенд
+# с абсолютным https://www.38-0-0.ru/api/... не ломался на CORS-редиректе.
+RewriteCond %{HTTP_HOST} ^www\.38-0-0\.ru$ [NC]
+RewriteCond %{REQUEST_URI} !^/api/ [NC]
+RewriteRule ^ https://38-0-0.ru%{REQUEST_URI} [R=301,L]
+
+# 2. Редирект с HTTP на HTTPS без www
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
+RewriteRule ^ https://38-0-0.ru%{REQUEST_URI} [R=301,L]
+
+</IfModule>
