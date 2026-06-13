@@ -20,6 +20,7 @@ const PERFECT_SCORE = 100;
 
 header('Content-Type: application/json; charset=utf-8');
 header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
+sendCorsHeaders();
 
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(204);
@@ -44,6 +45,23 @@ try {
 } catch (Throwable $exception) {
     error_log('Leaderboard API error: ' . $exception->getMessage());
     sendJson(['error' => 'Internal server error'], 500);
+}
+
+function sendCorsHeaders(): void
+{
+    $origin = (string) ($_SERVER['HTTP_ORIGIN'] ?? '');
+    $allowedOrigins = [
+        'https://38-0-0.ru',
+        'https://www.38-0-0.ru',
+    ];
+
+    if (in_array($origin, $allowedOrigins, true)) {
+        header('Access-Control-Allow-Origin: ' . $origin);
+        header('Vary: Origin');
+    }
+
+    header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
+    header('Access-Control-Allow-Headers: Content-Type');
 }
 
 function createConnection(): PDO
