@@ -478,7 +478,7 @@
 
   function renderFinishSummaryPending(rating) {
     if (finishedCard) finishedCard.classList.add("simulation-pending");
-    if (finishHeadline) finishHeadline.textContent = "Симулируем чемпионат...";
+    if (finishHeadline) finishHeadline.textContent = "Посмотрим, сможет ли твоя команда 38-0-0";
     teamRatingText.textContent = `Рейтинг команды: ${rating}`;
     if (matchResultsList) {
       matchResultsList.innerHTML = `<div class="match-results-empty">Матчи будут появляться в реальном времени.</div>`;
@@ -493,7 +493,7 @@
     if (projectedWins) projectedWins.textContent = season.wins;
     if (projectedDraws) projectedDraws.textContent = season.draws;
     if (projectedLosses) projectedLosses.textContent = season.losses;
-    if (projectedPointsText) projectedPointsText.textContent = `38 матчей против случайных команд из базы · ${season.points} очков · голы ${season.goalsFor}:${season.goalsAgainst}`;
+    if (projectedPointsText) projectedPointsText.textContent = `Результат вашей команды в сезоне · ${season.points} очков · голы ${season.goalsFor}:${season.goalsAgainst}`;
     if (seasonBadge) {
       seasonBadge.textContent = season.label;
       seasonBadge.dataset.tier = season.tier;

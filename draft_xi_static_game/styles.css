@@ -628,11 +628,12 @@ button { cursor: pointer; }
   filter: drop-shadow(0 16px 34px rgba(0,0,0,.48));
 }
 .finished-card h2 {
-  max-width: 520px;
+  max-width: none;
   margin: 0 auto 10px;
-  font-size: clamp(27px, 4vw, 34px);
+  font-size: clamp(24px, 3vw, 34px);
   line-height: 1.12;
   letter-spacing: -.04em;
+  white-space: nowrap;
 }
 .finished-card > p {
   color: var(--muted);
