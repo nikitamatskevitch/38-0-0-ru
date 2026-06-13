@@ -11,3 +11,7 @@ SET
   losses = CASE WHEN score >= 100 THEN 0 ELSE NULL END,
   points = CASE WHEN score >= 100 THEN 114 ELSE NULL END
 WHERE wins IS NULL OR draws IS NULL OR losses IS NULL OR points IS NULL;
+
+UPDATE leaderboard
+SET points = (wins * 3) + draws
+WHERE wins IS NOT NULL AND draws IS NOT NULL;

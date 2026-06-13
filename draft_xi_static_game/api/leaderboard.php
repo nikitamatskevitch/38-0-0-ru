@@ -123,7 +123,7 @@ function loadLeaderboard(PDO $pdo, string $view, int $limit): array
             $entry['wins'] = (int) $row['wins'];
             $entry['draws'] = (int) $row['draws'];
             $entry['losses'] = (int) $row['losses'];
-            $entry['points'] = (int) $row['points'];
+            $entry['points'] = ((int) $row['wins'] * 3) + (int) $row['draws'];
         }
 
         return $entry;
@@ -214,13 +214,15 @@ function normalizeSeasonRecord(array $payload): array
     $wins = normalizeNonNegativeInt($payload['wins'] ?? 0);
     $draws = normalizeNonNegativeInt($payload['draws'] ?? 0);
     $losses = normalizeNonNegativeInt($payload['losses'] ?? 0);
-    $points = normalizeNonNegativeInt($payload['points'] ?? (($wins * 3) + $draws));
+    $points = ($wins * 3) + $draws;
 
     if (($wins + $draws + $losses) !== 38) {
         $wins = 0;
         $draws = 0;
         $losses = 38;
         $points = 0;
+    } else {
+        $points = ($wins * 3) + $draws;
     }
 
     return [
