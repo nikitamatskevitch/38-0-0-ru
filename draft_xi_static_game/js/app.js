@@ -822,6 +822,22 @@
     return url.toString();
   }
 
+  function getNicknameCheckUrl(nickname) {
+    const url = new URL(LEADERBOARD_API_ENDPOINT, window.location.href);
+    url.searchParams.set("nickname", nickname);
+    return url.toString();
+  }
+
+  async function isNicknameTaken(nickname) {
+    const response = await fetch(getNicknameCheckUrl(nickname), { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`Nickname check failed: ${response.status}`);
+    }
+
+    const payload = await response.json();
+    return Boolean(payload && payload.exists);
+  }
+
   async function loadLeaderboard(view = "top", limit) {
     if (LEADERBOARD_API_ENDPOINT) {
       const response = await fetch(getLeaderboardUrl(view, limit));
@@ -1087,16 +1103,32 @@
     });
   }
   if (nicknameForm) {
-    nicknameForm.addEventListener("submit", event => {
+    nicknameForm.addEventListener("submit", async event => {
       event.preventDefault();
       const nickname = normalizeNickname(nicknameInput.value);
       if (nickname.length < 2) {
         nicknameError.textContent = "Минимум 2 символа.";
         return;
       }
-      saveNickname(nickname);
-      nicknameModal.classList.add("hidden");
-      startGame();
+
+      const submitButton = nicknameForm.querySelector('button[type="submit"]');
+      nicknameError.textContent = "Проверяем никнейм...";
+      if (submitButton) submitButton.disabled = true;
+
+      try {
+        if (await isNicknameTaken(nickname)) {
+          nicknameError.textContent = "Такой никнейм уже занят. Придумай другой, чтобы начать игру.";
+          return;
+        }
+
+        saveNickname(nickname);
+        nicknameModal.classList.add("hidden");
+        startGame();
+      } catch (error) {
+        nicknameError.textContent = "Не удалось проверить никнейм. Попробуй ещё раз.";
+      } finally {
+        if (submitButton) submitButton.disabled = false;
+      }
     });
   }
   if (changeSideBtn && gameGrid) changeSideBtn.addEventListener("click", () => gameGrid.classList.toggle("flipped"));
