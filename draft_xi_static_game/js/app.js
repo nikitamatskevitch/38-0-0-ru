@@ -158,6 +158,7 @@
       lastRating: 0,
       lastSeason: null,
       matchResults: [],
+      matchRevealTimer: null,
       formation: selectedFormation
     };
   }
@@ -224,6 +225,7 @@
   }
 
   function resetDraft() {
+    clearMatchRevealTimer();
     state = createFreshState();
     applyFormationToPitch();
     teamCodeEl.textContent = "---";
@@ -300,7 +302,7 @@
     state.currentDraw = draw;
     state.currentPlayers = draw.players
       .filter(player => !state.usedPlayerIds.has(player.id) && hasAnyFreePosition(player))
-      .sort((a, b) => b.stats.ovr - a.stats.ovr);
+      .sort(comparePlayersByName);
     state.selectedPlayerId = null;
 
     teamCodeEl.textContent = draw.clubCode;
@@ -455,14 +457,37 @@
     state.lastRating = rating;
     state.lastSeason = season;
     state.matchResults = generateMatchResults(season);
-    renderFinishSummary(rating, season);
+    renderFinishSummaryPending(rating);
+    revealMatchResults(state.matchResults, () => {
+      renderFinishSummary(rating, season);
+      saveLeaderboardResult(rating);
+    });
     roundPill.textContent = "Завершено";
-    saveLeaderboardResult(rating);
   }
 
+  function comparePlayersByName(a, b) {
+    return String(a.name || "").localeCompare(String(b.name || ""), ["ru", "en"], { sensitivity: "base" });
+  }
+
+  function clearMatchRevealTimer() {
+    if (state && state.matchRevealTimer) {
+      clearInterval(state.matchRevealTimer);
+      state.matchRevealTimer = null;
+    }
+  }
+
+  function renderFinishSummaryPending(rating) {
+    if (finishedCard) finishedCard.classList.add("simulation-pending");
+    if (finishHeadline) finishHeadline.textContent = "Симулируем чемпионат...";
+    teamRatingText.textContent = `Рейтинг команды: ${rating}`;
+    if (matchResultsList) {
+      matchResultsList.innerHTML = `<div class="match-results-empty">Матчи будут появляться в реальном времени.</div>`;
+    }
+  }
 
   function renderFinishSummary(rating, season = getProjectedSeason(rating)) {
 
+    if (finishedCard) finishedCard.classList.remove("simulation-pending");
     if (finishHeadline) finishHeadline.textContent = `Сможет ли твой XI сделать 38-0-0?`;
     teamRatingText.textContent = `Рейтинг команды: ${rating}`;
     if (projectedWins) projectedWins.textContent = season.wins;
@@ -615,16 +640,13 @@
   }
 
   function getOpponentPool() {
-    const seen = new Set();
     const selectedClubSeasons = new Set(Object.values(state.placed).map(player => `${player.clubName}|${player.season}`));
-
-    return DB.reduce((items, player) => {
-      const key = `${player.clubName}|${player.season}`;
-      if (seen.has(key) || selectedClubSeasons.has(key)) return items;
-      seen.add(key);
-      items.push({ clubName: player.clubName, season: player.season });
-      return items;
-    }, []);
+    return shuffleDeterministic(
+      getHistoricalTeamRatings()
+        .filter(team => !selectedClubSeasons.has(`${team.clubName}|${team.season}`))
+        .map(team => ({ clubName: team.clubName, season: team.season })),
+      `${getSeasonSeed(state.lastSeason || { wins: 0, draws: 0, losses: 0 })}|opponents`
+    );
   }
 
   function getMatchScore(outcome, index, season) {
@@ -669,7 +691,7 @@
       return;
     }
 
-    matchResultsList.innerHTML = results.map(match => `
+    matchResultsList.innerHTML = results.slice().sort((a, b) => b.round - a.round).map(match => `
       <div class="match-result-row ${match.outcome}">
         <div class="match-result-meta">
           <span>${match.round}. матч</span>
@@ -678,6 +700,38 @@
         <div class="match-result-score">${escapeHtml(match.score)}</div>
       </div>
     `).join("");
+  }
+
+  function revealMatchResults(results, onComplete) {
+    if (!matchResultsList) {
+      onComplete();
+      return;
+    }
+
+    clearMatchRevealTimer();
+    const revealed = [];
+    let index = 0;
+    matchResultsList.innerHTML = "";
+
+    const revealNext = () => {
+      if (index >= results.length) {
+        clearMatchRevealTimer();
+        onComplete();
+        return;
+      }
+
+      revealed.unshift(results[index]);
+      index += 1;
+      renderMatchResults(revealed);
+      matchResultsList.scrollTop = 0;
+      if (index >= results.length) {
+        clearMatchRevealTimer();
+        onComplete();
+      }
+    };
+
+    revealNext();
+    state.matchRevealTimer = setInterval(revealNext, 1000);
   }
 
   function calculateTeamRating() {

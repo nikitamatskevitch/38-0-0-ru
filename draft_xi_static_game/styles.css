@@ -452,7 +452,7 @@ button { cursor: pointer; }
 }
 .stat-head span:not(:first-child) { text-align: center; }
 .players-list {
-  max-height: 572px;
+  max-height: 430px;
   overflow: auto;
   scrollbar-color: #303047 transparent;
   scrollbar-width: thin;
@@ -1095,7 +1095,7 @@ button { cursor: pointer; }
 .match-results-list {
   display: grid;
   gap: 8px;
-  max-height: 360px;
+  max-height: 362px;
   margin-top: 14px;
   overflow: auto;
   padding-right: 4px;
@@ -1141,6 +1141,10 @@ button { cursor: pointer; }
 .match-result-row.win .match-result-score { color: var(--green); }
 .match-result-row.loss .match-result-score { color: #ff6a90; }
 .match-results-empty { color: var(--muted); font-weight: 850; padding: 14px; }
+.finished-card.simulation-pending .projected-record-card,
+.finished-card.simulation-pending .finish-actions {
+  display: none;
+}
 @media (max-width: 720px) {
   .match-result-row { grid-template-columns: 1fr; gap: 6px; }
 }
